@@ -93,7 +93,8 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-    color: #222D5A;
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+    color: #262728;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -110,5 +111,7 @@ export const NavLinks = styled(Link)`
             transition: all 0.3s ease;
         }
     }
+    font-family: 'Jost', sans-serif;
+    
 `
 

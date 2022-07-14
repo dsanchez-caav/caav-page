@@ -13,8 +13,6 @@ body{
     background-color: #F9F9F9;
 }
 `;
-
-
 export const Container = styled.div`
     z-index: 1;
     width: 100%;
@@ -30,6 +28,26 @@ export const Container = styled.div`
     }
 `;
 
+export const Button = styled.button`
+    border-radius: 20px;
+    background: ${({ primary }) => (primary ? "#C9EFF2" : "#0467FB")};
+    white-space: nowrap;
+    padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
+    color: #606568;
+    font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+    outline: none;
+    border: none;
+    cursor: pointer;
 
+    &:hover {
+        transition: all 0.3s ease-out;
+        background: red;
+        background: ${({ primary }) => (primary ? "#0467FB" : "#C9EFF2")};
+    }
+
+    @media screen and (max-width: 960px){
+        width: 100%;
+    } 
+`
 
 export default GlobalStyle;
