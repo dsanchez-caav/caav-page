@@ -112,6 +112,8 @@ export const NavLinks = styled(Link)`
         }
     }
     font-family: 'Jost', sans-serif;
-    
+
+    //preuba
+
 `
 
