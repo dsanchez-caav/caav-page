@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Container } from "../../globlalStyles";
 import { Link } from "react-router-dom";
-import { FaMagento } from "react-icons/fa";
+import { FaMagento, FaCaretDown } from "react-icons/fa";
 
 //This file gives the style to the Navbar
 
@@ -76,11 +76,12 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
+    color: #262728;
     height: 80px;
     border-bottom: 2px solid transparent;
 
     &hover {
-        border-bottom: 2px solid #222D5A;
+        border-bottom: 2px solid #262728;
     }
 
     @media screen and (max-width: 960px){
@@ -93,7 +94,6 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
     color: #262728;
     display: flex;
     align-items: center;
@@ -107,13 +107,70 @@ export const NavLinks = styled(Link)`
         display: table;
 
         &hover{
-            color: #4b59f7;
+            color: #262728;
             transition: all 0.3s ease;
         }
     }
-    font-family: 'Jost', sans-serif;
+`;
 
-    //preuba
+export const Navdrop = styled.button`
+    font-size: 2rem;
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #262728;
+    border: none;
+
+    background-color: transparent;
+    @media screen and (max-width: 960px){
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+
+        &hover{
+            color: #262728;
+            transition: all 0.3s ease;
+        }
+    }
+
 
 `
 
+export const Dropico = styled(FaCaretDown)`
+    margin-left: 0.2rem;
+    color: #262728;
+    `;
+
+// export const Navdrop = styled.li`
+//     @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+//     font-family: 'Jost', sans-serif;
+//     display: flex;
+//     align-items: center;
+//     color: #262728;
+//     height: 80px;
+//     border-bottom: 2px solid transparent;
+//     align-items: center;
+//     text-decoration: none;
+//     padding: 0.5rem 1rem;
+//     height: 100%;
+
+//     &hover {
+//         border-bottom: 2px solid #222D5A;
+//     }
+
+//     @media screen and (max-width: 960px){
+//         text-align: center;
+//         padding: 2rem;
+//         width: 100%;
+//         display: table;
+//         &hover {
+//             border: none;
+//         }
+//     }
+// `;

@@ -2,8 +2,9 @@ import styled, { createGlobalStyle } from "styled-components";
 
 
 const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+    
 *{
+    @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
     box-sizing: border-box;
     margin: 0;
     padding: 0;

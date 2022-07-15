@@ -1,8 +1,11 @@
 import React, {useState} from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import { Nav, NavbarContainer, NavLogo, Navicon, MobileIcon, NavMenu, NavItem, NavLinks } from "./Navbar.elements";
+import { FaBars, FaTimes, FaCaretDown } from "react-icons/fa";
+import { Nav, NavbarContainer, NavLogo, Navicon, MobileIcon, NavMenu, NavItem, NavLinks, Dropico, Navdrop } from "./Navbar.elements";
 import { Container } from "../../globlalStyles";
 import { IconContext } from "react-icons/lib";
+
+//test
+import { useTranslation } from "react-i18next";
 
 
 
@@ -11,9 +14,11 @@ const Navbar = () => {
 
   const handleClick = () => setClick(!click)
 
+  const [t, i18n] = useTranslation("global")
+
   return (
     <>
-      <IconContext.Provider value={{ color: "#222D5A"}}>
+      <IconContext.Provider value={{ color: "#262728"}}>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
@@ -25,16 +30,22 @@ const Navbar = () => {
           </MobileIcon>
           <NavMenu onClick={handleClick} click={click}>
             <NavItem>
-              <NavLinks to="/">Home</NavLinks>
+                <NavLinks to="/">{t("nav.home") }</NavLinks>
+            </NavItem>
+            <NavItem >
+                <NavLinks to="/services">{t("nav.services")}
+                </NavLinks>
+            </NavItem>
+            <NavItem >
+                <NavLinks to="/">{t("nav.company")} <Dropico />  
+                </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/services">Services</NavLinks>
+                <NavLinks to="/">
+                  {t("nav.careers")} <Dropico />
+                </NavLinks>
             </NavItem>
-            <NavItem>
-              <NavLinks to="/">Company</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="/">Carrers</NavLinks>
+              <NavItem>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
