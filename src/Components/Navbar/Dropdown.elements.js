@@ -23,7 +23,9 @@ export const Dropitem = styled.li`
     &:hover{
         border-left: 2px solid #262728;
     }
-    
+    @media screen and (max-width: 960px){
+        display: none;
+    }
 
 `;
 

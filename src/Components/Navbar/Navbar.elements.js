@@ -62,15 +62,14 @@ export const NavMenu = styled.ul`
     text-align: center;
 
     @media screen and (max-width: 960px){
-        display: flex;
+        display: ${({ click }) => (click ? "flex" : "none")};
         flex-direction: column;
         width: 100%;
         height: 90vh;
         position: absolute;
             top: 80px;
-            right: ${({ click }) => (click ? 0 : "-100%")};
+            left: 0px;
         opacity: 1;
-        transition: all 0.5s ease;
         background: #F1F1F1;
     }
 `;
@@ -101,7 +100,7 @@ export const NavLinks = styled(Link)`
     padding: 0.5rem 1rem;
     height: 100%;
     @media screen and (max-width: 960px){
-        text-align: center;
+        text-align: left;
         padding: 2rem;
         width: 100%;
         display: table;

@@ -31,6 +31,13 @@ export const Menuitems = [
         path: "./",
         cName: "NavItem",
         tras: "nav.careers"
+    },
+    {
+        id: 5,
+        title: "Languaje",
+        path: "./",
+        cName: "NavItem",
+        tras: "nav.languaje"
     }
 ]
 
@@ -67,3 +74,21 @@ export const CompanyDrop = [
         tras: "drop.drop_com.contact"
     }
 ]
+
+export const languageDrop = [
+    {
+        id: 1,
+        title: "About Us",
+        path: "./",
+        cName: "submenuItem",
+        tras: "drop.drop_com.about"
+    },
+    {
+        id: 2,
+        title: "Contact Us",
+        path: "./",
+        cName: "submenuItem",
+        tras: "drop.drop_com.contact"
+    }
+]
+
