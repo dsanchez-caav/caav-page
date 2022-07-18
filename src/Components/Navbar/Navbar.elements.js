@@ -80,14 +80,14 @@ export const NavItem = styled.li`
     height: 80px;
     border-bottom: 2px solid transparent;
 
-    &hover {
+    &:hover {
         border-bottom: 2px solid #262728;
     }
 
     @media screen and (max-width: 960px){
         width: 100%;
 
-        &hover {
+        &:hover {
             border: none;
         }
     }
@@ -116,4 +116,7 @@ export const NavLinks = styled(Link)`
 export const Dropico = styled(FaCaretDown)`
     margin-left: 0.2rem;
     color: #262728;
+    @media screen and (max-width: 960px){
+        display: none;
+    }
     `;

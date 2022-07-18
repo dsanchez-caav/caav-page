@@ -1,19 +1,20 @@
 import React, {useState} from 'react'
-import { ServicesDrop } from "./Menuitems"
+import { ServicesDrop, CompanyDrop } from "./Menuitems"
 import {
-    Dropmenu,
+    DropmenuS,
+    DropmenuC,
     Dropitem,
     Droplink
 } from "./Dropdown.elements"
 
 import { useTranslation } from "react-i18next";
 
-function Dropdown() {
+export function DropdownS() {
     const [t, i18n] = useTranslation("global");
     const [dropdown, setDropdown] = useState(false);
     return (
         <>
-            <Dropmenu onClick={() => setDropdown(!dropdown)}>
+            <DropmenuS className={dropdown ? "Drop-click" : "Dropmenu"} onClick={() => setDropdown(!dropdown)} >
                 {ServicesDrop.map(item => {
                     return (
                         <Dropitem key={item.id}>
@@ -23,9 +24,28 @@ function Dropdown() {
                         </Dropitem>
                     )
                 })}
-            </Dropmenu>
+            </DropmenuS>
         </>
     );
 };
 
-export default Dropdown
+
+export function DropdownC() {
+    const [t, i18n] = useTranslation("global");
+    const [dropdown, setDropdown] = useState(false);
+    return (
+        <>
+            <DropmenuC className={dropdown ? "Drop-click" : "Dropmenu"} onClick={() => setDropdown(!dropdown)} >
+                {CompanyDrop.map(item => {
+                    return (
+                        <Dropitem key={item.id}>
+                            <Droplink to={item.path} onClick={() => setDropdown(false)}>
+                                {t(item.tras)}
+                            </Droplink>
+                        </Dropitem>
+                    )
+                })}
+            </DropmenuC>
+        </>
+    );
+};

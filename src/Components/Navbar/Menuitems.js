@@ -50,3 +50,20 @@ export const ServicesDrop = [
         tras: "drop.drop_ser.marketing"
     }
 ]
+
+export const CompanyDrop = [
+    {
+        id: 1,
+        title: "About Us",
+        path: "./",
+        cName: "submenuItem",
+        tras: "drop.drop_com.about"
+    },
+    {
+        id: 2,
+        title: "Contact Us",
+        path: "./",
+        cName: "submenuItem",
+        tras: "drop.drop_com.contact"
+    }
+]
