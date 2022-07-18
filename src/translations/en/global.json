@@ -4,5 +4,19 @@
         "services": "Services",
         "company": "Company",
         "careers": "Careers"
-    }
+    },
+    "drop":{
+        "drop_ser":{
+            "human": "Human Resources",
+            "marketing" : "Marketing"
+        },
+        "drop_com":{
+            "about":"About Us",
+            "contact": "Contact Us"
+        },
+        "drop_len":{
+            "english": "English",
+            "spanish": "Español"
+        }
+}
 }

@@ -1,11 +1,25 @@
 import React, {useState} from "react";
 import { FaBars, FaTimes, FaCaretDown } from "react-icons/fa";
-import { Nav, NavbarContainer, NavLogo, Navicon, MobileIcon, NavMenu, NavItem, NavLinks, Dropico, Navdrop } from "./Navbar.elements";
+import {
+  Nav,
+  NavbarContainer,
+  NavLogo,
+  Navicon,
+  MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLinks,
+  Dropico,
+} from "./Navbar.elements";
 import { Container } from "../../globlalStyles";
 import { IconContext } from "react-icons/lib";
+import { Menuitems } from "./Menuitems";
+import { useTranslation } from "react-i18next";
+
+import Dropdown from "./Dropdown";
 
 //test
-import { useTranslation } from "react-i18next";
+
 
 
 
@@ -14,7 +28,9 @@ const Navbar = () => {
 
   const handleClick = () => setClick(!click)
 
-  const [t, i18n] = useTranslation("global")
+  const [t, i18n] = useTranslation("global");
+
+
 
   return (
     <>
@@ -27,32 +43,49 @@ const Navbar = () => {
           </NavLogo>
           <MobileIcon onClick={handleClick}>
             {click ? <FaTimes /> : <FaBars />}
-          </MobileIcon>
-          <NavMenu onClick={handleClick} click={click}>
-            <NavItem>
-                <NavLinks to="/">{t("nav.home") }</NavLinks>
-            </NavItem>
-            <NavItem >
-                <NavLinks to="/services">{t("nav.services")}
-                </NavLinks>
-            </NavItem>
-            <NavItem >
-                <NavLinks to="/">{t("nav.company")} <Dropico />  
-                </NavLinks>
-            </NavItem>
-            <NavItem>
-                <NavLinks to="/">
-                  {t("nav.careers")} <Dropico />
-                </NavLinks>
-            </NavItem>
-              <NavItem>
-            </NavItem>
-          </NavMenu>
+            </MobileIcon>
+            <NavMenu onClick={handleClick} click={click}>
+              {Menuitems.map(item => {
+                return (
+                  <NavItem key={item.id}>
+                    <NavLinks to={item.path} >
+                      {t(item.tras)}
+                  </NavLinks>
+                </NavItem>
+              )
+                }
+                )}
+              </NavMenu>
         </NavbarContainer>
         </Nav>
+        <Dropdown />
         </IconContext.Provider> 
     </>
   );
-};
+};  
 
 export default Navbar;
+
+// const Navbar = () => {
+//   const [click, setClick] = useState(false)
+  
+//   const handleClick = () => setClick(!click)
+  
+//   const [t, i18n] = useTranslation("global")
+  
+//   return (
+//     <>
+//       <IconContext.Provider value={{ color: "#262728" }}>
+//         <nav className="Navbar">
+//           <link to="./" className="Navlogo">
+//             CAAV
+//           </link>
+//           <ul className="Nav-item">
+
+//           </ul>
+//         </nav>
+//       </IconContext.Provider>
+//     </>
+//   )
+// }
+// export default Navbar;
