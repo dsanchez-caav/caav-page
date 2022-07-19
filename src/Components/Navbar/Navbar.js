@@ -16,7 +16,7 @@ import { IconContext } from "react-icons/lib";
 import { Menuitems } from "./Menuitems";
 import { useTranslation } from "react-i18next";
 
-import {DropdownS, DropdownC} from "./Dropdown";
+import {DropdownS, DropdownC, DropdownL} from "./Dropdown";
 
 
 
@@ -34,7 +34,9 @@ const Navbar = () => {
 
   const [dropdownS, setDropdownS] = useState(false)
   const [dropdownC, setDropdownC] = useState(false)
+  const [dropdownL, setDropdownL] = useState(false)
 
+  
 
   return (
     <>
@@ -68,7 +70,16 @@ const Navbar = () => {
                         </NavLinks>
                       </NavItem>
                     );
-                }else
+                } else if (item.title === "Languaje") {
+                  return (
+                    <NavItem key={item.id}>
+                      <NavLinks to={item.path} onMouseEnter={() => setDropdownL(true)} onMouseLeave={() => setDropdownL(false)} >
+                        {t(item.tras)} <Dropico />
+                        {dropdownL && <DropdownL />}
+                      </NavLinks>
+                    </NavItem>
+                  );
+                  }else
                 return (
                   <NavItem key={item.id}>
                     <NavLinks to={item.path} >
@@ -89,3 +100,4 @@ const Navbar = () => {
 };  
 
 export default Navbar;
+

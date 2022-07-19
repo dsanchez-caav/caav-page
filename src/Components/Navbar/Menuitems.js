@@ -78,17 +78,17 @@ export const CompanyDrop = [
 export const languageDrop = [
     {
         id: 1,
-        title: "About Us",
+        title: "Englihs",
         path: "./",
         cName: "submenuItem",
-        tras: "drop.drop_com.about"
+        tras: "drop.drop_len.english",
     },
     {
         id: 2,
-        title: "Contact Us",
+        title: "Español",
         path: "./",
         cName: "submenuItem",
-        tras: "drop.drop_com.contact"
+        tras: "drop.drop_len.spanish",
     }
 ]
 

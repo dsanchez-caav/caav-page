@@ -118,4 +118,4 @@ export const Dropico = styled(FaCaretDown)`
     @media screen and (max-width: 960px){
         display: none;
     }
-    `;
+`;

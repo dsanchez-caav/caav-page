@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
-import { ServicesDrop, CompanyDrop } from "./Menuitems"
+import { ServicesDrop, CompanyDrop, languageDrop } from "./Menuitems"
 import {
     DropmenuS,
     DropmenuC,
+    DropmenuL,
     Dropitem,
     Droplink
 } from "./Dropdown.elements"
@@ -29,7 +30,6 @@ export function DropdownS() {
     );
 };
 
-
 export function DropdownC() {
     const [t, i18n] = useTranslation("global");
     const [dropdown, setDropdown] = useState(false);
@@ -46,6 +46,26 @@ export function DropdownC() {
                     )
                 })}
             </DropmenuC>
+        </>
+    );
+};
+
+export function DropdownL() {
+    const [t, i18n] = useTranslation("global");
+    const [dropdown, setDropdown] = useState(false);
+    return (
+        <>
+            <DropmenuL className={dropdown ? "Drop-click" : "Dropmenu"} onClick={() => setDropdown(!dropdown)} >
+                {languageDrop.map(item => {
+                    return (
+                        <Dropitem key={item.id}>
+                            <Droplink to={item.path} onClick={()=> setDropdown(false) }  >
+                                {t(item.tras)}
+                            </Droplink>
+                        </Dropitem>
+                    )
+                })}
+            </DropmenuL>
         </>
     );
 };

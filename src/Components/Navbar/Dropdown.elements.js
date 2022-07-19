@@ -21,7 +21,7 @@ export const Dropitem = styled.li`
     border-bottom: 2px solid transparent;
 
     &:hover{
-        border-left: 2px solid #262728;
+        background: #D2D8DD;
     }
     @media screen and (max-width: 960px){
         display: none;
@@ -50,5 +50,31 @@ export const DropmenuC = styled.ul`
     &.Drop-click{
         display: none;
     }
+
+`;
+
+export const DropmenuL = styled.ul`
+    width: 10rem;
+    position: absolute;
+    top: 80px;
+    list-style: none;
+    text-align: start;
+    
+
+    &.Drop-click{
+        display: none;
+    }
+
+`;
+
+export const DropbotonLenguaje = styled.button`
+    display: block;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #262728;
+    padding: 16px;
 
 `;
