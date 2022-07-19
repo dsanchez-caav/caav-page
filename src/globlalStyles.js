@@ -51,4 +51,17 @@ export const Button = styled.button`
     } 
 `
 
+export const MainHeader = styled.h1`
+    justify-content: right;
+    font-family: 'PT Sans', sans-serif;
+    //font-size: clamp(2.3rem, 6vh, 4.5rem);
+    font-size: 14vh;
+    margin-bottom: 2rem;
+    color: #F9F9F9;
+    display: flex;
+    align-items: flex-start;
+    text-align: right;
+
+`
+
 export default GlobalStyle;

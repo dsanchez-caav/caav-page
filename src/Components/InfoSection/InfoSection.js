@@ -1,13 +1,21 @@
 import React from 'react'
-import { InfoSec } from './InfoSection.elements'
+import { Container } from '../../globlalStyles'
+import { InfoSec, InfoColumn, InfoRow, TextWrapper } from './InfoSection.elements'
 
 const InfoSection = () => {
     return (
         <>
             <InfoSec>
-            InfoSection
+                <Container>
+                    <InfoRow >
+                        <InfoColumn>
+                            <TextWrapper>
+                                holi
+                            </TextWrapper>
+                        </InfoColumn>
+                    </InfoRow>
+                </Container>
             </InfoSec>
-        
         </>
     )
 }

@@ -78,6 +78,7 @@ export const NavItem = styled.li`
     color: #262728;
     height: 80px;
     border-bottom: 2px solid transparent;
+    font-family: 'Jost', sans-serif;
 
     &:hover {
         border-bottom: 2px solid #262728;

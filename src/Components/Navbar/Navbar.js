@@ -16,7 +16,9 @@ import { IconContext } from "react-icons/lib";
 import { Menuitems } from "./Menuitems";
 import { useTranslation } from "react-i18next";
 
-import {DropdownS, DropdownC, DropdownL} from "./Dropdown";
+import { DropdownS, DropdownC, DropdownL } from "./Dropdown";
+
+import Hero from "../HeroSection/Hero";
 
 
 
@@ -94,7 +96,8 @@ const Navbar = () => {
         </NavbarContainer>
         </Nav>
         
-        </IconContext.Provider> 
+      </IconContext.Provider> 
+      
     </>
   );
 };  
