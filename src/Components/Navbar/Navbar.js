@@ -18,11 +18,6 @@ import { useTranslation } from "react-i18next";
 
 import { DropdownS, DropdownC, DropdownL } from "./Dropdown";
 
-import Hero from "../HeroSection/Hero";
-
-
-
-
 
 const Navbar = () => {
 
