@@ -19,5 +19,27 @@
             "english": "English",
             "spanish": "Español"
         }
-}
+    },
+    "hero":{
+        "title": "We have the right Solution",
+        "text": "Connecting the right solutions to the right needs",
+        "button": "Learn more"
+    },
+    "info_home":{
+        "des":{
+            "title":"Discover our services",
+            "text":"Find out what services we offer to boost your business, saving time, cost effective and incorporating your organization to the new digital technologies",
+            "button": "Learn more"
+        },
+        "info":{
+            "title_hr":"\\\\Human Resources",
+            "ser_hr1": "Outsourcing",
+            "ser_hr2": "Recruiting and staffing",
+            "ser_hr3": "Consulting",
+            "title_mk":"\\\\Marketing",
+            "ser_mk1": "Digital Marketing",
+            "ser_mk2": "Branding",
+            "ser_mk3": "Consulting"
+        }
+    }
 }

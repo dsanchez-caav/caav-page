@@ -1,30 +1,36 @@
 import styled from "styled-components";
-import Home_img from '../../Images/Home.png';
+import Home_img from '../../Images/Home.jpg';
 
 export const Herosection = styled.section`
-    height: 100vh;
+    height: 95vh;
     background-image: url(${Home_img});
     justify-content: right;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     display: flex;
-    align-items: center;
+    align-items: top;
     object-fit: contain;
 `
 export const HeroText = styled.p`
     justify-content: right;
     margin-bottom: 35px;
-    font-size: 4vh;
+    padding-left: 30%;
+    font-size: 5vh;
     line-height: 24px;
     text-align: right;
     //Figma 
     font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
-    line-height: 92px;
+    line-height: 120%;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: #F9F9F9;
+
+    @media screen and (max-width: 1400px){
+        padding-left: 40%;
+
+    }
 
 `;
 

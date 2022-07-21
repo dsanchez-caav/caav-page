@@ -4,7 +4,6 @@ import styled, { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
     
 *{
-    @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -30,20 +29,22 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-    border-radius: 20px;
-    background: ${({ primary }) => (primary ? "#C9EFF2" : "#0467FB")};
+    border-radius: 10px;
+    background: ${({ primary }) => (primary ? "#C9EFF2" : "#54DAE4")};
     white-space: nowrap;
     padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
     color: #606568;
-    font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+    font-size: ${({ fontBig }) => (fontBig ? "3vh" : "2vh")};
     outline: none;
     border: none;
     cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 
     &:hover {
         transition: all 0.3s ease-out;
-        background: red;
-        background: ${({ primary }) => (primary ? "#0467FB" : "#C9EFF2")};
+        background: ${({ primary }) => (primary ? "#54DAE4" : "#C9EFF2")};
+        color: #4D5053;
     }
 
     @media screen and (max-width: 960px){
@@ -54,6 +55,7 @@ export const Button = styled.button`
 export const MainHeader = styled.h1`
     justify-content: right;
     font-family: 'PT Sans', sans-serif;
+    padding-top: 10vh;
     //font-size: clamp(2.3rem, 6vh, 4.5rem);
     font-size: 14vh;
     margin-bottom: 2rem;
@@ -61,6 +63,11 @@ export const MainHeader = styled.h1`
     display: flex;
     align-items: flex-start;
     text-align: right;
+
+    @media screen and (max-width: 1400px){
+        padding-left: 25%;
+
+    }
 
 `
 

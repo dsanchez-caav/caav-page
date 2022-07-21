@@ -2,17 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, MainHeader, Button } from '../../globlalStyles';
 import { Herosection, HeroText, ButtonWrapper } from './Hero.elements';
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+
+  const [t, i18n] = useTranslation("global");
+
   return (
     <Herosection>
       <Container>
-        <MainHeader>We have the right Solution</MainHeader>
-        <HeroText> Connecting the right solutions to the right needs</HeroText>
+        <MainHeader>{t("hero.title")}</MainHeader>
+        <HeroText>{t("hero.text")}</HeroText>
         <ButtonWrapper>
           <Link to="/">
-            <Button big >
-              Learn more
+            <Button big primary fontBig >
+            {t("hero.button")}
             </Button>
           </Link>
         </ButtonWrapper>

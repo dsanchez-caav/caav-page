@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import { FaBars, FaTimes, FaCaretDown } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { BsGlobe } from "react-icons/bs";
 import {
   Nav,
   NavbarContainer,
@@ -11,12 +12,13 @@ import {
   NavLinks,
   Dropico,
 } from "./Navbar.elements";
-import { Container } from "../../globlalStyles";
 import { IconContext } from "react-icons/lib";
 import { Menuitems } from "./Menuitems";
 import { useTranslation } from "react-i18next";
 
 import { DropdownS, DropdownC, DropdownL } from "./Dropdown";
+
+import { useLocation } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -32,8 +34,8 @@ const Navbar = () => {
   const [dropdownS, setDropdownS] = useState(false)
   const [dropdownC, setDropdownC] = useState(false)
   const [dropdownL, setDropdownL] = useState(false)
-
   
+  let location = useLocation();
 
   return (
     <>
@@ -70,8 +72,8 @@ const Navbar = () => {
                 } else if (item.title === "Languaje") {
                   return (
                     <NavItem key={item.id}>
-                      <NavLinks to={item.path} onMouseEnter={() => setDropdownL(true)} onMouseLeave={() => setDropdownL(false)} >
-                        {t(item.tras)} <Dropico />
+                      <NavLinks to={location} onMouseEnter={() => setDropdownL(true)} onMouseLeave={() => setDropdownL(false)} >
+                        <BsGlobe/> <Dropico />
                         {dropdownL && <DropdownL />}
                       </NavLinks>
                     </NavItem>

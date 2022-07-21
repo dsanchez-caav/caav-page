@@ -1,11 +1,12 @@
 import React from 'react';
-import { Hero } from '../../Components';
-//import Hero from '../../Components/HeroSection/Hero';
+import { Hero, InfoSection } from '../../Components';
+
 
 const Home = () => {
     return (
         <>
-            <Hero/>
+            <Hero />
+            <InfoSection/>
         </>
     );
 };

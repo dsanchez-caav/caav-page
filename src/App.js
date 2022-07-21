@@ -1,8 +1,9 @@
 import React from "react";
 import { Navbar } from "./Components";
 import GlobalStyle from "./globlalStyles";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/HomePage/Home";
+import Services from "./Pages/ServicesPages/Services";
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
       <GlobalStyle />
       <Navbar />
       <Routes>
-        <Route exact path="/" element = {<Home/>} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/Services" element = {<Services/>} />
       </Routes>
     </Router>
   );

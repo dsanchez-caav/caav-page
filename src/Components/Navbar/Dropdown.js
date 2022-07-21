@@ -10,9 +10,14 @@ import {
 
 import { useTranslation } from "react-i18next";
 
+import { useLocation } from 'react-router-dom';
+
 export function DropdownS() {
     const [t, i18n] = useTranslation("global");
     const [dropdown, setDropdown] = useState(false);
+
+
+
     return (
         <>
             <DropmenuS className={dropdown ? "Drop-click" : "Dropmenu"} onClick={() => setDropdown(!dropdown)} >
@@ -51,19 +56,31 @@ export function DropdownC() {
 };
 
 export function DropdownL() {
+    let location = useLocation();
     const [t, i18n] = useTranslation("global");
     const [dropdown, setDropdown] = useState(false);
     return (
         <>
             <DropmenuL className={dropdown ? "Drop-click" : "Dropmenu"} onClick={() => setDropdown(!dropdown)} >
                 {languageDrop.map(item => {
-                    return (
-                        <Dropitem key={item.id}>
-                            <Droplink to={item.path} onClick={()=> setDropdown(false) }  >
-                                {t(item.tras)}
-                            </Droplink>
-                        </Dropitem>
-                    )
+                    if (item.id === 1) {
+                        return (
+                            <Dropitem key={item.id}>
+                                <Droplink to={location} onClick={()=> i18n.changeLanguage("en") }  >
+                                    {t(item.tras)}
+                                </Droplink>
+                            </Dropitem>
+                        )
+                    } else {
+                        return (
+                            <Dropitem key={item.id}>
+                                <Droplink to= {location} onClick={()=> i18n.changeLanguage("es") }  >
+                                    {t(item.tras)}
+                                </Droplink>
+                            </Dropitem>
+                        )
+                    }
+                    
                 })}
             </DropmenuL>
         </>

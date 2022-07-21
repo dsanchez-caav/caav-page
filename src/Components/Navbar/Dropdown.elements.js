@@ -68,13 +68,19 @@ export const DropmenuL = styled.ul`
 `;
 
 export const DropbotonLenguaje = styled.button`
+
     display: block;
-    background: none;
-    border: none;
     width: 100%;
     height: 100%;
     text-decoration: none;
     color: #262728;
     padding: 16px;
+    font-family: 'Jost', sans-serif;
+    border: none;
+    
+
+    &:hover{
+        background: #D2D8DD;
+    }
 
 `;

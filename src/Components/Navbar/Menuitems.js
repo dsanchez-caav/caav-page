@@ -1,6 +1,7 @@
 import i18next from 'i18next';
 
 
+
 export const Menuitems = [
 
     {
@@ -14,7 +15,7 @@ export const Menuitems = [
     {
         id: 2,
         title: "Services",
-        path: "./",
+        path: "../Pages/ServicesPages/Services",
         cName: "NavItem",
         tras: "nav.services"
     },
@@ -45,7 +46,7 @@ export const ServicesDrop = [
     {
         id: 1,
         title: "Humman resources",
-        path: "./",
+        path: "./Services",
         cName: "submenuItem",
         tras: "drop.drop_ser.human"
     },
@@ -76,9 +77,10 @@ export const CompanyDrop = [
 ]
 
 export const languageDrop = [
+    
     {
         id: 1,
-        title: "Englihs",
+        title: "English",
         path: "./",
         cName: "submenuItem",
         tras: "drop.drop_len.english",
