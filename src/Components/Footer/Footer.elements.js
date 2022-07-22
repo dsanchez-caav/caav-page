@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
-
-import { BsFillTelephoneFill } from "react-icons/bs";
+import { BsFillTelephoneFill, BsLinkedin } from "react-icons/bs";
 import { MdMail, MdLocationOn } from "react-icons/md";
+import { RiInstagramFill } from "react-icons/ri";
+
 
 export const FooterSection = styled.section`
     height: 50vh;
@@ -28,31 +29,17 @@ export const FooterColumn = styled.div`
         width: 4vh;
         padding-right: 3vh;
     }
-`;
-
-export const FooterWrapper = styled.div`
-    //max-width: 540px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-
-
-    @media screen and (max-width: 768px) {
-        padding-bottom: 65px;
-
+    &.text{
+        width: 35%;
+        align-items: flex-start;
     }
-
 `;
+
 
 export const FooterText = styled.p`
-    //justify-content: left;
-    font-size: 3vh;
-    line-height: 24px;
+    font-size: 2.8vh;
     text-align: left;
-    //Figma 
     font-family: 'Jost', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
     display: flex;
     align-items: center;
     color: #F9F9F9;
@@ -69,24 +56,26 @@ export const FooterIco = styled(Link)`
     cursor: pointer;
     display: flex;
     align-items: center;
-    //padding: 10px;
 `;
 
 export const Phone = styled(BsFillTelephoneFill)`
-    //margin-right: 2rem;
     font-size: 3vh;
-    
 `;
 
 export const Location = styled(MdLocationOn)`
-    //margin-right: 2rem;
     font-size: 4.5vh;
 `;
 
 export const Mail = styled(MdMail)`
-    //margin-right: 2rem;
     font-size: 4vh;
 `;
+
+export const Instagram = styled(RiInstagramFill)`
+    font-size: 4.5vh;
+`
+export const Linkedin = styled(BsLinkedin)`
+    font-size: 4.5vh;
+`
 
 export const FooterLinktext = styled(Link)`
     color: #F9F9F9;
@@ -95,8 +84,17 @@ export const FooterLinktext = styled(Link)`
     font-size: 2.8vh;
     display: flex;
 
+    @media screen and (max-width: 1400px){
+        font-size: 2.9vh;
+    }
+
+
 `;
 
-//this is a test
 
-
+export const FooterIcoA = styled.a`
+    color: #F9F9F9;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+`;

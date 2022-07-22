@@ -6,6 +6,9 @@
         "careers": "Careers",
         "languaje": "English"
     },
+    "footer":{
+        "media": "Our social media"
+    },
     "drop":{
         "drop_ser":{
             "human": "Human Resources",

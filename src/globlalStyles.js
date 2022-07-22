@@ -2,17 +2,17 @@ import styled, { createGlobalStyle } from "styled-components";
 
 
 const GlobalStyle = createGlobalStyle`
-    
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Jost", sans-serif;
-}
-body{
-    background-color: #F9F9F9;
-}
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Jost", sans-serif;
+    }
+    body{
+        background-color: #F9F9F9;
+    }
 `;
+
 export const Container = styled.div`
     z-index: 1;
     width: 100%;

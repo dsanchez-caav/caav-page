@@ -22,6 +22,7 @@ const Hero = () => {
         </ButtonWrapper>
       </Container>
     </Herosection>
+    
   );
 };
 
