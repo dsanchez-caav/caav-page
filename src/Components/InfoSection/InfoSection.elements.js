@@ -3,21 +3,25 @@ import styled from "styled-components";
 
 export const InfoSec = styled.div`
     color: #262728;
-    padding: 80px 0;
+    padding-top: 60px;
+    padding-bottom: 50px;
     background: #F9F9F9;
-    height: 95vh;
+    height: auto;
+    @media screen and (max-width: 768px) {
+        padding: 0 0;
+        height: auto;
+    }
 `;
 
 export const InfoRow = styled.div`
     display: flex;
     margin: 0 -15px -15px -15px;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
 `;
 
 export const InfoColumn = styled.div`
     margin-bottom: 15px;
-    //padding-left: 15px;
     padding-right: 15px;
     flex: 1;
     max-width: 50%;
@@ -28,6 +32,7 @@ export const InfoColumn = styled.div`
         flex-basis: 100%;
         display: flex;
         justify-content: center;
+        
     }
 `;
 export const TextWrapper = styled.div`
@@ -45,28 +50,35 @@ export const TextWrapper = styled.div`
 export const TexTitle = styled.h2`
     justify-content: left;
     font-family: 'PT Sans', sans-serif;
-    padding-top: 8vh;
-    //font-size: clamp(2.3rem, 6vh, 4.5rem);
+    padding-top: 3vh;
     font-size: 6vh;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     color: #262728;
     display: flex;
     align-items: flex-start;
     text-align: left;
+
     @media screen and (max-width: 1400px){
         font-size: 8vh;
     }
+
+    @media screen and (max-width: 960px){
+        justify-content: center;
+        font-size: 6vh;
+        text-align: center;
+        padding-top: 6vh;
+        margin-bottom: 2rem;
+    }
+
 
 `;
 
 export const TexDesc = styled.p`
     justify-content: left;
-    margin-bottom: 35px;
-    //padding-left: 30%;
+    padding-bottom: 8vh;
     font-size: 3vh;
     line-height: 24px;
     text-align: left;
-    //Figma 
     font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -77,29 +89,37 @@ export const TexDesc = styled.p`
 
         @media screen and (max-width: 1400px){
         font-size: 3.5vh;
-
     }
-
+    @media screen and (max-width: 960px){
+        justify-content: center;
+        font-size: 3vh;
+        text-align: center;
+        padding-top: 0;
+    }
 `;
 
 
 export const Serlist = styled.p`
     justify-content: left;
-    //margin-bottom: 35px;
-    //padding-left: 30%;
-    font-size: 3.3vh;
-    line-height: 24px;
+    padding-bottom: 1vh;
+    font-size: 2.6vh;
     text-align: left;
-    //Figma 
     font-family: 'Jost', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
     display: flex;
     align-items: center;
     color: #262728;
 
+    &.mk{
+        
+        justify-content: right;
+        
+    }
+
     @media screen and (max-width: 1400px){
+        font-size: 3.5vh;
+    }
+
+    @media screen and (max-width: 960px){
         font-size: 3.5vh;
     }
 
@@ -109,19 +129,26 @@ export const Serlink = styled(Link)`
     justify-content: left;
     font-family: 'PT Sans', sans-serif;
     padding-top: 3vh;
-    //font-size: clamp(2.3rem, 6vh, 4.5rem);
-    font-size: 4vh;
+    font-size: 3.7vh;
     margin-bottom: 1rem;
     color: #222D5A;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     text-align: left;
     text-decoration: none;
     font-style: normal;
     font-weight: 700;
 
+    &.mk{
+        padding-left: 10vh;
+        padding-top: 10vh;
+        justify-content: right;
+    
+    }
+
     @media screen and (max-width: 1400px){
         font-size: 4vh;
+
     }
 
 `;

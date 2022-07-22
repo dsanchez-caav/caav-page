@@ -81,6 +81,7 @@ export const NavItem = styled.li`
     font-family: 'Jost', sans-serif;
 
     &:hover {
+        transition: all 0.3s ease-out;
         border-bottom: 2px solid #262728;
     }
 
@@ -105,12 +106,12 @@ export const NavLinks = styled(Link)`
         padding: 2rem;
         width: 100%;
         display: table;
-
-        &hover{
-            color: #262728;
-            transition: all 0.3s ease;
-        }
     }
+    &hover{
+            transition: all 0.3s ease;
+            color: #262728;
+            
+        }
 `;
 
 export const Dropico = styled(FaCaretDown)`

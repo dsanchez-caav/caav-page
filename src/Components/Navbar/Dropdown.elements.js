@@ -18,10 +18,11 @@ export const DropmenuS = styled.ul`
 export const Dropitem = styled.li`
     background: #F1F1F1;
     cursor: pointer;
-    border-bottom: 2px solid transparent;
 
     &:hover{
+        transition: all 0.3s ease-out;
         background: #D2D8DD;
+        
     }
     @media screen and (max-width: 960px){
         display: none;
@@ -36,6 +37,8 @@ export const Droplink = styled(Link)`
     text-decoration: none;
     color: #262728;
     padding: 16px;
+
+    
 
 `;
 
@@ -54,7 +57,7 @@ export const DropmenuC = styled.ul`
 `;
 
 export const DropmenuL = styled.ul`
-    width: 10rem;
+    width: 8rem;
     position: absolute;
     top: 80px;
     list-style: none;
@@ -63,24 +66,6 @@ export const DropmenuL = styled.ul`
 
     &.Drop-click{
         display: none;
-    }
-
-`;
-
-export const DropbotonLenguaje = styled.button`
-
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: #262728;
-    padding: 16px;
-    font-family: 'Jost', sans-serif;
-    border: none;
-    
-
-    &:hover{
-        background: #D2D8DD;
     }
 
 `;

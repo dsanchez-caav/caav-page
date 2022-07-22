@@ -52,16 +52,16 @@ const InfoSection = () => {
                                 <Serlist>
                                     {t("info_home.info.ser_hr3")}
                                 </Serlist>
-                                <Serlink to="/">
+                                <Serlink to="/" className='mk'>
                                     {t("info_home.info.title_mk")}
                                 </Serlink>
-                                <Serlist>
+                                <Serlist className='mk'>
                                     {t("info_home.info.ser_mk1")}
                                 </Serlist>
-                                <Serlist>
+                                <Serlist className='mk'>
                                     {t("info_home.info.ser_mk2")}
                                 </Serlist>
-                                <Serlist>
+                                <Serlist className='mk'>
                                     {t("info_home.info.ser_mk3")}
                                 </Serlist>
                             </TextWrapper>

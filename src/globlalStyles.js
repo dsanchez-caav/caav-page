@@ -49,6 +49,8 @@ export const Button = styled.button`
 
     @media screen and (max-width: 960px){
         width: 100%;
+        padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
+        font-size: ${({ fontBig }) => (fontBig ? "1.8vh" : "1.5vh")};
     } 
 `
 
@@ -56,17 +58,23 @@ export const MainHeader = styled.h1`
     justify-content: right;
     font-family: 'PT Sans', sans-serif;
     padding-top: 10vh;
-    //font-size: clamp(2.3rem, 6vh, 4.5rem);
-    font-size: 14vh;
-    margin-bottom: 2rem;
+    font-size: 11vh;
+    margin-bottom: 3rem;
     color: #F9F9F9;
     display: flex;
     align-items: flex-start;
     text-align: right;
 
     @media screen and (max-width: 1400px){
-        padding-left: 25%;
+        padding-left: 13%;
 
+    }
+    @media screen and (max-width: 960px){
+        justify-content: center;
+        font-size: 5vh;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 5vh;
     }
 
 `
