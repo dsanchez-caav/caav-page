@@ -3,7 +3,8 @@ import { Navbar, Footer } from "./Components";
 import GlobalStyle from "./globlalStyles";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/HomePage/Home";
-import Services from "./Pages/ServicesPages/Services";
+import ServicesPrincipal from "./Pages/ServicesPages/ServicesPrincipal";
+import MarketingService from "./Pages/ServicesPages/MarketingService";
 
 
 function App() {
@@ -13,9 +14,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/Services" element = {<Services/>} />
+        <Route path="/Services" element={<ServicesPrincipal />} />
+        <Route path="/Marketing" element={<MarketingService />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
 };

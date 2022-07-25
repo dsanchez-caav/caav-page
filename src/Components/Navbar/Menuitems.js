@@ -11,7 +11,7 @@ export const Menuitems = [
     {
         id: 2,
         title: "Services",
-        path: "../Pages/ServicesPages/Services",
+        path: "/Services",
         cName: "NavItem",
         tras: "nav.services"
     },
@@ -42,14 +42,14 @@ export const ServicesDrop = [
     {
         id: 1,
         title: "Humman resources",
-        path: "./Services",
+        path: "./",
         cName: "submenuItem",
         tras: "drop.drop_ser.human"
     },
     {
         id: 2,
         title: "Marketing",
-        path: "./",
+        path: "./Marketing",
         cName: "submenuItem",
         tras: "drop.drop_ser.marketing"
     }

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
-import { BsFillTelephoneFill, BsLinkedin } from "react-icons/bs";
+import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdMail, MdLocationOn } from "react-icons/md";
-import { RiInstagramFill } from "react-icons/ri";
+import { AiOutlineLinkedin, AiOutlineFacebook, AiOutlineInstagram} from "react-icons/ai";
 
 
 export const FooterSection = styled.section`
@@ -70,11 +70,15 @@ export const Mail = styled(MdMail)`
     font-size: 4vh;
 `;
 
-export const Instagram = styled(RiInstagramFill)`
-    font-size: 4.5vh;
+export const Instagram = styled(AiOutlineInstagram)`
+    font-size: 4.8vh;
 `
-export const Linkedin = styled(BsLinkedin)`
-    font-size: 4.5vh;
+export const Linkedin = styled(AiOutlineLinkedin)`
+    font-size: 4.8vh;
+`
+
+export const Facebook = styled(AiOutlineFacebook)`
+    font-size: 4.8vh;
 `
 
 export const FooterLinktext = styled(Link)`

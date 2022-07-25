@@ -31,7 +31,7 @@ const InfoSection = () => {
                                 <TexDesc>
                                     {t("info_home.des.text")}
                                 </TexDesc>
-                                <Link to="/" >
+                                <Link to="/Services" >
                                     <Button primary fontBig>
                                         {t("info_home.des.button")}
                                     </Button>
@@ -52,7 +52,7 @@ const InfoSection = () => {
                                 <Serlist>
                                     {t("info_home.info.ser_hr3")}
                                 </Serlist>
-                                <Serlink to="/" className='mk'>
+                                <Serlink to="/Marketing" className='mk'>
                                     {t("info_home.info.title_mk")}
                                 </Serlink>
                                 <Serlist className='mk'>

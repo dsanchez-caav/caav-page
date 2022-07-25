@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import {
     FooterSection,
     FooterColumn,
@@ -12,9 +11,10 @@ import {
     Linkedin,
     FooterIco,
     FooterLinktext,
-    FooterIcoA
+    FooterIcoA,
+    Facebook
 } from './Footer.elements';
-import { Container, Button } from '../../globlalStyles'
+import { Container } from '../../globlalStyles'
 
 import { useTranslation } from "react-i18next";
 
@@ -62,7 +62,7 @@ const Footer = () => {
                                     <Linkedin />
                                 </FooterIcoA>
                                 <FooterIcoA>
-                                    <Phone />
+                                    <Facebook />
                                 </FooterIcoA>
                             </FooterRow>
                     </FooterRow>

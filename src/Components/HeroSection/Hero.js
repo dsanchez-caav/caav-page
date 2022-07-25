@@ -14,7 +14,7 @@ const Hero = () => {
         <MainHeader>{t("hero.title")}</MainHeader>
         <HeroText>{t("hero.text")}</HeroText>
         <ButtonWrapper>
-          <Link to="/">
+          <Link to="/Services">
             <Button big primary fontBig >
             {t("hero.button")}
             </Button>
