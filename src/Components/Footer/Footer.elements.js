@@ -33,6 +33,19 @@ export const FooterColumn = styled.div`
         width: 35%;
         align-items: flex-start;
     }
+    &.separator{
+        width: 10%;
+    }
+    &.network{
+        align-items: flex-start;
+        width: 20%;
+    }
+    &.networkI{
+        width: 15%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
 `;
 
 
@@ -43,7 +56,6 @@ export const FooterText = styled.p`
     display: flex;
     align-items: center;
     color: #F9F9F9;
-    
 
         @media screen and (max-width: 1400px){
         font-size: 3.5vh;
@@ -58,6 +70,7 @@ export const FooterIco = styled(Link)`
     align-items: center;
 `;
 
+//Icons
 export const Phone = styled(BsFillTelephoneFill)`
     font-size: 3vh;
 `;
@@ -71,14 +84,14 @@ export const Mail = styled(MdMail)`
 `;
 
 export const Instagram = styled(AiOutlineInstagram)`
-    font-size: 4.8vh;
+    font-size: 5.5vh;
 `
 export const Linkedin = styled(AiOutlineLinkedin)`
-    font-size: 4.8vh;
+    font-size: 5.5vh;
 `
 
 export const Facebook = styled(AiOutlineFacebook)`
-    font-size: 4.8vh;
+    font-size: 5.5vh;
 `
 
 export const FooterLinktext = styled(Link)`
@@ -91,8 +104,6 @@ export const FooterLinktext = styled(Link)`
     @media screen and (max-width: 1400px){
         font-size: 2.9vh;
     }
-
-
 `;
 
 
@@ -101,4 +112,19 @@ export const FooterIcoA = styled.a`
     cursor: pointer;
     display: flex;
     align-items: center;
+    &social{
+        padding: 10vh;
+    }
+`;
+
+export const FooterAtext = styled.a`
+    color: #F9F9F9;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2.8vh;
+    display: flex;
+
+    @media screen and (max-width: 1400px){
+        font-size: 2.9vh;
+    }
 `;

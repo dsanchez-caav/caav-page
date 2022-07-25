@@ -12,7 +12,8 @@ import {
     FooterIco,
     FooterLinktext,
     FooterIcoA,
-    Facebook
+    Facebook,
+    FooterAtext
 } from './Footer.elements';
 import { Container } from '../../globlalStyles'
 
@@ -37,11 +38,13 @@ const Footer = () => {
                                 COL: +57 301-349-6784
                             </FooterLinktext>
                         </FooterColumn>
-                            <FooterRow>
-                                <FooterText>
-                                {t("footer.media")}
-                                </FooterText>
-                            </FooterRow>
+                        <FooterColumn className='separator'>
+                        </FooterColumn>
+                        <FooterColumn className='network'>
+                                    <FooterText>
+                                        {t("footer.media")}
+                                    </FooterText>
+                        </FooterColumn>
                     </FooterRow>
                     <FooterRow>
                         <FooterColumn className='ico'>
@@ -54,17 +57,19 @@ const Footer = () => {
                                 USA: +1 305-998-6797
                             </FooterLinktext>
                         </FooterColumn>
-                            <FooterRow>
-                                <FooterIcoA>
-                                    <Instagram />
-                                </FooterIcoA>
-                                <FooterIcoA>
-                                    <Linkedin />
-                                </FooterIcoA>
-                                <FooterIcoA>
-                                    <Facebook />
-                                </FooterIcoA>
-                            </FooterRow>
+                        <FooterColumn className='separator'>
+                        </FooterColumn>
+                        <FooterColumn className='networkI'>
+                            <FooterIcoA href="https://www.instagram.com/caav_is/?igshid=YmMyMTA2M2Y%3D" rel='noopener' target='_blank'>
+                                <Instagram />
+                            </FooterIcoA>
+                            <FooterIcoA href="https://www.linkedin.com/company/caav/?originalSubdomain=co" rel='noopener' target='_blank'>
+                                <Linkedin />
+                            </FooterIcoA>
+                            <FooterIcoA>
+                                <Facebook />
+                            </FooterIcoA>
+                        </FooterColumn>
                     </FooterRow>
                     <FooterRow>
                         <FooterColumn className='ico'>
@@ -73,9 +78,9 @@ const Footer = () => {
                             </FooterIcoA>
                         </FooterColumn>
                         <FooterColumn className='text'>
-                            <FooterLinktext to="/">
+                            <FooterAtext href="https://goo.gl/maps/N4maStp3zAgUWFKm9" rel='noopener' target='_blank'>
                                 Calle 19 Norte 2N-29, 2202A, Santiago de Cali, Valle del Cauca 760046, CO
-                            </FooterLinktext>
+                            </FooterAtext>
                         </FooterColumn>
                     </FooterRow>
                     <FooterRow>
