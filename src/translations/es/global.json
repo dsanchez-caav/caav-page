@@ -51,5 +51,27 @@
         "titlehr": "Recursos Humanos",
         "desmar": "En CAAV contamos con un amplio portafolio de servicios de marketing para darle a su empresa una identidad de marca exitosa",
         "deshru": "En Santiago de Cali tenemos acceso a un excelente talento humano. Ex alumnos de varias de las mejores universidades de Colombia"
+    },
+    "pagestitles":{
+        "pagehr": "Recursos Humanos",
+        "pagemar": "Marketing"
+    },
+    "show":{
+        "marketing":{
+            "branding":{
+                "title": "\\ Branding",
+                "des": "Haremos que su marca sea única y reconocible con servicios como:",
+                "list1": "\\ Identidad de marca",
+                "list2": "\\ Nombre de marca",
+                "list3": "\\ Colores de marca"
+            },
+            "digital":{
+                "title": "\\ Digital Marketing",
+                "des": "Campañas de marketing digital con los beneficios de la industria digital, diseñadas para llegar al público adecuado",
+                "list1": "\\ Publico Objetivo",
+                "list2": "\\ Diseño Web",
+                "list3": "\\ Varios medios"
+            }
+        }
     }
 }

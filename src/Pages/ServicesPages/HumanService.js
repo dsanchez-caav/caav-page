@@ -13,7 +13,7 @@ const HumanService = () => {
         
         <>
         <Helmet>
-            <title>CAAV-{t("pagestitles.pagehr")} </title>
+            <title>CAAV - {t("pagestitles.pagehr")} </title>
         </Helmet>
             <Banner {...BannerHR} />
         </>

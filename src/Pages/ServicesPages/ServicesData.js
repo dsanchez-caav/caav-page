@@ -20,3 +20,19 @@ export const BannerHR= {
     desuni: "banner.deshru"
 
 };
+
+export const ShowitemsMar = {
+    title: "Marketing",
+    //Branding
+    titletrasC1: "show.marketing.branding.title",
+    destrasC1: "show.marketing.branding.des",
+    list1C1: "show.marketing.branding.list1",
+    list2C1: "show.marketing.branding.list2",
+    list3C1: "show.marketing.branding.list3",
+    //Digital Marketinh
+    titletrasC2: "show.marketing.digital.title",
+    destrasC2: "show.marketing.digital.des",
+    list1C2: "show.marketing.digital.list1",
+    list2C2: "show.marketing.digital.list2",
+    list3C2: "show.marketing.digital.list3"
+};

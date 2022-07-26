@@ -53,7 +53,28 @@
         "deshru": "In Santiago de Cali we have access to excellent human talent. Alumni from several of the best universities in Colombia"
     },
     "pagestitles":{
-        "pagehr": "Human Resources"
+        "pagehr": "Human Resources",
+        "pagemar": "Marketing"
+    },
+    "show":{
+        "marketing":{
+            "branding":{
+                "title": "\\ Branding",
+                "des": "We will make your brand unique and recognizable with services like:",
+                "list1": "\\ Brand Identity",
+                "list2": "\\ Brand Name",
+                "list3": "\\ Brand Colors"
+            },
+            "digital":{
+                "title": "\\ Digital Marketing",
+                "des": "Digital marketing campaigns with the benefits of the digital industry, design to reach the right audience",
+                "list1": "\\ Target Audience",
+                "list2": "\\ Web Desing",
+                "list3": "\\ Several Media"
+            }
+
+        }
     }
+
 
 }
