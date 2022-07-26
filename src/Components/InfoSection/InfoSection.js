@@ -40,7 +40,7 @@ const InfoSection = () => {
                         </InfoColumn>
                         <InfoColumn>
                             <TextWrapper>
-                                <Serlink to="/">
+                                <Serlink to="/Human-Resources">
                                     {t("info_home.info.title_hr")}
                                 </Serlink>
                                 <Serlist>

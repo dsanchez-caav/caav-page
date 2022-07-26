@@ -14,7 +14,7 @@ export const FooterSection = styled.section`
 export const FooterRow = styled.div`
     display: flex;
     flex-direction: row;
-    height: 25%;
+    height: 8vh;
     align-items: center;
     padding-top: 1vh;
 `;
@@ -30,7 +30,7 @@ export const FooterColumn = styled.div`
         padding-right: 3vh;
     }
     &.text{
-        width: 35%;
+        width: 40%;
         align-items: flex-start;
     }
     &.separator{
@@ -46,6 +46,23 @@ export const FooterColumn = styled.div`
         justify-content: space-between;
     }
 
+    @media screen and (max-width: 996px) {
+        width: 100%;
+            &.text{
+            width: 100%;
+            align-items: flex-start;
+        }
+        &.network{
+        align-items: flex-start;
+        width: 100%;
+    }
+    &.networkI{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    }
+
 `;
 
 
@@ -58,7 +75,7 @@ export const FooterText = styled.p`
     color: #F9F9F9;
 
         @media screen and (max-width: 1400px){
-        font-size: 3.5vh;
+        font-size: 3.2vh;
     }
 
 `;
@@ -98,11 +115,11 @@ export const FooterLinktext = styled(Link)`
     color: #F9F9F9;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2.8vh;
+    font-size: 2.6vh;
     display: flex;
 
     @media screen and (max-width: 1400px){
-        font-size: 2.9vh;
+        font-size: 2.8vh;
     }
 `;
 
@@ -121,10 +138,10 @@ export const FooterAtext = styled.a`
     color: #F9F9F9;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2.8vh;
+    font-size: 2.6vh;
     display: flex;
 
     @media screen and (max-width: 1400px){
-        font-size: 2.9vh;
+        font-size: 2.8vh;
     }
 `;

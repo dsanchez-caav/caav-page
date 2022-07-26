@@ -42,7 +42,7 @@ export const ServicesDrop = [
     {
         id: 1,
         title: "Humman resources",
-        path: "./",
+        path: "./Human-Resources",
         cName: "submenuItem",
         tras: "drop.drop_ser.human"
     },

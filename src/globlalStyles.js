@@ -67,6 +67,7 @@ export const MainHeader = styled.h1`
 
     @media screen and (max-width: 1400px){
         padding-left: 13%;
+        font-size: 11vh;
 
     }
     @media screen and (max-width: 960px){

@@ -44,5 +44,16 @@
             "ser_mk2": "Branding",
             "ser_mk3": "Consulting"
         }
+    },
+    "banner":{
+        "titleser": "Services",
+        "titlemar": "Marketing",
+        "titlehr": "Human Resources",
+        "desmar": "At CAAV we have a wide portfolio of marketing services to give your company a successful brand identity",
+        "deshru": "In Santiago de Cali we have access to excellent human talent. Alumni from several of the best universities in Colombia"
+    },
+    "pagestitles":{
+        "pagehr": "Human Resources"
     }
+
 }

@@ -2,10 +2,21 @@
 
 export const BannerServices = {
     title: "Services",
-    Subtitle: "CAAV"
+    Subtitle: "CAAV",
+    titletras: "banner.titleser"
 };
 
 export const BannerMarketing = {
     title: "Marketing",
-    Subtitle: "CAAV"
+    Subtitle: "CAAV",
+    titletras: "banner.titlemar",
+    destras: "banner.desmar"
+};
+
+export const BannerHR= {
+    title: "Human Resources",
+    Subtitle: "CAAV",
+    titletras: "banner.titlehr",
+    desuni: "banner.deshru"
+
 };
