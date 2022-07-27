@@ -43,8 +43,9 @@ export const BannerTitle = styled.h3`
 `;
 
 export const BannerSectionDes = styled.section`
-    height: 20vh;
+    height: 23vh;
     background: #F9F9F9;
+
 `
 
 export const BannerDes = styled.p`
@@ -53,7 +54,7 @@ export const BannerDes = styled.p`
     font-weight: 400;
     color: #262728;
     text-align: center;
-    font-size: 3vh;
-    max-width: 50%;
+    font-size: 3.6vh;
+    max-width: 55%;
     padding-top: 4vh;
 `

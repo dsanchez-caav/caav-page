@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
 export const ShowSection = styled.section`
-    height: 80vh;
+    height: 70vh;
     background: #F9F9F9;
 `
 
 export const ShowColumns = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     justify-self: center;
     flex-wrap: nowrap;
 `
 
 export const ShowCard = styled.div`
 
-    width: 27%;
+    width: 31%;
     height: auto;
     background: #F1F1F1;
     border-radius: 10px;
@@ -22,7 +22,7 @@ export const ShowCard = styled.div`
     justify-self: center;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
     @media screen and (max-width: 1400px) {
-        width: 25%; 
+        width: 27%; 
     }
 
 `
@@ -41,7 +41,12 @@ export const Texttitle = styled.h3`
 export const Textdes = styled.p`
     font-family: 'Jost', sans-serif;
     color: #262728;
-    font-size: 2.8vh;
+    font-size: 2.5vh;
+
+    @media screen and (max-width: 1400px) {
+        font-size: 2.8vh;
+    }
+
 
 `
 
@@ -56,7 +61,7 @@ export const Textcont = styled.div`
     display: flex;
     padding-bottom: 2vh;
     margin-left: 3vh;
-    margin-right: 1vh;
+    margin-right: 1.5vh;
     &.list{
         padding-top: 1vh;
     }

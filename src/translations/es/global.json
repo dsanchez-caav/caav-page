@@ -54,7 +54,9 @@
     },
     "pagestitles":{
         "pagehr": "Recursos Humanos",
-        "pagemar": "Marketing"
+        "pagemar": "Marketing",
+        "pagehome": "Inicio",
+        "pageabout": "Quienes Somos"
     },
     "show":{
         "marketing":{
@@ -71,7 +73,22 @@
                 "list1": "\\ Publico Objetivo",
                 "list2": "\\ Diseño Web",
                 "list3": "\\ Varios medios"
+            },
+            "consulting":{
+                "title": "\\ Consultoria",
+                "des": "Te asesoramos para llevar tu marca al siguiente nivel",
+                "list1": "\\ Ayuda profesional",
+                "list2": "\\ Rapida respuesta",
+                "list3": "\\ Centrado a tus objetivos"
             }
+
+        }
+    },
+    "contactshow":{
+        "marketing":{
+            "title": "Vamos a hablar de tu marca",
+            "desc": "¿No sabes donde empezar? Contáctanos y hablemos de tu marca",
+            "button": "Contáctanos"
         }
     }
 }

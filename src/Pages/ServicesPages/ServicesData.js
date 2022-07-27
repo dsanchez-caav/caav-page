@@ -22,7 +22,6 @@ export const BannerHR= {
 };
 
 export const ShowitemsMar = {
-    title: "Marketing",
     //Branding
     titletrasC1: "show.marketing.branding.title",
     destrasC1: "show.marketing.branding.des",
@@ -34,5 +33,17 @@ export const ShowitemsMar = {
     destrasC2: "show.marketing.digital.des",
     list1C2: "show.marketing.digital.list1",
     list2C2: "show.marketing.digital.list2",
-    list3C2: "show.marketing.digital.list3"
+    list3C2: "show.marketing.digital.list3",
+    //Consulting
+    titletrasC3: "show.marketing.consulting.title",
+    destrasC3: "show.marketing.consulting.des",
+    list1C3: "show.marketing.consulting.list1",
+    list2C3: "show.marketing.consulting.list2",
+    list3C3: "show.marketing.consulting.list3"
 };
+
+export const ContactitemsMar = {
+    Ctitle: "contactshow.marketing.title",
+    Cdescription: "contactshow.marketing.desc",
+    Cbutton: "contactshow.marketing.button"
+}

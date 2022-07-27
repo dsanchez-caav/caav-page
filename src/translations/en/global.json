@@ -54,7 +54,9 @@
     },
     "pagestitles":{
         "pagehr": "Human Resources",
-        "pagemar": "Marketing"
+        "pagemar": "Marketing",
+        "pagehome": "Home",
+        "pageabout": "Abous Us"
     },
     "show":{
         "marketing":{
@@ -71,8 +73,21 @@
                 "list1": "\\ Target Audience",
                 "list2": "\\ Web Desing",
                 "list3": "\\ Several Media"
+            },
+            "consulting":{
+                "title": "\\ Consulting",
+                "des": "We advise you to take your brand to the next level",
+                "list1": "\\ Professional help",
+                "list2": "\\ Quick answer",
+                "list3": "\\ Focused on your goals"
             }
-
+        }
+    },
+    "contactshow":{
+        "marketing":{
+            "title": "Let's talk about your brand",
+            "desc": "Don't know where to start? Contact us and let's talk about your brand",
+            "button": "Contact Us"
         }
     }
 

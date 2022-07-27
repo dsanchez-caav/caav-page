@@ -23,7 +23,12 @@ const Show = ({ titletrasC1,
     destrasC2,
     list1C2,
     list2C2,
-    list3C2 }) => {
+    list3C2,
+    titletrasC3,
+    destrasC3,
+    list1C3,
+    list2C3,
+    list3C3}) => {
 
     const [t, i18n] = useTranslation("global");
 
@@ -61,7 +66,6 @@ const Show = ({ titletrasC1,
                                 </Textcont>
                                 <Textcont className='separator'>
                                 </Textcont>
-                                
                             </ShowRows>
                         </ShowCard>
                         <ShowCard>
@@ -93,16 +97,37 @@ const Show = ({ titletrasC1,
                                 </Textcont>
                                 <Textcont className='separator'>
                                 </Textcont>
-                                
                             </ShowRows>
                         </ShowCard>
                         <ShowCard>
                             <ShowRows>
                                 <Titlecont>
                                     <Texttitle>
-                                        Holi
+                                        {t(titletrasC3)}
                                     </Texttitle>
                                 </Titlecont>
+                                <Textcont>
+                                    <Textdes>
+                                        {t(destrasC3)}
+                                    </Textdes>
+                                </Textcont>
+                                <Textcont className='list'>
+                                    <Textdes>
+                                        {t(list1C3)}
+                                    </Textdes>
+                                </Textcont>
+                                <Textcont className='list'>
+                                    <Textdes>
+                                        {t(list2C3)}
+                                    </Textdes>
+                                </Textcont>
+                                <Textcont className='list'>
+                                    <Textdes>
+                                        {t(list3C3)}
+                                    </Textdes>
+                                </Textcont>
+                                <Textcont className='separator'>
+                                </Textcont>
                             </ShowRows>
                         </ShowCard>
                     </ShowColumns>
