@@ -49,14 +49,18 @@
         "titleser": "Services",
         "titlemar": "Marketing",
         "titlehr": "Human Resources",
+        "titleau": "CAAV",
+        "subtitleau1" : "WE ARE",
+        "subtitleau2": "International Solutions",
         "desmar": "At CAAV we have a wide portfolio of marketing services to give your company a successful brand identity",
-        "deshru": "In Santiago de Cali we have access to excellent human talent. Alumni from several of the best universities in Colombia"
+        "deshru": "In Santiago de Cali we have access to excellent human talent. Alumni from several of the best universities in Colombia",
+        "desau": "CAAV International Solutions offers companies of all sizes talent solutions across borders by connecting the right talent with the right need."
     },
     "pagestitles":{
         "pagehr": "Human Resources",
         "pagemar": "Marketing",
         "pagehome": "Home",
-        "pageabout": "Abous Us"
+        "pageabout": "About Us"
     },
     "show":{
         "marketing":{
@@ -88,7 +92,20 @@
             "title": "Let's talk about your brand",
             "desc": "Don't know where to start? Contact us and let's talk about your brand",
             "button": "Contact Us"
+        },
+        "aboutus":{
+            "title": "Now that you know us, we want to meet you",
+            "desc": "Don't know where to start? Contact us and we will help you",
+            "button": "Contact Us"
         }
+    },
+    "company":{
+        "tmision": "Our Mission",
+        "tvision": "Our Vision",
+        "mision": "CAAV's mission is to promote and connect the incredible talent of Professionals in Colombia and the rest of South America to the world.",
+        "vision": "CAAV's vision is to become a leader in human resources & marketing solution worldwide offering the best human talent solution to any industry and companies of all sizes.",
+        "altm": "Our mission",
+        "altv": "Our vision"
     }
 
 

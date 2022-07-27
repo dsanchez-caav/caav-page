@@ -18,7 +18,7 @@ export const Menuitems = [
     {
         id: 3,
         title: "Company",
-        path: "./",
+        path: "./About-us",
         cName: "NavItem",
         tras: "nav.company"
     },
@@ -59,7 +59,7 @@ export const CompanyDrop = [
     {
         id: 1,
         title: "About Us",
-        path: "./",
+        path: "./About-us",
         cName: "submenuItem",
         tras: "drop.drop_com.about"
     },

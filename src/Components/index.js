@@ -5,3 +5,4 @@ export { default as Footer } from "./Footer/Footer";
 export { default as Banner } from "./Banner/Banner";
 export { default as Show } from "./ShowSection/Show";
 export { default as Contact } from "./ContactSection/Contact";
+export { default as Company } from "./CompanySection/Company";

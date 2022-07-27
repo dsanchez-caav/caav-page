@@ -6,6 +6,7 @@ import Home from "./Pages/HomePage/Home";
 import ServicesPrincipal from "./Pages/ServicesPages/ServicesPrincipal";
 import MarketingService from "./Pages/ServicesPages/MarketingService";
 import HumanService from "./Pages/ServicesPages/HumanService";
+import AboutUs from "./Pages/CompanyPages/AboutUs";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Services" element={<ServicesPrincipal />} />
         <Route path="/Marketing" element={<MarketingService />} />
         <Route path="/Human-Resources" element={<HumanService />} />
+        <Route path="/About-us" element={<AboutUs />} />
       </Routes>
       <Footer />
     </Router>

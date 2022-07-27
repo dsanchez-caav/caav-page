@@ -6,25 +6,27 @@ import {
     BannerSectionSer,
     BannerSectionHr,
     BannerSectionDes,
-    BannerDes
+    BannerDes,
+    BannerSectionAu,
+    BannerTaglineA
 } from './Banner.elements'
 
 import { useTranslation } from "react-i18next";
 
-const Banner = ({ title, Subtitle, titletras, destras, desuni }) => {
+const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, SubtitleB }) => {
 
     const [t, i18n] = useTranslation("global");
     
     if (title === "Services") {
         return (
             <BannerSectionSer>
-            <BannerTagline >
-                {Subtitle} 
-            </BannerTagline>
-            <BannerTitle>
-                {t(titletras)} 
-            </BannerTitle>
-        </BannerSectionSer>
+                <BannerTagline >
+                    {Subtitle}
+                </BannerTagline>
+                <BannerTitle>
+                    {t(titletras)}
+                </BannerTitle>
+            </BannerSectionSer>
         )
         
     } else if (title === "Marketing") {
@@ -33,17 +35,17 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni }) => {
             <>
                 <BannerSectionMar>
                     <BannerTagline >
-                        {Subtitle} 
+                        {Subtitle}
                     </BannerTagline>
                     <BannerTitle>
-                        {t(titletras)} 
+                        {t(titletras)}
                     </BannerTitle>
                 </BannerSectionMar>
                 <BannerSectionDes>
-                <BannerDes>
-                        {t(destras)} 
+                    <BannerDes>
+                        {t(destras)}
                     </BannerDes>
-                </BannerSectionDes>  
+                </BannerSectionDes>
             </>
         )
     } else if (title === "Human Resources") {
@@ -51,19 +53,39 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni }) => {
             <>
                 <BannerSectionHr>
                     <BannerTagline >
-                        {Subtitle} 
+                        {Subtitle}
                     </BannerTagline>
                     <BannerTitle>
-                        {t(titletras)} 
+                        {t(titletras)}
                     </BannerTitle>
                 </BannerSectionHr>
                 <BannerSectionDes>
-                <BannerDes>
-                        {t(desuni)} 
+                    <BannerDes>
+                        {t(desuni)}
                     </BannerDes>
-                </BannerSectionDes>  
+                </BannerSectionDes>
             </>
-    
+        )
+    } else if (title === "About Us") {
+        return (
+            <>
+                <BannerSectionAu>
+                    <BannerTagline >
+                        {t(SubtitleA)}
+                    </BannerTagline>
+                    <BannerTitle className='caav'>
+                        {t(titletras)}
+                    </BannerTitle>
+                    <BannerTaglineA >
+                        {t(SubtitleB)}
+                    </BannerTaglineA>
+                </BannerSectionAu>
+                <BannerSectionDes>
+                    <BannerDes>
+                        {t(destras)}
+                    </BannerDes>
+                </BannerSectionDes>
+            </>
         )
     }
 }

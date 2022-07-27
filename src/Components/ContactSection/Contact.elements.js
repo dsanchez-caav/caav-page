@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactSection = styled.section`
-    height: 60vh;
+    height: auto;
     background: #F9F9F9;
     @media screen and (max-width: 1400px) {
         height: 50vh;
@@ -11,7 +11,7 @@ export const ContactSection = styled.section`
 
 export const Titlecont = styled.div`
     display: flex;
-    width: 60%;
+    width: 70%;
     padding-top: 2vh;
 
 `
@@ -37,4 +37,5 @@ export const Contacttext = styled.p`
 export const Buttoncont = styled.div`
     display: flex;
     padding-top: 7vh;
+    padding-bottom: 10vh;
 `

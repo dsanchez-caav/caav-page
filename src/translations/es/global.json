@@ -12,11 +12,11 @@
     "drop":{
         "drop_ser":{
             "human": "Recursos Humanos",
-            "marketing" : "Mercadeo"
+            "marketing" : "Marketing"
         },
         "drop_com":{
             "about":"Quienes somos",
-            "contact": "Contacto"
+            "contact": "Contáctanos"
         },
         "drop_len":{
             "english": "English",
@@ -49,8 +49,12 @@
         "titleser": "Servicios",
         "titlemar": "Marketing",
         "titlehr": "Recursos Humanos",
+        "titleau": "CAAV",
+        "subtitleau1" : "SOMOS",
+        "subtitleau2": "International Solutions",
         "desmar": "En CAAV contamos con un amplio portafolio de servicios de marketing para darle a su empresa una identidad de marca exitosa",
-        "deshru": "En Santiago de Cali tenemos acceso a un excelente talento humano. Ex alumnos de varias de las mejores universidades de Colombia"
+        "deshru": "En Santiago de Cali tenemos acceso a un excelente talento humano. Ex alumnos de varias de las mejores universidades de Colombia",
+        "desau": "CAAV International Solutions ofrece a empresas de todos los tamaños soluciones de talento a través de las fronteras conectando el talento adecuado con la necesidad adecuada."
     },
     "pagestitles":{
         "pagehr": "Recursos Humanos",
@@ -87,8 +91,21 @@
     "contactshow":{
         "marketing":{
             "title": "Vamos a hablar de tu marca",
-            "desc": "¿No sabes donde empezar? Contáctanos y hablemos de tu marca",
+            "desc": "¿No sabes por dónde empezar? Contáctanos y hablemos de tu marca",
+            "button": "Contáctanos"
+        },
+        "aboutus":{
+            "title": "Ahora que nos conoces, queremos conocerte",
+            "desc": "¿No sabes por dónde empezar? Contacta con nosotros y te ayudaremos",
             "button": "Contáctanos"
         }
+    },
+    "company":{
+        "tmision": "Misión",
+        "tvision": "Visión",
+        "mision": "La misión de CAAV es promover y conectar el increíble talento de los profesionales en Colombia y el resto de Sudamérica con el mundo.",
+        "vision": "La visión de CAAV es convertirse en líder en recursos humanos y soluciones de marketing a nivel mundial ofreciendo la mejor solución de talento humano a cualquier industria y empresas de todos los tamaños.",
+        "altm": "Misión",
+        "altv": "Visión"
     }
 }
