@@ -85,9 +85,22 @@
                 "list2": "\\ Rapida respuesta",
                 "list3": "\\ Centrado a tus objetivos"
             }
-
-        }
-    },
+        },
+            "humanresourses":{
+                "out":{
+                    "title": "\\ Outsourcing",
+                    "des": "Soluciones de outsourcing para empresas de cualquier tamaño con el mejor talento"
+                },
+                "recru":{
+                    "title": "\\ Recruiting y staffing",
+                    "des": "Reclutamos al mejor talento para la contratación directa de tu organización"
+                },
+                "consulting":{
+                    "title": "\\ Consultoria",
+                    "des": "Te asesoramos para llevar tu empresa al siguiente nivel con el mejor empleo"
+                }
+            }
+        },
     "contactshow":{
         "marketing":{
             "title": "Vamos a hablar de tu marca",
@@ -97,6 +110,11 @@
         "aboutus":{
             "title": "Ahora que nos conoces, queremos conocerte",
             "desc": "¿No sabes por dónde empezar? Contacta con nosotros y te ayudaremos",
+            "button": "Contáctanos"
+        },
+        "hr":{
+            "title": "Conectemos su empresa con los mejores talentos",
+            "desc": "¿No sabes por dónde empezar? Contáctanos y contrata al mejor talento",
             "button": "Contáctanos"
         }
     },

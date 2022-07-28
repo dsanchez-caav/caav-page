@@ -80,6 +80,6 @@ export const BannerDes = styled.p`
     color: #262728;
     text-align: center;
     font-size: 3.6vh;
-    max-width: 55%;
+    //max-width: 55%;
     padding-top: 4vh;
 `

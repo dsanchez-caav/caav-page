@@ -12,6 +12,7 @@ import {
 } from './Banner.elements'
 
 import { useTranslation } from "react-i18next";
+import { Container } from '../../globlalStyles';
 
 const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, SubtitleB }) => {
 
@@ -19,32 +20,39 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
     
     if (title === "Services") {
         return (
-            <BannerSectionSer>
-                <BannerTagline >
-                    {Subtitle}
-                </BannerTagline>
-                <BannerTitle>
-                    {t(titletras)}
-                </BannerTitle>
-            </BannerSectionSer>
+            <>
+                <BannerSectionSer>
+                    <Container>
+                        <BannerTagline >
+                        {Subtitle}
+                        </BannerTagline>
+                        <BannerTitle>
+                            {t(titletras)}
+                        </BannerTitle>
+                    </Container>
+                </BannerSectionSer>
+            </>
         )
         
     } else if (title === "Marketing") {
         return (
-
             <>
                 <BannerSectionMar>
-                    <BannerTagline >
-                        {Subtitle}
-                    </BannerTagline>
-                    <BannerTitle>
-                        {t(titletras)}
-                    </BannerTitle>
+                    <Container>
+                        <BannerTagline >
+                            {Subtitle}
+                        </BannerTagline>
+                        <BannerTitle>
+                            {t(titletras)}
+                        </BannerTitle>
+                    </Container>
                 </BannerSectionMar>
                 <BannerSectionDes>
-                    <BannerDes>
-                        {t(destras)}
-                    </BannerDes>
+                    <Container>
+                        <BannerDes>
+                            {t(destras)}
+                        </BannerDes>
+                    </Container>
                 </BannerSectionDes>
             </>
         )
@@ -52,17 +60,21 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
         return (
             <>
                 <BannerSectionHr>
-                    <BannerTagline >
-                        {Subtitle}
-                    </BannerTagline>
-                    <BannerTitle>
-                        {t(titletras)}
-                    </BannerTitle>
+                    <Container>
+                        <BannerTagline >
+                            {Subtitle}
+                        </BannerTagline>
+                        <BannerTitle>
+                            {t(titletras)}
+                        </BannerTitle>
+                    </Container>
                 </BannerSectionHr>
                 <BannerSectionDes>
-                    <BannerDes>
-                        {t(desuni)}
-                    </BannerDes>
+                    <Container>
+                        <BannerDes>
+                            {t(desuni)}
+                        </BannerDes>
+                    </Container>
                 </BannerSectionDes>
             </>
         )
@@ -70,7 +82,8 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
         return (
             <>
                 <BannerSectionAu>
-                    <BannerTagline >
+                <Container>
+                <BannerTagline >
                         {t(SubtitleA)}
                     </BannerTagline>
                     <BannerTitle className='caav'>
@@ -79,11 +92,14 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
                     <BannerTaglineA >
                         {t(SubtitleB)}
                     </BannerTaglineA>
+                </Container>
                 </BannerSectionAu>
                 <BannerSectionDes>
-                    <BannerDes>
-                        {t(destras)}
-                    </BannerDes>
+                    <Container>
+                        <BannerDes>
+                            {t(destras)}
+                        </BannerDes>
+                    </Container>
                 </BannerSectionDes>
             </>
         )

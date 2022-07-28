@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ShowSection = styled.section`
-    height: 70vh;
+    height: auto;
     background: #F9F9F9;
 `
 

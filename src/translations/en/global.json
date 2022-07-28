@@ -85,7 +85,22 @@
                 "list2": "\\ Quick answer",
                 "list3": "\\ Focused on your goals"
             }
-        }
+        },
+            "humanresourses":{
+                "out":{
+                    "title": "\\ Outsourcing",
+                    "des": "Outsourcing solutions to any company size with the best talent"
+                },
+                "recru":{
+                    "title": "\\ Recruiting & staffing",
+                    "des": "We recruit the best talent to direct hire for your organization"
+                },
+                "consulting":{
+                    "title": "\\ Consulting",
+                    "des": "We advise you to take your company to the next level with the best employment"
+                }
+            }
+        
     },
     "contactshow":{
         "marketing":{
@@ -97,6 +112,11 @@
             "title": "Now that you know us, we want to meet you",
             "desc": "Don't know where to start? Contact us and we will help you",
             "button": "Contact Us"
+        },
+        "hr":{
+            "title": "Let's connect your company to top talent",
+            "desc": "Don't know where to start? Contact us and and hire the best talent",
+            "button": "Contact Us"
         }
     },
     "company":{
@@ -107,6 +127,4 @@
         "altm": "Our mission",
         "altv": "Our vision"
     }
-
-
-}
+    }

@@ -52,7 +52,7 @@ export const TexTitle = styled.h2`
     font-family: 'PT Sans', sans-serif;
     padding-top: 3vh;
     font-size: 6vh;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     color: #262728;
     display: flex;
     align-items: flex-start;
@@ -77,15 +77,14 @@ export const TexDesc = styled.p`
     justify-content: left;
     padding-bottom: 8vh;
     font-size: 3vh;
-    line-height: 24px;
     text-align: left;
     font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: 400;
-    line-height: 120%;
     display: flex;
     align-items: center;
     color: #262728;
+    line-height: normal;
 
         @media screen and (max-width: 1400px){
         font-size: 3.5vh;

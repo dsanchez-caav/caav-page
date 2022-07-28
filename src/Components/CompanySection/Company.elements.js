@@ -31,6 +31,7 @@ export const Companytext = styled.p`
     font-family: 'Jost', sans-serif;
     font-size: 3vh;
     color: #262728;
+    padding: 0 5vh 0 5vh;
 
 `
 

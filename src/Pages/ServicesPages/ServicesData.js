@@ -47,3 +47,25 @@ export const ContactitemsMar = {
     Cdescription: "contactshow.marketing.desc",
     Cbutton: "contactshow.marketing.button"
 }
+
+export const Showitemshr = {
+    //Branding
+    titletrasC1: "show.humanresourses.out.title",
+    destrasC1: "show.humanresourses.out.des",
+
+    //Digital Marketinh
+    titletrasC2: "show.humanresourses.recru.title",
+    destrasC2: "show.humanresourses.recru.des",
+
+    //Consulting
+    titletrasC3: "show.humanresourses.consulting.title",
+    destrasC3: "show.humanresourses.consulting.des",
+
+};
+
+export const Contactitemshr = {
+    Ctitle: "contactshow.hr.title",
+    Cdescription: "contactshow.hr.desc",
+    Cbutton: "contactshow.hr.button"
+}
+

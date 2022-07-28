@@ -12,7 +12,7 @@ export const ContactSection = styled.section`
 export const Titlecont = styled.div`
     display: flex;
     width: 70%;
-    padding-top: 2vh;
+    padding-top: 5vh;
 
 `
 
@@ -25,13 +25,13 @@ export const Textcont = styled.div`
 export const Contacttitle = styled.h1`
     font-family: 'PT Sans', sans-serif;
     color: #262728;
-    font-size: 8vh;
+    font-size: 6vh;
 `
 
 export const Contacttext = styled.p`
     font-family: 'Jost', sans-serif;
     color: #262728;
-    font-size: 4vh;
+    font-size: 3.5vh;
 `
 
 export const Buttoncont = styled.div`

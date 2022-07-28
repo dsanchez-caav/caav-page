@@ -25,16 +25,11 @@ const Company = ({ titleA, titleB, desA, desB, altA, altB }) => {
                 <Container>
                     <Infocontainer>
                         <ImgContainer>
-
                             <Img src={VisImg} alt={t(altA)} />
-                                
-                            
-
                         </ImgContainer>
                         <TextContainer>
                             <Companytext>
                                 {t(desA)}
-                                
                             </Companytext>
                         </TextContainer>
                     </Infocontainer>
@@ -45,7 +40,7 @@ const Company = ({ titleA, titleB, desA, desB, altA, altB }) => {
                             </Companytext>
                         </TextContainer>
                         <ImgContainer>
-                            <Img src = {MisImg} />
+                            <Img src = {MisImg} alt={t(altB)} />
                         </ImgContainer>
                     </Infocontainer>
                 </Container>
