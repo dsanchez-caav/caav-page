@@ -1,19 +1,19 @@
 import React from 'react'
 import {
     FooterSection,
-    FooterColumn,
-    FooterRow,
+    Contactinfo,
     FooterText,
+    IcoContainer,
+    InfoContainer,
+    LinkContainer,
+    Logocontainer,
+    InfoRow,
     Phone,
     Mail,
     Location,
-    Instagram,
     Linkedin,
-    FooterIco,
-    FooterLinktext,
-    FooterIcoA,
-    Facebook,
-    FooterAtext
+    Instagram,
+    Facebook
 } from './Footer.elements';
 import { Container } from '../../globlalStyles'
 
@@ -27,76 +27,73 @@ const Footer = () => {
         <>
             <FooterSection>
                 <Container>
-                    <FooterRow>
-                        <FooterColumn className='ico'>
-                            <FooterIco to="/">
-                                <Phone />
-                            </FooterIco>
-                        </FooterColumn>
-                        <FooterColumn className='text'>
-                            <FooterLinktext to="/">
-                                COL: +57 301-349-6784
-                            </FooterLinktext>
-                        </FooterColumn>
-                        <FooterColumn className='separator'>
-                        </FooterColumn>
-                        <FooterColumn className='network'>
+                    <Logocontainer>
+                        {/* Aqui va el logo en un futuro */} 
+                    </Logocontainer>
+                    <InfoRow>
+                        <InfoContainer>
+                            <Contactinfo>
+                                <IcoContainer href="tel:+13059986797">
+                                    <Phone />
+                                </IcoContainer>
+                                <LinkContainer href="tel:+13059986797">
                                     <FooterText>
-                                        {t("footer.media")}
+                                        USA: +1 (305) 998-6797
                                     </FooterText>
-                        </FooterColumn>
-                    </FooterRow>
-                    <FooterRow>
-                        <FooterColumn className='ico'>
-                            <FooterIco to="/">
-                                <Phone />
-                            </FooterIco>
-                        </FooterColumn>
-                        <FooterColumn className='text'>
-                            <FooterLinktext to="/">
-                                USA: +1 305-998-6797
-                            </FooterLinktext>
-                        </FooterColumn>
-                        <FooterColumn className='separator'>
-                        </FooterColumn>
-                        <FooterColumn className='networkI'>
-                            <FooterIcoA href="https://www.instagram.com/caav_is/?igshid=YmMyMTA2M2Y%3D" rel='noopener' target='_blank'>
-                                <Instagram />
-                            </FooterIcoA>
-                            <FooterIcoA href="https://www.linkedin.com/company/caav/?originalSubdomain=co" rel='noopener' target='_blank'>
-                                <Linkedin />
-                            </FooterIcoA>
-                            <FooterIcoA>
-                                <Facebook />
-                            </FooterIcoA>
-                        </FooterColumn>
-                    </FooterRow>
-                    <FooterRow>
-                        <FooterColumn className='ico'>
-                            <FooterIcoA href="https://goo.gl/maps/N4maStp3zAgUWFKm9" rel='noopener' target='_blank'>
-                                <Location />
-                            </FooterIcoA>
-                        </FooterColumn>
-                        <FooterColumn className='text'>
-                            <FooterAtext href="https://goo.gl/maps/N4maStp3zAgUWFKm9" rel='noopener' target='_blank'>
-                                Calle 19 Norte 2N-29, 2202A, Santiago de Cali, Valle del Cauca 760046, CO
-                            </FooterAtext>
-                        </FooterColumn>
-                    </FooterRow>
-                    <FooterRow>
-                        <FooterColumn className='ico'>
-                            <FooterIcoA to="/">
-                                <Mail/>
-                            </FooterIcoA>
-                        </FooterColumn>
-                        <FooterColumn className='text'>
-                            <FooterLinktext to="/">
-                                info@caav.com.co
-                            </FooterLinktext>
-                        </FooterColumn>
-                    </FooterRow>
-            </Container>
-        </FooterSection>        
+                                </LinkContainer>
+                            </Contactinfo>
+                            <Contactinfo>
+                                <IcoContainer href="tel:+573013496784">
+                                    <Phone />
+                                </IcoContainer>
+                                <LinkContainer href="tel:+573013496784">
+                                    <FooterText>
+                                        COL: +57 (301) 349-6784
+                                    </FooterText>
+                                </LinkContainer>
+                            </Contactinfo>
+                            <Contactinfo>
+                                <IcoContainer href="mailto:info@caav.com.co">
+                                    <Mail/>
+                                </IcoContainer>
+                                <LinkContainer >
+                                    <FooterText>
+                                        info@caav.com.co
+                                    </FooterText>
+                                </LinkContainer>
+                            </Contactinfo>
+                            <Contactinfo>
+                                <IcoContainer href="https://goo.gl/maps/nobDJAwWm8VpmAkD9" rel='noopener' target='_blank'>
+                                <Location/>
+                                </IcoContainer>
+                                <LinkContainer href="https://goo.gl/maps/nobDJAwWm8VpmAkD9" rel='noopener' target='_blank'>
+                                    <FooterText>
+                                    Calle 19 Norte 2N-29, Office 2202A, Santiago de Cali, Valle del Cauca 760046, CO
+                                    </FooterText>
+                                </LinkContainer>
+                            </Contactinfo>
+                        </InfoContainer>
+                        <InfoContainer>
+                            <Contactinfo>
+                                <FooterText>
+                                    {t("footer.media")}
+                                </FooterText>
+                            </Contactinfo>
+                            <Contactinfo>
+                                <IcoContainer href="https://www.linkedin.com/company/caav/?originalSubdomain=co" rel='noopener' target='_blank'>
+                                    <Linkedin />
+                                </IcoContainer>
+                                <IcoContainer href="https://www.instagram.com/caav_is/?igshid=YmMyMTA2M2Y%3D" rel='noopener' target='_blank'>
+                                    <Instagram />
+                                </IcoContainer>
+                                <IcoContainer>
+                                    <Facebook/>
+                                </IcoContainer>
+                            </Contactinfo>
+                        </InfoContainer>
+                    </InfoRow>
+                </Container>
+            </FooterSection>
         </>
     )
 }

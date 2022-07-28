@@ -35,13 +35,13 @@ export const ShowRows = styled.div`
 export const Texttitle = styled.h3`
     font-family: 'PT Sans', sans-serif;
     color: #222D5A;
-    font-size: 3.3vh;
+    font-size: 4vh;
 `
 
 export const Textdes = styled.p`
     font-family: 'Jost', sans-serif;
     color: #262728;
-    font-size: 2.5vh;
+    font-size: 3vh;
 
     @media screen and (max-width: 1400px) {
         font-size: 2.8vh;
@@ -53,15 +53,16 @@ export const Textdes = styled.p`
 export const Titlecont = styled.div`
     display: flex;
     width: 100%;
-    padding-top: 5vh;
-    padding-bottom: 4vh;
-    margin-left: 3vh;
+
+
+    padding: 5vh 2vh 4vh 3vh ;
 `
 export const Textcont = styled.div`
     display: flex;
-    padding-bottom: 2vh;
-    margin-left: 3vh;
-    margin-right: 1.5vh;
+
+
+    padding: 2vh 2vh 2vh 3vh ;
+
     &.list{
         padding-top: 1vh;
     }

@@ -38,13 +38,17 @@ export const Button = styled.button`
     outline: none;
     border: none;
     cursor: pointer;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 
     &:hover {
         transition: all 0.3s ease-out;
         background: ${({ primary }) => (primary ? "#54DAE4" : "#C9EFF2")};
         color: #4D5053;
+    }
+
+    @media screen and (max-width: 1400px){
+        font-size: ${({ fontBig }) => (fontBig ? "3.5vh" : "2.5vh")};
     }
 
     @media screen and (max-width: 960px){

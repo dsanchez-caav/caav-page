@@ -26,12 +26,18 @@ export const Contacttitle = styled.h1`
     font-family: 'PT Sans', sans-serif;
     color: #262728;
     font-size: 6vh;
+    @media screen and (max-width: 1400px){
+        font-size: 8vh;
+    }
 `
 
 export const Contacttext = styled.p`
     font-family: 'Jost', sans-serif;
     color: #262728;
-    font-size: 3.5vh;
+    font-size: 3vh;
+    @media screen and (max-width: 1400px){
+        font-size: 3.5vh;
+    }
 `
 
 export const Buttoncont = styled.div`

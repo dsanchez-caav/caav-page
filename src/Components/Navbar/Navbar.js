@@ -54,7 +54,7 @@ const Navbar = () => {
                 if (item.title === "Services") {
                   return (
                     <NavItem key={item.id}>
-                      <NavLinks to={item.path} onMouseEnter={() => setDropdownS(true)} onMouseLeave={() => setDropdownS(false)}>
+                      <NavLinks to={item.path} onMouseEnter={() => setDropdownS(true)} onMouseLeave={() => setDropdownS(false)} > 
                         {t(item.tras)} <Dropico />
                         {dropdownS && <DropdownS />}
                       </NavLinks>
