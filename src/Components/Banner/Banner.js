@@ -83,10 +83,10 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
             <>
                 <BannerSectionAu>
                 <Container>
-                <BannerTagline >
+                <BannerTagline className="caav">
                         {t(SubtitleA)}
                     </BannerTagline>
-                    <BannerTitle className='caav'>
+                    <BannerTitle className="caav">
                         {t(titletras)}
                     </BannerTitle>
                     <BannerTaglineA >

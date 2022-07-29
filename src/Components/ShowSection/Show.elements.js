@@ -9,7 +9,11 @@ export const ShowColumns = styled.div`
     display: flex;
     justify-content: space-between;
     justify-self: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    @media screen and (max-width: 960px) {
+        width: 100%; 
+        gap: 3rem;
+    }
 `
 
 export const ShowCard = styled.div`
@@ -24,27 +28,43 @@ export const ShowCard = styled.div`
     @media screen and (max-width: 1400px) {
         width: 27%; 
     }
+    @media screen and (max-width: 690px) {
+        width: 100%; 
+        //padding-bottom: 5%;
+    }
 
 `
 
 export const ShowRows = styled.div`
     display: flex;
     flex-direction: column;
+    
 `
 
 export const Texttitle = styled.h3`
     font-family: 'PT Sans', sans-serif;
     color: #222D5A;
-    font-size: 4vh;
+    font-size: 3rem;
+    @media screen and (max-width: 1400px) {
+        font-size: 2.6rem;
+    }
+    @media screen and (max-width: 960px) {
+        font-size: 2.1rem;
+        text-align: center;
+    }
 `
 
 export const Textdes = styled.p`
     font-family: 'Jost', sans-serif;
     color: #262728;
-    font-size: 3vh;
+    font-size: 2rem;
 
     @media screen and (max-width: 1400px) {
-        font-size: 2.8vh;
+        font-size: 1.7rem;
+    }
+    @media screen and (max-width: 960px) {
+        font-size: 1.3rem;
+        text-align: center;
     }
 
 
@@ -54,13 +74,18 @@ export const Titlecont = styled.div`
     display: flex;
     width: 100%;
 
+    padding: 13% 8% 8% 10% ;
+    @media screen and (max-width: 960px) {
+        align-self: center;
+        align-items: center;
+        display: block;
+    }
 
-    padding: 5vh 2vh 4vh 3vh ;
 `
+
+
 export const Textcont = styled.div`
     display: flex;
-
-
     padding: 2vh 2vh 2vh 3vh ;
 
     &.list{

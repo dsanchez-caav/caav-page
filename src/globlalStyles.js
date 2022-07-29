@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-family: "Jost", sans-serif;
         
+        
     }
     body{
         background-color: #F9F9F9;

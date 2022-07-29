@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 export const InfoSec = styled.div`
     color: #262728;
-    padding-top: 60px;
-    padding-bottom: 50px;
+    padding-top: 5%;
+    padding-bottom: 3%;
     background: #F9F9F9;
     height: auto;
     @media screen and (max-width: 768px) {
@@ -37,7 +37,7 @@ export const InfoColumn = styled.div`
 `;
 export const TextWrapper = styled.div`
     max-width: 540px;
-    padding-top: 0;
+    //padding-top: 0;
     padding-bottom: 50px;
 
     @media screen and (max-width: 768px) {
@@ -50,7 +50,7 @@ export const TextWrapper = styled.div`
 export const TexTitle = styled.h2`
     justify-content: left;
     font-family: 'PT Sans', sans-serif;
-    padding-top: 3vh;
+    padding-top: 2%;
     font-size: 4.6rem;
     margin-bottom: 3rem;
     color: #262728;
@@ -66,7 +66,7 @@ export const TexTitle = styled.h2`
         justify-content: center;
         font-size: 2.4rem;
         text-align: center;
-        padding-top: 6vh;
+        padding-top: 20%;
         margin-bottom: 2rem;
     }
 
@@ -75,7 +75,7 @@ export const TexTitle = styled.h2`
 
 export const TexDesc = styled.p`
     justify-content: left;
-    padding-bottom: 8vh;
+    padding-bottom: 10%;
     font-size: 2rem;
     text-align: left;
     font-family: 'Jost', sans-serif;
@@ -100,7 +100,7 @@ export const TexDesc = styled.p`
 
 export const Serlist = styled.p`
     justify-content: left;
-    padding-bottom: 1vh;
+    padding-bottom: 2%;
     font-size: 2rem;
     text-align: left;
     font-family: 'Jost', sans-serif;
@@ -127,7 +127,7 @@ export const Serlist = styled.p`
 export const Serlink = styled(Link)`
     justify-content: left;
     font-family: 'PT Sans', sans-serif;
-    padding-top: 3vh;
+    padding-top: 4%;
     font-size: 3rem;
     margin-bottom: 1rem;
     color: #222D5A;
@@ -139,8 +139,8 @@ export const Serlink = styled(Link)`
     font-weight: 700;
 
     &.mk{
-        padding-left: 10vh;
-        padding-top: 10vh;
+        padding-top: 15%;
+        align-self: flex-end;
         justify-content: right;
     
     }
