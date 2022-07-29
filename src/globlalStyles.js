@@ -7,9 +7,14 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         font-family: "Jost", sans-serif;
+        
     }
     body{
         background-color: #F9F9F9;
+        font-size: 18px;
+        @media screen and (max-width: 991px){
+            font-size: 18px;
+    }
     }
 `;
 
@@ -34,7 +39,7 @@ export const Button = styled.button`
     white-space: nowrap;
     padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
     color: #606568;
-    font-size: ${({ fontBig }) => (fontBig ? "3vh" : "2vh")};
+    font-size: ${({ fontBig }) => (fontBig ? "2rem" : "2vh")};
     outline: none;
     border: none;
     cursor: pointer;
@@ -48,21 +53,21 @@ export const Button = styled.button`
     }
 
     @media screen and (max-width: 1400px){
-        font-size: ${({ fontBig }) => (fontBig ? "3.5vh" : "2.5vh")};
+        font-size: ${({ fontBig }) => (fontBig ? "1.7rem" : "2.5vh")};
     }
 
     @media screen and (max-width: 960px){
         width: 100%;
         padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
-        font-size: ${({ fontBig }) => (fontBig ? "1.8vh" : "1.5vh")};
+        font-size: ${({ fontBig }) => (fontBig ? "1.3rem" : "1.5vh")};
     } 
 `
 
 export const MainHeader = styled.h1`
     justify-content: right;
     font-family: 'PT Sans', sans-serif;
-    padding-top: 10vh;
-    font-size: 11vh;
+    padding-top: 8%;
+    font-size: 7.5rem;
     margin-bottom: 3rem;
     color: #F9F9F9;
     display: flex;
@@ -70,16 +75,16 @@ export const MainHeader = styled.h1`
     text-align: right;
 
     @media screen and (max-width: 1400px){
-        padding-left: 13%;
-        font-size: 11vh;
+        
+        font-size: 5.5rem;
 
     }
     @media screen and (max-width: 960px){
         justify-content: center;
-        font-size: 5vh;
         text-align: center;
         padding-left: 0;
-        padding-top: 5vh;
+        font-size: 2.6rem;
+        margin-bottom: 0.6em;
     }
 
 `

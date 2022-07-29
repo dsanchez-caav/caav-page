@@ -103,6 +103,31 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
                 </BannerSectionDes>
             </>
         )
+    }else if (title === "Contact") {
+        return (
+            <>
+                <BannerSectionAu>
+                <Container>
+                <BannerTagline >
+                        {t(SubtitleA)}
+                    </BannerTagline>
+                    <BannerTitle className='caav'>
+                        {t(titletras)}
+                    </BannerTitle>
+                    <BannerTaglineA >
+                        {t(SubtitleB)}
+                    </BannerTaglineA>
+                </Container>
+                </BannerSectionAu>
+                <BannerSectionDes>
+                    <Container>
+                        <BannerDes>
+                            {t(destras)}
+                        </BannerDes>
+                    </Container>
+                </BannerSectionDes>
+            </>
+        )
     }
 }
 

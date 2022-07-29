@@ -13,7 +13,7 @@ export const Nav = styled.nav`
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
-    top:0;
+        top: 0;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
     z-index: 999;
 `;
@@ -34,6 +34,7 @@ export const NavLogo = styled(Link)`
     font-size: 2rem;
     display: flex;
     align-items: center;
+
 `;
 
 export const Navicon = styled(FaMagento)`
@@ -78,7 +79,7 @@ export const NavItem = styled.li`
     color: #262728;
     height: 80px;
     border-bottom: 2px solid transparent;
-    font-family: 'Jost', sans-serif;
+    //font-family: 'Jost', sans-serif;
 
     &:hover {
         transition: all 0.3s ease-out;
@@ -101,6 +102,7 @@ export const NavLinks = styled(Link)`
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
+    font-family: 'Jost', sans-serif;
     @media screen and (max-width: 960px){
         text-align: left;
         padding: 2rem;
@@ -110,7 +112,6 @@ export const NavLinks = styled(Link)`
     &hover{
             transition: all 0.3s ease;
             color: #262728;
-            
         }
 `;
 

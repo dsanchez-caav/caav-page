@@ -15,7 +15,7 @@ const Hero = () => {
         <HeroText>{t("hero.text")}</HeroText>
         <ButtonWrapper>
           <Link to="/Services">
-            <Button big primary fontBig >
+            <Button  primary fontBig >
             {t("hero.button")}
             </Button>
           </Link>

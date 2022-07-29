@@ -51,7 +51,7 @@ export const TexTitle = styled.h2`
     justify-content: left;
     font-family: 'PT Sans', sans-serif;
     padding-top: 3vh;
-    font-size: 6vh;
+    font-size: 4.6rem;
     margin-bottom: 3rem;
     color: #262728;
     display: flex;
@@ -59,12 +59,12 @@ export const TexTitle = styled.h2`
     text-align: left;
 
     @media screen and (max-width: 1400px){
-        font-size: 8vh;
+        font-size: 4rem;
     }
 
     @media screen and (max-width: 960px){
         justify-content: center;
-        font-size: 6vh;
+        font-size: 2.4rem;
         text-align: center;
         padding-top: 6vh;
         margin-bottom: 2rem;
@@ -76,7 +76,7 @@ export const TexTitle = styled.h2`
 export const TexDesc = styled.p`
     justify-content: left;
     padding-bottom: 8vh;
-    font-size: 3vh;
+    font-size: 2rem;
     text-align: left;
     font-family: 'Jost', sans-serif;
     font-style: normal;
@@ -87,11 +87,11 @@ export const TexDesc = styled.p`
     line-height: normal;
 
         @media screen and (max-width: 1400px){
-        font-size: 3.5vh;
+        font-size: 1.7rem;
     }
     @media screen and (max-width: 960px){
         justify-content: center;
-        font-size: 3vh;
+        font-size: 1.3rem;
         text-align: center;
         padding-top: 0;
     }
@@ -101,7 +101,7 @@ export const TexDesc = styled.p`
 export const Serlist = styled.p`
     justify-content: left;
     padding-bottom: 1vh;
-    font-size: 3vh;
+    font-size: 2rem;
     text-align: left;
     font-family: 'Jost', sans-serif;
     display: flex;
@@ -115,11 +115,11 @@ export const Serlist = styled.p`
     }
 
     @media screen and (max-width: 1400px){
-        font-size: 3.5vh;
+        font-size: 1.7rem;
     }
 
     @media screen and (max-width: 960px){
-        font-size: 3.5vh;
+        font-size: 1.3rem;
     }
 
 `
@@ -128,7 +128,7 @@ export const Serlink = styled(Link)`
     justify-content: left;
     font-family: 'PT Sans', sans-serif;
     padding-top: 3vh;
-    font-size: 4vh;
+    font-size: 3rem;
     margin-bottom: 1rem;
     color: #222D5A;
     display: flex;
@@ -146,8 +146,10 @@ export const Serlink = styled(Link)`
     }
 
     @media screen and (max-width: 1400px){
-        font-size: 4vh;
-
+        font-size: 2.6rem;
+    }
+    @media screen and (max-width: 960px){
+        font-size: 2.1rem;
     }
 
 `;

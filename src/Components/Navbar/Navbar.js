@@ -48,7 +48,7 @@ const Navbar = () => {
           </NavLogo>
           <MobileIcon onClick={handleClick}>
             {click ? <FaTimes /> : <FaBars />}
-            </MobileIcon>
+          </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               {Menuitems.map(item => {
                 if (item.title === "Services") {
@@ -86,15 +86,12 @@ const Navbar = () => {
                     </NavLinks>
                   </NavItem>
                 );
-                
-                }
-                )}
-              </NavMenu>
-        </NavbarContainer>
+              }
+            )}
+            </NavMenu>
+          </NavbarContainer>
         </Nav>
-        
       </IconContext.Provider> 
-      
     </>
   );
 };  

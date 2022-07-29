@@ -6,10 +6,12 @@ import AuImg from '../../Images/Company/CompanyImg1.jpg'
 
 
 export const BannerSectionMar = styled.section`
-    height: 50vh;
-    padding-top: 1vh;
+    height: 25rem;
+    //padding-top: 1vh;
     background-image: url(${MarImg});
-    background-position: center;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto;
 `;
 
 export const BannerSectionSer = styled.section`
@@ -33,6 +35,14 @@ export const BannerSectionAu = styled.section`
     background-position: center;
 `;
 
+export const BannerSectionCn = styled.section`
+    height: 50vh;
+    padding-top: 1vh;
+    background-image: url(${AuImg});
+    background-position: center;
+`;
+
+
 export const BannerTagline = styled.h4`
     color: #F9F9F9;
     text-align: center;
@@ -40,8 +50,8 @@ export const BannerTagline = styled.h4`
     font-family: 'Jost', sans-serif;
     letter-spacing: 1vh;
     font-weight: 400;
-    font-size: 5vh;
-    padding-top: 12vh;
+    font-size: 3em;
+    padding-top: 5rem;
 `;
 
 export const BannerTaglineA = styled.h4`
@@ -60,7 +70,7 @@ export const BannerTitle = styled.h3`
     text-align: center;
     justify-content: center;
     font-family: 'PT Sans', sans-serif;
-    font-size: 12vh;
+    font-size: 8em;
     &.caav{
         letter-spacing: 2vh;
     }
@@ -68,7 +78,7 @@ export const BannerTitle = styled.h3`
 `;
 
 export const BannerSectionDes = styled.section`
-    height: 23vh;
+    height: 25vh;
     background: #F9F9F9;
 
 `
@@ -79,7 +89,7 @@ export const BannerDes = styled.p`
     font-weight: 400;
     color: #262728;
     text-align: center;
-    font-size: 3.6vh;
+    font-size: 2em;
     //max-width: 55%;
     padding-top: 4vh;
 `

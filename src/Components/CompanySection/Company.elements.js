@@ -41,6 +41,8 @@ export const Img = styled.img`
     max-height: 100%;
     vertical-align: middle;
     max-width: 40vh;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 
     @media screen and (max-width: 1400px){
         max-width: 50vh;
