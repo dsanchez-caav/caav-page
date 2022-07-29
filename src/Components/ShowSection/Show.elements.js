@@ -30,7 +30,6 @@ export const ShowCard = styled.div`
     }
     @media screen and (max-width: 690px) {
         width: 100%; 
-        //padding-bottom: 5%;
     }
 
 `

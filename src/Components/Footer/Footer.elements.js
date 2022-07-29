@@ -14,10 +14,11 @@ export const Logocontainer = styled.div`
 `
 
 export const InfoContainer = styled.div`
-    //max-width: 70%;
     display: flex;
     padding-top: 5vh;
     flex-direction: column;
+
+    
 `
 export const Contactinfo = styled.div`
     width: 100%;
@@ -40,19 +41,27 @@ export const LinkContainer = styled.a`
     text-decoration: none;
 `
 export const FooterText = styled.p`
-    font-size: 2vh;
+    font-size: 1.5rem;
     font-family: 'Jost', sans-serif;
     color: #F9F9F9;
     text-align: left;
     
     @media screen and (max-width: 1400px){
-        font-size: 2.5vh;
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 960px){
+        font-size: 1.1rem;
     }
 `
 
 export const InfoRow = styled.div`
     display: flex;
     padding-bottom: 5vh;
+    @media screen and (max-width: 960px) {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
 `
 
 //Iconos

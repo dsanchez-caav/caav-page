@@ -14,6 +14,7 @@ export const BannerSectionMar = styled.section`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    image-rendering: optimizeSpeed;
     @media screen and (max-width: 1400px) {
         max-height: 350px;
     }
@@ -66,7 +67,7 @@ export const BannerSectionAu = styled.section`
 
 export const BannerSectionCn = styled.section`
     height: 50vh;
-    max-height: 400px !important; 
+    max-height: 400px; 
     padding-top: 1vh;
     background-image: url(${AuImg});
     background-position: center;
@@ -137,8 +138,12 @@ export const BannerTitle = styled.h3`
 
 export const BannerSectionDes = styled.section`
     height: 25vh;
-    max-height: 300px;
+    max-height: 200px;
     background: #F9F9F9;
+    @media screen and (max-width: 960px) {
+        height: auto;
+        max-height: 250px;
+    }
 `
 
 export const BannerDes = styled.p`
