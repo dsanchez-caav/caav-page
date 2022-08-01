@@ -128,7 +128,7 @@ export const BannerTitle = styled.h3`
     }
 
     @media screen and (max-width: 1400px) {
-        font-size: 6rem;
+        font-size: 8rem;
     }
     @media screen and (max-width: 960px) {
         font-size: 4rem;

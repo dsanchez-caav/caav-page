@@ -11,6 +11,7 @@ export const Herosection = styled.section`
     display: flex;
     align-items: top;
     object-fit: contain;
+    
 
     @media screen and (max-width: 960px){
         background-repeat: no-repeat;
@@ -45,7 +46,6 @@ export const HeroText = styled.p`
         font-size: 1.5rem;
         text-align: center;
         padding-left: 0;
-        //padding-top: 0.3vh;
     }
 
 `;

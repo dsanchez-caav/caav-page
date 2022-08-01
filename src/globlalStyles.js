@@ -12,10 +12,8 @@ const GlobalStyle = createGlobalStyle`
     }
     body{
         background-color: #F9F9F9;
-        font-size: 18px;
-        @media screen and (max-width: 991px){
-            font-size: 18px;
-    }
+        //font-size: 18px;
+
     }
 `;
 
@@ -65,21 +63,23 @@ export const Button = styled.button`
 `
 
 export const MainHeader = styled.h1`
+
     justify-content: right;
     font-family: 'PT Sans', sans-serif;
     padding-top: 8%;
-    font-size: 7.5rem;
+    font-size: 9rem;
     margin-bottom: 3rem;
     color: #F9F9F9;
     display: flex;
     align-items: flex-start;
-    text-align: right;
+    text-align: right;  
 
-    @media screen and (max-width: 1400px){
-        
-        font-size: 5.5rem;
-
+    
+    @media only screen and (max-device-width: 1400px) {
+        font-size: 6.5rem;
     }
+
+
     @media screen and (max-width: 960px){
         justify-content: center;
         text-align: center;
@@ -87,7 +87,8 @@ export const MainHeader = styled.h1`
         font-size: 2.6rem;
         margin-bottom: 0.6em;
     }
+    
 
-`
+`;
 
 export default GlobalStyle;
