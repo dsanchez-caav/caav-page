@@ -30,7 +30,7 @@ export const Contacttitle = styled.h1`
     color: #262728;
     font-size: 4.6rem;
     @media screen and (max-width: 1400px){
-        font-size: 4rem;
+        font-size: 3.9rem;
     }
     @media screen and (max-width: 960px){
         font-size: 2.4rem;
@@ -42,8 +42,8 @@ export const Contacttext = styled.p`
     font-family: 'Jost', sans-serif;
     color: #262728;
     font-size: 2rem;
-    @media screen and (max-width: 1400px){
-        font-size: 1.7rem;
+    @media screen and (max-device-width: 1400px){
+        font-size: 1.6rem;
     }
     @media screen and (max-width: 960px){
         font-size: 1.3rem;

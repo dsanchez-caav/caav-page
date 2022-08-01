@@ -68,52 +68,52 @@ export const InfoRow = styled.div`
 
 export const Phone = styled(MdPhone)`
     color: #F9F9F9;
-    font-size: 3vh;
+    font-size: 2rem;
     align-self: center;
 
     @media screen and (max-width: 1400px){
-        font-size: 3.5vh;
+        font-size: 1.7rem;
     }
 `
 export const Mail = styled(MdMail)`
     color: #F9F9F9;
-    font-size: 3vh;
+    font-size: 2rem;
     align-self: center;
     @media screen and (max-width: 1400px){
-        font-size: 3.5vh;
+        font-size: 1.7rem;
     }
 `
 export const Location = styled(MdLocationOn)`
     color: #F9F9F9;
-    font-size: 3vh;
+    font-size: 2rem;
     align-self: center;
-    @media screen and (max-width: 1400px){
-        font-size: 3.5vh;
+    @media screen and (max-device-width: 1400px){
+        font-size: 1.7rem;
     }
 `
 
 //Network
 export const Linkedin = styled(AiOutlineLinkedin)`
     color: #F9F9F9;
-    font-size: 4vh;
+    font-size: 3rem;
     align-self: center;
-    @media screen and (max-width: 1400px){
-        font-size: 4.5vh;
+    @media screen and (max-device-width: 1400px){
+        font-size: 2.8rem;
     }
 `
 export const Facebook = styled(AiOutlineFacebook)`
     color: #F9F9F9;
-    font-size: 4vh;
+    font-size: 3rem;
     align-self: center;
-    @media screen and (max-width: 1400px){
-        font-size: 4.5vh;
+    @media screen and (max-device-width: 1400px){
+        font-size: 2.8rem;
     }
 `
 export const Instagram = styled(AiOutlineInstagram)`
     color: #F9F9F9;
-    font-size: 4vh;
+    font-size: 3rem;
     align-self: center;
-    @media screen and (max-width: 1400px){
-        font-size: 4.5vh;
+    @media screen and (max-device-width: 1400px){
+        font-size: 2.8rem;
     }
 `

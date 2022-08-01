@@ -15,21 +15,24 @@ export const Infocontainer = styled.div`
     align-items: stretch;
     flex-wrap: nowrap;
     height: auto;
-    @media screen and (max-width: 1400px){
+    @media screen and (max-width: 960px){
         flex-wrap: wrap;
     }
 `
 
 export const ImgContainer = styled.div`
     
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 10px;
     display: flex;
     width: 100%;
-    //align-self: stretch;
     align-items: center;
     align-content: center;
+
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: optimizeSpeed;
+
     &.vis{
         background-image: url(${VisImg});
     }
@@ -38,6 +41,7 @@ export const ImgContainer = styled.div`
         order: 4;
     }
     @media screen and (max-width: 960px) {
+
         &.mis{
         order: 0;
     }
@@ -58,8 +62,8 @@ export const Companytext = styled.p`
     font-size: 2rem;
     color: #262728;
     padding: 0 5vh 0 5vh;
-    @media screen and (max-width: 1400px) {
-        font-size: 1.7rem;
+    @media screen and (max-device-width: 1400px) {
+        font-size: 1.6rem;
     }
     @media screen and (max-width: 960px) {
         font-size: 1.3rem;
@@ -103,7 +107,4 @@ export const Img = styled.img`
     background-repeat: no-repeat;
     background-position: right top;
 
-    @media screen and (max-width: 1400px){
-        max-width: 50vh;
-    }
 `

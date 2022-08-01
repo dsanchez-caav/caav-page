@@ -9,13 +9,12 @@ import GlobalStyle from "../../globlalStyles";
 export const BannerSectionMar = styled.section`
     height: 50vh;
     max-height: 400px; 
-    //padding-top: 1vh;
     background-image: url(${MarImg});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     image-rendering: optimizeSpeed;
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-device-width: 1400px) {
         max-height: 350px;
     }
     @media screen and (max-width: 960px) {
@@ -31,6 +30,13 @@ export const BannerSectionSer = styled.section`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    image-rendering: optimizeSpeed;
+    @media screen and (max-device-width: 1400px) {
+        max-height: 350px;
+    }
+    @media screen and (max-width: 960px) {
+        max-height: 250px;
+    }
 `;
 
 export const BannerSectionHr = styled.section`
@@ -41,11 +47,12 @@ export const BannerSectionHr = styled.section`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media screen and (max-width: 1400px) {
+    image-rendering: optimizeSpeed;
+    @media screen and (max-device-width: 1400px) {
         max-height: 350px;
     }
     @media screen and (max-width: 960px) {
-        max-height: 300px;
+        max-height: 250px;
     }
 `;
 
@@ -57,7 +64,8 @@ export const BannerSectionAu = styled.section`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media screen and (max-width: 1400px) {
+    image-rendering: optimizeSpeed;
+    @media screen and (max-device-width: 1400px) {
         max-height: 350px;
     }
     @media screen and (max-width: 960px) {
@@ -73,6 +81,13 @@ export const BannerSectionCn = styled.section`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    image-rendering: optimizeSpeed;
+    @media screen and (max-device-width: 1400px) {
+        max-height: 350px;
+    }
+    @media screen and (max-width: 960px) {
+        max-height: 250px;
+    }
 `;
 
 
@@ -87,15 +102,15 @@ export const BannerTagline = styled.h4`
     padding-top: 8%;
 
     &.caav{
-        padding-top: 5%;
+        padding-top: 4%;
     }
 
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-device-width: 1400px) {
         font-size: 2.2rem;
     }
     @media screen and (max-width: 960px) {
         font-size: 1.8rem;
-        padding-top: 15%;
+        padding-top: 10%;
     }
 `;
 
@@ -112,8 +127,8 @@ export const BannerTaglineA = styled.h4`
         font-size: 2.2rem;
     }
     @media screen and (max-width: 960px) {
-        font-size: 1.8rem;
-        padding-top: 15%;
+        font-size: 1.6rem;
+        padding-top: 5%;
     }
 `;
 
@@ -127,8 +142,8 @@ export const BannerTitle = styled.h3`
         letter-spacing: 2rem;
     }
 
-    @media screen and (max-width: 1400px) {
-        font-size: 8rem;
+    @media screen and (max-device-width: 1400px) {
+        font-size: 6rem;
     }
     @media screen and (max-width: 960px) {
         font-size: 4rem;
@@ -154,8 +169,8 @@ export const BannerDes = styled.p`
     text-align: center;
     font-size: 2rem;
     padding-top: 5%;
-    @media screen and (max-width: 1400px) {
-        font-size: 1.7rem;
+    @media screen and (max-device-width: 1400px) {
+        font-size: 1.6rem;
         padding-top: 4%;
     }
     @media screen and (max-width: 960px) {

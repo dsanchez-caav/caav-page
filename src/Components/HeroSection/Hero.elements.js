@@ -3,7 +3,7 @@ import Home_img from '../../Images/Home.jpg';
 
 export const Herosection = styled.section`
     height: 95vh;
-    max-height: 1500px;
+    max-height: 1400px;
     background-image: url(${Home_img});
     justify-content: right;
     background-position: top;
@@ -11,6 +11,7 @@ export const Herosection = styled.section`
     display: flex;
     align-items: top;
     object-fit: contain;
+    image-rendering: optimizeSpeed;
     
 
     @media screen and (max-width: 960px){
@@ -23,22 +24,17 @@ export const Herosection = styled.section`
 export const HeroText = styled.p`
     justify-content: right;
     margin-bottom: 1em;
-    padding-left: 40%;
-    font-size: 3rem;
+    padding-left: 30%;
+    font-size: 4rem;
     line-height: 24px;
     text-align: right;
-    //Figma 
     font-family: 'Jost', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     line-height: normal;
-    display: flex;
-    align-items: center;
     color: #F9F9F9;
 
-    @media screen and (max-width: 1400px){
+    @media screen and (max-device-width: 1400px){
         padding-left: 50%;
-        font-size: 2rem;
+        font-size: 2.6rem;
 
     }
     @media screen and (max-width: 960px){
@@ -54,9 +50,6 @@ export const ButtonWrapper = styled.div`
     width: 100%;
     display: flex;
     justify-content: right;
-    //flex-flow: wrap;
-    //padding-top: 3vh;
-    //gap: 3rem;
     align-items: flex-end;
     align-self: stretch;
     float: right;

@@ -31,7 +31,7 @@ export const NavLogo = styled(Link)`
     justify-self: flex-start;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
 

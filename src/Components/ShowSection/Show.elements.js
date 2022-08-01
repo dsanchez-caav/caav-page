@@ -25,7 +25,7 @@ export const ShowCard = styled.div`
     justify-content: space-around;
     justify-self: center;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-device-width: 1400px) {
         width: 27%; 
     }
     @media screen and (max-width: 690px) {
@@ -44,8 +44,8 @@ export const Texttitle = styled.h3`
     font-family: 'PT Sans', sans-serif;
     color: #222D5A;
     font-size: 3rem;
-    @media screen and (max-width: 1400px) {
-        font-size: 2.6rem;
+    @media screen and (max-device-width: 1400px) {
+        font-size: 2.4rem;
     }
     @media screen and (max-width: 960px) {
         font-size: 2.1rem;
@@ -58,8 +58,8 @@ export const Textdes = styled.p`
     color: #262728;
     font-size: 2rem;
 
-    @media screen and (max-width: 1400px) {
-        font-size: 1.7rem;
+    @media screen and (max-device-width: 1400px) {
+        font-size: 1.6rem;
     }
     @media screen and (max-width: 960px) {
         font-size: 1.3rem;
@@ -85,12 +85,12 @@ export const Titlecont = styled.div`
 
 export const Textcont = styled.div`
     display: flex;
-    padding: 2vh 2vh 2vh 3vh ;
+    padding: 0 8% 5% 10% ;
 
     &.list{
-        padding-top: 1vh;
+        padding-top: 2%;
     }
     &.separator{
-        gap: 5vh;
+        gap: 10%;
     }
 `

@@ -58,8 +58,8 @@ export const TexTitle = styled.h2`
     align-items: flex-start;
     text-align: left;
 
-    @media screen and (max-width: 1400px){
-        font-size: 4rem;
+    @media screen and (max-device-width: 1400px){
+        font-size: 3.9rem;
     }
 
     @media screen and (max-width: 960px){
@@ -86,8 +86,8 @@ export const TexDesc = styled.p`
     color: #262728;
     line-height: normal;
 
-        @media screen and (max-width: 1400px){
-        font-size: 1.7rem;
+        @media screen and (max-device-width: 1400px){
+        font-size: 1.6rem;
     }
     @media screen and (max-width: 960px){
         justify-content: center;
@@ -114,8 +114,8 @@ export const Serlist = styled.p`
         
     }
 
-    @media screen and (max-width: 1400px){
-        font-size: 1.7rem;
+    @media screen and (max-device-width: 1400px){
+        font-size: 1.6rem;
     }
 
     @media screen and (max-width: 960px){
@@ -145,8 +145,8 @@ export const Serlink = styled(Link)`
     
     }
 
-    @media screen and (max-width: 1400px){
-        font-size: 2.6rem;
+    @media screen and (max-device-width: 1400px){
+        font-size: 2.4rem;
     }
     @media screen and (max-width: 960px){
         font-size: 2.1rem;

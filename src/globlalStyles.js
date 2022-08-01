@@ -51,8 +51,8 @@ export const Button = styled.button`
         color: #4D5053;
     }
 
-    @media screen and (max-width: 1400px){
-        font-size: ${({ fontBig }) => (fontBig ? "1.7rem" : "2.5vh")};
+    @media screen and (max-device-width: 1400px){
+        font-size: ${({ fontBig }) => (fontBig ? "1.6rem" : "2.5vh")};
     }
 
     @media screen and (max-width: 960px){
@@ -67,7 +67,7 @@ export const MainHeader = styled.h1`
     justify-content: right;
     font-family: 'PT Sans', sans-serif;
     padding-top: 8%;
-    font-size: 9rem;
+    font-size: 10rem;
     margin-bottom: 3rem;
     color: #F9F9F9;
     display: flex;
@@ -76,7 +76,7 @@ export const MainHeader = styled.h1`
 
     
     @media only screen and (max-device-width: 1400px) {
-        font-size: 6.5rem;
+        font-size: 7rem;
     }
 
 

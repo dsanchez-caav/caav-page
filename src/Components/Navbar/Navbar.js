@@ -20,6 +20,7 @@ import { DropdownS, DropdownC, DropdownL } from "./Dropdown";
 
 import { useLocation } from 'react-router-dom';
 
+import Logo from "../../Images/Logos/Logo.svg"
 
 const Navbar = () => {
 
@@ -43,8 +44,9 @@ const Navbar = () => {
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
-            <Navicon />
-            CAAV
+              
+              <img src={Logo} />
+              CAAV
           </NavLogo>
           <MobileIcon onClick={handleClick}>
             {click ? <FaTimes /> : <FaBars />}
