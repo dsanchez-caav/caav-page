@@ -68,7 +68,7 @@ const Footer = () => {
                                 </IcoContainer>
                                 <LinkContainer href="https://goo.gl/maps/nobDJAwWm8VpmAkD9" rel='noopener' target='_blank'>
                                     <FooterText>
-                                    Calle 19 Norte 2N-29, Office 2202A, Santiago de Cali, Valle del Cauca 760046, CO
+                                    {t("footer.office")}
                                     </FooterText>
                                 </LinkContainer>
                             </Contactinfo>

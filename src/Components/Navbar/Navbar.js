@@ -5,14 +5,13 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
-  Navicon,
   MobileIcon,
   NavMenu,
   NavItem,
   NavLinks,
   Dropico,
+  CaavLogo
 } from "./Navbar.elements";
-import { IconContext } from "react-icons/lib";
 import { Menuitems } from "./Menuitems";
 import { useTranslation } from "react-i18next";
 
@@ -40,13 +39,11 @@ const Navbar = () => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#262728"}}>
+      
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
-              
-              <img src={Logo} />
-              CAAV
+              <CaavLogo src={Logo} alt="CAAV"/>
           </NavLogo>
           <MobileIcon onClick={handleClick}>
             {click ? <FaTimes /> : <FaBars />}
@@ -93,7 +90,7 @@ const Navbar = () => {
             </NavMenu>
           </NavbarContainer>
         </Nav>
-      </IconContext.Provider> 
+      
     </>
   );
 };  

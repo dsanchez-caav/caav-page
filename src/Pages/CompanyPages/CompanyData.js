@@ -21,3 +21,9 @@ export const Contactitemsau = {
     Cbutton: "contactshow.aboutus.button"
 
 }
+
+export const BannerCo = {
+    title: "Contact",
+    titletras: "banner.titleco",
+    Subtitle: "CAAV",
+}

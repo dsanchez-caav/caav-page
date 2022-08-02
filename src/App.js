@@ -7,6 +7,7 @@ import ServicesPrincipal from "./Pages/ServicesPages/ServicesPrincipal";
 import MarketingService from "./Pages/ServicesPages/MarketingService";
 import HumanService from "./Pages/ServicesPages/HumanService";
 import AboutUs from "./Pages/CompanyPages/AboutUs";
+import ContactUs from "./Pages/CompanyPages/ContactUs";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Marketing" element={<MarketingService />} />
         <Route path="/Human-Resources" element={<HumanService />} />
         <Route path="/About-us" element={<AboutUs />} />
+        <Route path="/Contact" element={<ContactUs />} />
       </Routes>
       <Footer />
     </Router>

@@ -7,7 +7,8 @@
         "languaje": "Español"
     },
     "footer":{
-        "media": "Nuestras Redes sociales"
+        "media": "Nuestras Redes sociales",
+        "office": "Calle 19 Norte 2N-29, Oficina 2202A, Santiago de Cali, Valle del Cauca 760046, CO"
     },
     "drop":{
         "drop_ser":{
@@ -50,6 +51,7 @@
         "titlemar": "Marketing",
         "titlehr": "Recursos Humanos",
         "titleau": "CAAV",
+        "titleco": "Contáctanos",
         "subtitleau1" : "SOMOS",
         "subtitleau2": "International Solutions",
         "desmar": "En CAAV contamos con un amplio portafolio de servicios de marketing para darle a su empresa una identidad de marca exitosa",
@@ -60,7 +62,8 @@
         "pagehr": "Recursos Humanos",
         "pagemar": "Marketing",
         "pagehome": "Inicio",
-        "pageabout": "Quienes Somos"
+        "pageabout": "Quienes Somos",
+        "pagecontact": "Contáctanos"
     },
     "show":{
         "marketing":{
@@ -125,5 +128,19 @@
         "vision": "La visión de CAAV es convertirse en líder en recursos humanos y soluciones de marketing a nivel mundial ofreciendo la mejor solución de talento humano a cualquier industria y empresas de todos los tamaños.",
         "altm": "Misión",
         "altv": "Visión"
+    },
+    "contact":{
+        "form":{
+            "name": "Nombre",
+            "email": "Correo Electronico",
+            "phone": "Telefono",
+            "description": "Mensaje"
+        },
+        "hints":{
+            "name": "Ingresa tu nombre",
+            "email": "Ingresa tu correo",
+            "phone": "Ingresa tu telefono",
+            "description": "Dejanos un mensaje"
+        }
     }
 }

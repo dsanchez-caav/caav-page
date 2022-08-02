@@ -11,8 +11,6 @@ import {
     TitleContainer
 } from './Company.elements'
 
-import VisImg from '../../Images/Company/Mision.jpg'
-
 
 
 import { useTranslation } from 'react-i18next'

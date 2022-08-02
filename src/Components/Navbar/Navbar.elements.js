@@ -27,19 +27,19 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-    color: #222D5A;
     justify-self: flex-start;
     cursor: pointer;
     text-decoration: none;
-    font-size: 1.2rem;
     display: flex;
     align-items: center;
-
 `;
 
-export const Navicon = styled(FaMagento)`
-    margin-right: 0.5rem;
+export const CaavLogo = styled.img`
+    height: 50px;
+    width: auto;
+    alt: "CAAV";
 `;
+
 
 export const MobileIcon = styled.div`
     display: none;
@@ -79,7 +79,7 @@ export const NavItem = styled.li`
     color: #262728;
     height: 80px;
     border-bottom: 2px solid transparent;
-    //font-family: 'Jost', sans-serif;
+    font-family: 'Jost', sans-serif;
 
     &:hover {
         transition: all 0.3s ease-out;

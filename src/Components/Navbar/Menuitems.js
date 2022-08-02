@@ -66,7 +66,7 @@ export const CompanyDrop = [
     {
         id: 2,
         title: "Contact Us",
-        path: "./",
+        path: "./Contact",
         cName: "submenuItem",
         tras: "drop.drop_com.contact"
     }

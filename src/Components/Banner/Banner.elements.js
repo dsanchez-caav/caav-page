@@ -3,6 +3,7 @@ import SerImg from '../../Images/Services/ServicesImg1.jpg'
 import MarImg from '../../Images/Services/ServicesImg2.jpg'
 import HRImg from '../../Images/Services/ServicesImg3.jpg'
 import AuImg from '../../Images/Company/CompanyImg1.jpg'
+import CoImg from '../../Images/Company/CompanyImg2.jpg'
 import GlobalStyle from "../../globlalStyles";
 
 
@@ -77,7 +78,7 @@ export const BannerSectionCn = styled.section`
     height: 50vh;
     max-height: 400px; 
     padding-top: 1vh;
-    background-image: url(${AuImg});
+    background-image: url(${CoImg});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,7 +87,7 @@ export const BannerSectionCn = styled.section`
         max-height: 350px;
     }
     @media screen and (max-width: 960px) {
-        max-height: 250px;
+        max-height: 200px;
     }
 `;
 
