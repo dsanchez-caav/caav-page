@@ -25,7 +25,7 @@ export const HeroText = styled.p`
     justify-content: right;
     margin-bottom: 1em;
     padding-left: 30%;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 24px;
     text-align: right;
     font-family: 'Jost', sans-serif;
