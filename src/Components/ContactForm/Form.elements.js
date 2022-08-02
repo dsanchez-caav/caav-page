@@ -13,7 +13,7 @@ export const FormContainer = styled.div`
     align-items: center;
 `
 
-export const FormColumn = styled.form`
+export const FormColumn = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,19 +102,7 @@ export const TextFormA = styled.textarea`
         outline: 3px solid #54DAE4;
         border: 1px solid #54DAE4;
         transition: all 0.2s ease-out;
+        
     }
     
 `
-
-export const ButtonWrapper = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    align-items: flex-end;
-    align-self: stretch;
-    float: right;
-
-    @media only screen and (max-width: 960px){
-        display: block;
-    }
-`;

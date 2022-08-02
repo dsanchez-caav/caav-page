@@ -1,7 +1,6 @@
 import React from 'react'
-import { Button, Container } from '../../globlalStyles'
+import { Container } from '../../globlalStyles'
 import {
-    ButtonWrapper,
     FormColumn,
     FormContainer,
     FormInput,
@@ -58,11 +57,6 @@ const Form = () => {
                                 <TextFormA placeholder={t("contact.hints.description")} >
                                 </TextFormA>
                             </InputContainer>
-                            <ButtonWrapper>
-                                <Button type='submit'>
-                                    
-                                </Button>
-                            </ButtonWrapper>
                         </FormColumn>
                     </FormContainer>
                 </Container>

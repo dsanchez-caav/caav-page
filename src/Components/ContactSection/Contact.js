@@ -30,7 +30,7 @@ const Contact = ({ Ctitle, Cdescription, Cbutton }) => {
                     </Contacttext>
                 </Textcont>
                 <Buttoncont>
-                    <Link to="/Contact">
+                    <Link to="/">
                         <Button  fontBig primary>
                             {t(Cbutton)}
                         </Button>

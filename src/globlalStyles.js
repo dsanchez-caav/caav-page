@@ -66,8 +66,8 @@ export const MainHeader = styled.h1`
 
     justify-content: right;
     font-family: 'PT Sans', sans-serif;
-    padding-top: 5%;
-    font-size: 8rem;
+    padding-top: 8%;
+    font-size: 10rem;
     margin-bottom: 3rem;
     color: #F9F9F9;
     display: flex;
@@ -76,7 +76,7 @@ export const MainHeader = styled.h1`
 
     
     @media only screen and (max-device-width: 1400px) {
-        font-size: 6.5rem;
+        font-size: 7rem;
     }
 
 
