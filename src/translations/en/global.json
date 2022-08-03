@@ -8,7 +8,9 @@
     },
     "footer":{
         "media": "Our social media",
-        "office": "19th street North 2N-29, Office 2202A, Santiago de Cali, Valle del Cauca 760046, CO"
+        "office": "19th street North 2N-29, Office 2202A, Santiago de Cali, Valle del Cauca 760046, CO",
+        "copya": "Copyright © ",
+        "copyb": " CAAV International Solutions. All Rights Reserved."
     },
     "drop":{
         "drop_ser":{
@@ -135,7 +137,9 @@
             "name": "Name",
             "email": "E-Mail",
             "phone": "Phone",
-            "description": "Message"
+            "description": "Message",
+            "buttona": "Submit",
+            "buttonb": "Cancel"
         },
         "hints":{
             "name": "Enter your name",

@@ -9,13 +9,16 @@ import {
     InputContainer,
     TextContainer,
     TextForm,
-    TextFormA
+    TextFormA,
+    CancelButton
 } from './Form.elements'
 
 import { useTranslation } from "react-i18next";
 
 const Form = () => {
     const [t, i18n] = useTranslation("global");
+
+
     return (
         <>
             <FormSection>
@@ -59,8 +62,11 @@ const Form = () => {
                                 </TextFormA>
                             </InputContainer>
                             <ButtonWrapper>
+                                <CancelButton type='submit'>
+                                    {t("contact.form.buttonb")}
+                                </CancelButton>
                                 <Button type='submit'>
-                                    
+                                    {t("contact.form.buttona")}
                                 </Button>
                             </ButtonWrapper>
                         </FormColumn>
@@ -72,3 +78,4 @@ const Form = () => {
 }
 
 export default Form
+

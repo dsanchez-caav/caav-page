@@ -25,7 +25,7 @@ const Company = ({ titleA, titleB, desA, desB, altA, altB, }) => {
                         <ImgContainer className="vis">
                             <TitleContainer>
                                 <Companytitle>
-                                {t(titleA)}
+                                    {t(titleA)}
                                 </Companytitle>
                             </TitleContainer>
                         </ImgContainer>
@@ -36,10 +36,10 @@ const Company = ({ titleA, titleB, desA, desB, altA, altB, }) => {
                         </TextContainer>
                     </Infocontainer>
                     <Infocontainer>
-                    <ImgContainer className="mis">
-                        <TitleContainer>
+                        <ImgContainer className="mis">
+                            <TitleContainer>
                                 <Companytitle>
-                                {t(titleB)}
+                                    {t(titleB)}
                                 </Companytitle>
                             </TitleContainer>
                         </ImgContainer>

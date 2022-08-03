@@ -22,7 +22,7 @@ i18next.init({
       global: global_en
     }
   }
-  
+
 });
 
 const loadingMarkup = (

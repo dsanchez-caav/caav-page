@@ -18,14 +18,14 @@ import { Container } from '../../globlalStyles';
 const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, SubtitleB }) => {
 
     const [t, i18n] = useTranslation("global");
-    
+
     if (title === "Services") {
         return (
             <>
                 <BannerSectionSer>
                     <Container>
                         <BannerTagline >
-                        {Subtitle}
+                            {Subtitle}
                         </BannerTagline>
                         <BannerTitle>
                             {t(titletras)}
@@ -34,7 +34,7 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
                 </BannerSectionSer>
             </>
         )
-        
+
     } else if (title === "Marketing") {
         return (
             <>
@@ -83,17 +83,17 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
         return (
             <>
                 <BannerSectionAu>
-                <Container>
-                <BannerTagline className="caav">
-                        {t(SubtitleA)}
-                    </BannerTagline>
-                    <BannerTitle className="caav">
-                        {t(titletras)}
-                    </BannerTitle>
-                    <BannerTaglineA >
-                        {t(SubtitleB)}
-                    </BannerTaglineA>
-                </Container>
+                    <Container>
+                        <BannerTagline className="caav">
+                            {t(SubtitleA)}
+                        </BannerTagline>
+                        <BannerTitle className="caav">
+                            {t(titletras)}
+                        </BannerTitle>
+                        <BannerTaglineA >
+                            {t(SubtitleB)}
+                        </BannerTaglineA>
+                    </Container>
                 </BannerSectionAu>
                 <BannerSectionDes>
                     <Container>
@@ -104,18 +104,18 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
                 </BannerSectionDes>
             </>
         )
-    }else if (title === "Contact") {
+    } else if (title === "Contact") {
         return (
             <>
                 <BannerSectionCn>
-                <Container>
-                <BannerTagline >
-                        {t(Subtitle)}
-                    </BannerTagline>
-                    <BannerTitle>
-                        {t(titletras)}
-                    </BannerTitle>
-                </Container>
+                    <Container>
+                        <BannerTagline >
+                            {t(Subtitle)}
+                        </BannerTagline>
+                        <BannerTitle>
+                            {t(titletras)}
+                        </BannerTitle>
+                    </Container>
                 </BannerSectionCn>
             </>
         )

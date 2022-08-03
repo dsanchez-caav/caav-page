@@ -34,11 +34,11 @@ export const Container = styled.div`
 
 export const Button = styled.button`
     border-radius: 10px;
-    background: ${({ primary }) => (primary ? "#C9EFF2" : "#54DAE4")};
+    background: ${({ primary }) => (primary ? "#C9EFF2" : "#6EDAE4")};
     white-space: nowrap;
-    padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
+    padding: ${({ big }) => (big ? "0.75rem 4rem" : "0.63rem 1.25rem")};
     color: #606568;
-    font-size: ${({ fontBig }) => (fontBig ? "2rem" : "2vh")};
+    font-size: ${({ fontBig }) => (fontBig ? "2rem" : "1.6rem")};
     outline: none;
     border: none;
     cursor: pointer;
@@ -50,15 +50,18 @@ export const Button = styled.button`
         background: ${({ primary }) => (primary ? "#54DAE4" : "#C9EFF2")};
         color: #4D5053;
     }
+    :active{
+        background: #22B3E4;
+    }
 
     @media screen and (max-device-width: 1400px){
-        font-size: ${({ fontBig }) => (fontBig ? "1.6rem" : "2.5vh")};
+        font-size: ${({ fontBig }) => (fontBig ? "1.6rem" : "1.3rem")};
     }
 
     @media screen and (max-width: 960px){
         width: 100%;
-        padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
-        font-size: ${({ fontBig }) => (fontBig ? "1.3rem" : "1.5vh")};
+        padding: ${({ big }) => (big ? "0.75rem 4rem" : "0.63rem 1.25rem")};
+        font-size: ${({ fontBig }) => (fontBig ? "1.3rem" : "1rem")};
     } 
 `
 

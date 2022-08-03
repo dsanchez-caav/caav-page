@@ -31,14 +31,14 @@ const Contact = ({ Ctitle, Cdescription, Cbutton }) => {
                 </Textcont>
                 <Buttoncont>
                     <Link to="/Contact">
-                        <Button  fontBig primary>
+                        <Button fontBig primary>
                             {t(Cbutton)}
                         </Button>
                     </Link>
                 </Buttoncont>
             </Container>
         </ContactSection>
-        
+
     )
 }
 

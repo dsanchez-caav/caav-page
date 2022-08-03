@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { ServicesDrop, CompanyDrop, languageDrop } from "./Menuitems"
 import {
     DropmenuS,
@@ -66,7 +66,7 @@ export function DropdownL() {
                     if (item.id === 1) {
                         return (
                             <Dropitem key={item.id}>
-                                <Droplink to={location} onClick={()=> i18n.changeLanguage("en") }  >
+                                <Droplink to={location} onClick={() => i18n.changeLanguage("en")}  >
                                     {t(item.tras)}
                                 </Droplink>
                             </Dropitem>
@@ -74,13 +74,12 @@ export function DropdownL() {
                     } else {
                         return (
                             <Dropitem key={item.id}>
-                                <Droplink to= {location} onClick={()=> i18n.changeLanguage("es") }  >
+                                <Droplink to={location} onClick={() => i18n.changeLanguage("es")}  >
                                     {t(item.tras)}
                                 </Droplink>
                             </Dropitem>
                         )
                     }
-                    
                 })}
             </DropmenuL>
         </>

@@ -8,6 +8,7 @@ import {
     LinkContainer,
     Logocontainer,
     InfoRow,
+    CaavLogo,
     Phone,
     Mail,
     Location,
@@ -19,8 +20,16 @@ import { Container } from '../../globlalStyles'
 
 import { useTranslation } from "react-i18next";
 
+import Logo from "../../Images/Logos/LogoWhite.svg"
+
 
 const Footer = () => {
+
+
+    var currentTime = new Date()
+
+    var year = currentTime.getFullYear()
+
     const [t, i18n] = useTranslation("global");
 
     return (
@@ -28,7 +37,7 @@ const Footer = () => {
             <FooterSection>
                 <Container>
                     <Logocontainer>
-                        {/* Aqui va el logo en un futuro */} 
+                        <CaavLogo src={Logo} alt="CAAV" />
                     </Logocontainer>
                     <InfoRow>
                         <InfoContainer>
@@ -54,7 +63,7 @@ const Footer = () => {
                             </Contactinfo>
                             <Contactinfo>
                                 <IcoContainer href="mailto:info@caav.com.co">
-                                    <Mail/>
+                                    <Mail />
                                 </IcoContainer>
                                 <LinkContainer >
                                     <FooterText>
@@ -64,11 +73,11 @@ const Footer = () => {
                             </Contactinfo>
                             <Contactinfo>
                                 <IcoContainer href="https://goo.gl/maps/nobDJAwWm8VpmAkD9" rel='noopener' target='_blank'>
-                                <Location/>
+                                    <Location />
                                 </IcoContainer>
                                 <LinkContainer href="https://goo.gl/maps/nobDJAwWm8VpmAkD9" rel='noopener' target='_blank'>
                                     <FooterText>
-                                    {t("footer.office")}
+                                        {t("footer.office")}
                                     </FooterText>
                                 </LinkContainer>
                             </Contactinfo>
@@ -87,11 +96,14 @@ const Footer = () => {
                                     <Instagram />
                                 </IcoContainer>
                                 <IcoContainer>
-                                    <Facebook/>
+                                    <Facebook />
                                 </IcoContainer>
                             </Contactinfo>
                         </InfoContainer>
                     </InfoRow>
+                    <FooterText className='copy'>
+                        {t("footer.copya")} {year} {t("footer.copyb")}
+                    </FooterText>
                 </Container>
             </FooterSection>
         </>

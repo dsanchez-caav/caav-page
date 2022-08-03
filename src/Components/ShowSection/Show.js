@@ -1,5 +1,5 @@
 import React from 'react'
-import {    
+import {
     ShowSection,
     ShowColumns,
     ShowCard,
@@ -28,7 +28,7 @@ const Show = ({ titletrasC1,
     destrasC3,
     list1C3,
     list2C3,
-    list3C3}) => {
+    list3C3 }) => {
 
     const [t, i18n] = useTranslation("global");
 

@@ -73,7 +73,7 @@ export const CompanyDrop = [
 ]
 
 export const languageDrop = [
-    
+
     {
         id: 1,
         title: "English",

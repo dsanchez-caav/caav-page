@@ -38,6 +38,9 @@ export const CaavLogo = styled.img`
     height: 50px;
     width: auto;
     alt: "CAAV";
+    @media screen and (max-width: 960px){
+        height: 40px;
+    }
 `;
 
 
@@ -83,7 +86,7 @@ export const NavItem = styled.li`
 
     &:hover {
         transition: all 0.3s ease-out;
-        border-bottom: 2px solid #262728;
+        border-bottom: 5px solid #6EDAE4;
     }
 
     @media screen and (max-width: 960px){

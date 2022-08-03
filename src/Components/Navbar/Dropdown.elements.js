@@ -21,7 +21,7 @@ export const Dropitem = styled.li`
 
     &:hover{
         transition: all 0.3s ease-out;
-        background: #D2D8DD;
+        background: #C9EFF2;
         
     }
     @media screen and (max-width: 960px){
