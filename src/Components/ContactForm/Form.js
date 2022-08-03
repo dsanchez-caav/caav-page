@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import { Button, Container } from '../../globlalStyles'
 import {
     ButtonWrapper,
@@ -15,7 +15,23 @@ import {
 
 import { useTranslation } from "react-i18next";
 
+import emailjs from '@emailjs/browser';
+
 const Form = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_1gi8x8i', 'template_t929npx', form.current, 'sjGr3xUvPZA-1d0nl')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
     const [t, i18n] = useTranslation("global");
 
 
@@ -24,14 +40,14 @@ const Form = () => {
             <FormSection>
                 <Container>
                     <FormContainer>
-                        <FormColumn>
+                        <FormColumn onSubmit={sendEmail} ref={form}>
                             <TextContainer>
                                 <TextForm>
                                     {t("contact.form.name")}
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <FormInput placeholder={t("contact.hints.name")}>
+                                <FormInput placeholder={t("contact.hints.name")} type="text" name="user_name" required>
                                 </FormInput>
                             </InputContainer>
                             <TextContainer>
@@ -40,7 +56,7 @@ const Form = () => {
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <FormInput placeholder={t("contact.hints.email")}>
+                                <FormInput placeholder={t("contact.hints.email")} name="user_email" type="email">
                                 </FormInput>
                             </InputContainer>
                             <TextContainer>
@@ -49,7 +65,7 @@ const Form = () => {
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <FormInput placeholder={t("contact.hints.phone")}>
+                                <FormInput placeholder={t("contact.hints.phone")} name="user_phone">
                                 </FormInput>
                             </InputContainer>
                             <TextContainer>
@@ -58,11 +74,11 @@ const Form = () => {
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <TextFormA placeholder={t("contact.hints.description")} >
+                                <TextFormA placeholder={t("contact.hints.description")} name="message">
                                 </TextFormA>
                             </InputContainer>
                             <ButtonWrapper>
-                                <CancelButton type='submit'>
+                                <CancelButton type='reset'>
                                     {t("contact.form.buttonb")}
                                 </CancelButton>
                                 <Button type='submit'>
