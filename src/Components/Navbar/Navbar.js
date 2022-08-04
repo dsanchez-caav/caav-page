@@ -69,14 +69,30 @@ const Navbar = () => {
                   </NavItem>
                 );
               } else if (item.title === "Languaje") {
-                return (
-                  <NavItem key={item.id}>
-                    <NavLinks to={location} onMouseEnter={() => setDropdownL(true)} onMouseLeave={() => setDropdownL(false)} >
-                      <BsGlobe /> <Dropico />
-                      {dropdownL && <DropdownL />}
+                if (window.innerWidth < 960) {
+                  return (
+                    <NavItem className="language">
+                    <NavLinks to={location} onClick={() => i18n.changeLanguage("en")} >
+                      {t("drop.drop_len.english")}
+                    </NavLinks>
+                    <NavLinks to={location} onClick={() => i18n.changeLanguage("es")}>
+                      {t("drop.drop_len.spanish")}
                     </NavLinks>
                   </NavItem>
-                );
+
+                  )
+                  
+                } else {
+                  return (
+                    <NavItem key={item.id}>
+                      <NavLinks to={location} onMouseEnter={() => setDropdownL(true)} onMouseLeave={() => setDropdownL(false)} >
+                        <BsGlobe /> <Dropico />
+                        {dropdownL && <DropdownL />}
+                      </NavLinks>
+                    </NavItem>
+                  );
+                }
+                
               } else
                 return (
                   <NavItem key={item.id}>

@@ -96,6 +96,9 @@ export const NavItem = styled.li`
             border: none;
         }
     }
+    &.language{
+        padding-left: 2rem;
+    }
 `;
 
 export const NavLinks = styled(Link)`
@@ -111,11 +114,14 @@ export const NavLinks = styled(Link)`
         padding: 2rem;
         width: 100%;
         display: table;
+
     }
     &hover{
             transition: all 0.3s ease;
             color: #262728;
         }
+
+    
 `;
 
 export const Dropico = styled(FaCaretDown)`
