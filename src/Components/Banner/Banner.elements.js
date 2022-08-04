@@ -25,8 +25,7 @@ export const BannerSectionMar = styled.section`
 
 export const BannerSectionSer = styled.section`
     height: 50vh;
-    max-height: 400px !important; 
-    padding-top: 1vh;
+    max-height: 400px; 
     background-image: url(${SerImg});
     background-position: center;
     background-repeat: no-repeat;
@@ -36,14 +35,13 @@ export const BannerSectionSer = styled.section`
         max-height: 350px;
     }
     @media screen and (max-width: 960px) {
-        max-height: 250px;
+        max-height: 200px;
     }
 `;
 
 export const BannerSectionHr = styled.section`
     height: 50vh;
     max-height: 400px; 
-    padding-top: 1vh;
     background-image: url(${HRImg});
     background-position: center;
     background-repeat: no-repeat;
@@ -60,7 +58,6 @@ export const BannerSectionHr = styled.section`
 export const BannerSectionAu = styled.section`
     height: 50vh;
     max-height: 400px; 
-    //padding-top: 1%;
     background-image: url(${AuImg});
     background-position: center;
     background-repeat: no-repeat;

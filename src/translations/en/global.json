@@ -65,7 +65,8 @@
         "pagemar": "Marketing",
         "pagehome": "Home",
         "pageabout": "About Us",
-        "pagecontact": "Contact Us"
+        "pagecontact": "Contact Us",
+        "pageser": "Services"
     },
     "show":{
         "marketing":{
@@ -120,7 +121,12 @@
         },
         "hr":{
             "title": "Let's connect your company to top talent",
-            "desc": "Don't know where to start? Contact us and and hire the best talent",
+            "desc": "Don't know where to start? Contact us and hire the best talent",
+            "button": "Contact Us"
+        },
+        "ser":{
+            "title": "Let's connect your needs whit the right solutions",
+            "desc": "Don't know where to start? Contact us and meet our services portfolio",
             "button": "Contact Us"
         }
     },
@@ -147,6 +153,12 @@
             "phone": "+1 3059999999",
             "description": "Leave a message"
         }
+    },
+    "services":{
+        "ourservicesT":"What we offer?",
+        "ourservices": "CAAV brings you the best talent for your company, connecting the right solutions for your needs.",
+        "ourpromiseT": "What we promise?",
+        "ourpromise": "We optimize the processes of your company, reducing the times of different processes, increasing productivity, all this with the best talent."
     }
 
 }

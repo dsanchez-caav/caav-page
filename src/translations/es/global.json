@@ -65,7 +65,8 @@
         "pagemar": "Marketing",
         "pagehome": "Inicio",
         "pageabout": "Quienes Somos",
-        "pagecontact": "Contáctanos"
+        "pagecontact": "Contáctanos",
+        "pageser": "Servicios"
     },
     "show":{
         "marketing":{
@@ -146,5 +147,11 @@
             "phone": "+1 305999999",
             "description": "Dejanos un mensaje"
         }
+    },
+    "services":{
+        "ourservicesT":"¿Qué ofrecemos?",
+        "ourservices": "CAAV te brinda el mejor talento para tu empresa, conectando las soluciones correctas para tus necesidades.",
+        "ourpromiseT":"¿Qué Prometemos?",
+        "ourpromise": "Optimizamos los procesos de tu compañía, disminuyendo los tiempos de diferentes procesos, aumentando la productividad, todo esto con el mejor talento."
     }
 }

@@ -67,5 +67,26 @@ export const Contactitemshr = {
     Ctitle: "contactshow.hr.title",
     Cdescription: "contactshow.hr.desc",
     Cbutton: "contactshow.hr.button"
+};
+
+
+//Services page
+
+export const Servicesitem1 = {
+    title: "services.ourservicesT",
+    des: "services.ourservices",
+    start: true
+};
+
+export const Servicesitem2 = {
+    title: "services.ourpromiseT",
+    des: "services.ourpromise",
+    start: false
+};
+
+export const ContactitemsSer = {
+    Ctitle: "contactshow.ser.title",
+    Cdescription: "contactshow.ser.desc",
+    Cbutton: "contactshow.ser.button"
 }
 
