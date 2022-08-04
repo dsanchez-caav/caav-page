@@ -79,9 +79,7 @@ const Navbar = () => {
                       {t("drop.drop_len.spanish")}
                     </NavLinks>
                   </NavItem>
-
                   )
-                  
                 } else {
                   return (
                     <NavItem key={item.id}>
