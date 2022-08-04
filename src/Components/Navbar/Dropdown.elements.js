@@ -25,7 +25,8 @@ export const Dropitem = styled.li`
         
     }
     @media screen and (max-width: 960px){
-        display: none;
+        display: flex;
+        width: 100%;
     }
 
 `;
@@ -66,6 +67,10 @@ export const DropmenuL = styled.ul`
 
     &.Drop-click{
         display: none;
+    }
+    @media screen and (max-width: 960px){
+        display: flex;
+        width: 100%;
     }
 
 `;

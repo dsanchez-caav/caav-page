@@ -46,7 +46,7 @@ const Navbar = () => {
             <CaavLogo src={Logo} alt="CAAV" />
           </NavLogo>
           <MobileIcon onClick={handleClick}>
-            {click ? <FaTimes /> : <FaBars />}
+            {click ? <FaTimes color="#262728" /> : <FaBars color="#262728" />}
           </MobileIcon>
           <NavMenu onClick={handleClick} click={click}>
             {Menuitems.map(item => {
