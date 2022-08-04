@@ -122,6 +122,11 @@
             "title": "Conectemos su empresa con los mejores talentos",
             "desc": "¿No sabes por dónde empezar? Contáctanos y contrata al mejor talento",
             "button": "Contáctanos"
+        },
+        "ser":{
+            "title": "Conectemos tus necesidades con la solución correcta",
+            "desc": "¿No sabes por dónde empezar? Contáctanos y conoce nuestro portafolio de servicios.",
+            "button": "Contáctanos"
         }
     },
     "company":{

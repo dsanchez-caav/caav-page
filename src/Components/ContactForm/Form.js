@@ -17,7 +17,9 @@ import { useTranslation } from "react-i18next";
 
 import emailjs from '@emailjs/browser';
 
+
 const Form = () => {
+
 
     const form = useRef();
 
@@ -34,20 +36,21 @@ const Form = () => {
 
     const [t, i18n] = useTranslation("global");
 
+    const resetF = window.scrollTo(0, 0);
 
     return (
         <>
             <FormSection>
                 <Container>
                     <FormContainer>
-                        <FormColumn onSubmit={sendEmail} ref={form}>
+                        <FormColumn onSubmit={sendEmail} ref={form} id="form">
                             <TextContainer>
                                 <TextForm>
                                     {t("contact.form.name")}
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <FormInput placeholder={t("contact.hints.name")} type="text" name="user_name" required>
+                                <FormInput placeholder={t("contact.hints.name")} type="text" name="user_name" id="name" required>
                                 </FormInput>
                             </InputContainer>
                             <TextContainer>
@@ -56,7 +59,7 @@ const Form = () => {
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <FormInput placeholder={t("contact.hints.email")} name="user_email" type="email">
+                                <FormInput placeholder={t("contact.hints.email")} name="user_email" type="email" id="mail" required>
                                 </FormInput>
                             </InputContainer>
                             <TextContainer>
@@ -65,7 +68,7 @@ const Form = () => {
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <FormInput placeholder={t("contact.hints.phone")} name="user_phone">
+                                <FormInput placeholder={t("contact.hints.phone")} type="tel" name="user_phone" id="phone" minLength={5} required>
                                 </FormInput>
                             </InputContainer>
                             <TextContainer>
@@ -74,7 +77,7 @@ const Form = () => {
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <TextFormA placeholder={t("contact.hints.description")} name="message">
+                                <TextFormA placeholder={t("contact.hints.description")} name="message" type="text" maxLength={300} required>
                                 </TextFormA>
                             </InputContainer>
                             <ButtonWrapper>
