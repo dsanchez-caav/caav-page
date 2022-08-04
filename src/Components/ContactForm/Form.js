@@ -24,7 +24,7 @@ const Form = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_1gi8x8i', 'template_t929npx', form.current, 'sjGr3xUvPZA-1d0nl')
+        emailjs.sendForm('service_0y5iw8f', 'template_wv3eeru', form.current, '9zEfrRSR762arBP9R')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -81,7 +81,7 @@ const Form = () => {
                                 <CancelButton type='reset'>
                                     {t("contact.form.buttonb")}
                                 </CancelButton>
-                                <Button type='submit'>
+                                <Button type='submit' >
                                     {t("contact.form.buttona")}
                                 </Button>
                             </ButtonWrapper>

@@ -142,9 +142,9 @@
             "buttonb": "Cancel"
         },
         "hints":{
-            "name": "Enter your name",
-            "email": "Enter your e-mail",
-            "phone": "Enter your phone",
+            "name": "Your Name",
+            "email": "example@mail.com",
+            "phone": "+1 3059999999",
             "description": "Leave a message"
         }
     }

@@ -141,9 +141,9 @@
             "buttonb": "Cancelar"
         },
         "hints":{
-            "name": "Ingresa tu nombre",
-            "email": "Ingresa tu correo",
-            "phone": "Ingresa tu telefono",
+            "name": "Tu Nombre",
+            "email": "ejemplo@mail.com",
+            "phone": "+1 305999999",
             "description": "Dejanos un mensaje"
         }
     }
