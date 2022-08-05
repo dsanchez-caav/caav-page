@@ -34,7 +34,7 @@
     "info_home":{
         "des":{
             "title":"Discover our services",
-            "text":"Find out what services we offer to boost your business, saving time, cost effective and incorporating your organization to the new digital technologies",
+            "text":"Find out what services we offer to boost your business saving time, cost effective and incorporating your organization to the new digital technologies",
             "button": "Learn more"
         },
         "info":{
@@ -54,6 +54,7 @@
         "titlehr": "Human Resources",
         "titleau": "CAAV",
         "titleco": "Contact",
+        "titleca": "Careers",
         "subtitleau1" : "WE ARE",
         "subtitleau2": "International Solutions",
         "desmar": "At CAAV we have a wide portfolio of marketing services to give your company a successful brand identity",
@@ -66,7 +67,9 @@
         "pagehome": "Home",
         "pageabout": "About Us",
         "pagecontact": "Contact Us",
-        "pageser": "Services"
+        "pageser": "Services",
+        "pageca": "Careers",
+        "page404": "Not Found"
     },
     "show":{
         "marketing":{
@@ -164,7 +167,9 @@
             "ctitle1": "Digital Marketing",
             "ctitle2": "Human Resources"
         }
-    }
+    },
+    "404": "you shouldn't see this, this page does not exist",
+    "404B": "Back Home"
 
 
 }

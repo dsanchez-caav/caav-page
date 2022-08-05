@@ -9,7 +9,8 @@ import {
     BannerDes,
     BannerSectionAu,
     BannerTaglineA,
-    BannerSectionCn
+    BannerSectionCn,
+    BannerSectionCa
 } from './Banner.elements'
 
 import { useTranslation } from "react-i18next";
@@ -117,6 +118,21 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
                         </BannerTitle>
                     </Container>
                 </BannerSectionCn>
+            </>
+        )
+    } else if (title === "Careers") {
+        return (
+            <>
+                <BannerSectionCa>
+                    <Container>
+                        <BannerTagline >
+                            {t(Subtitle)}
+                        </BannerTagline>
+                        <BannerTitle>
+                            {t(titletras)}
+                        </BannerTitle>
+                    </Container>
+                </BannerSectionCa>
             </>
         )
     }

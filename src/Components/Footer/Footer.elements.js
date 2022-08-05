@@ -60,7 +60,7 @@ export const IcoContainer = styled.a`
     align-self: center;
 `
 export const LinkContainer = styled.a`
-    max-width: 70%;
+    max-width: 65%;
     align-content: center;
     flex-grow: 2;
     align-self: center;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Home_img from '../../Images/Home.jpg';
+import Home_img from '../../Images/Home.avif';
 
 export const Herosection = styled.section`
     height: 95vh;

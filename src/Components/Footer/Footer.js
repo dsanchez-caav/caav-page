@@ -72,10 +72,10 @@ const Footer = () => {
                                 </LinkContainer>
                             </Contactinfo>
                             <Contactinfo>
-                                <IcoContainer href="https://goo.gl/maps/nobDJAwWm8VpmAkD9" rel='noopener' target='_blank'>
+                                <IcoContainer href="https://goo.gl/maps/KCVAnPQQUunnR4Zs9" rel='noopener' target='_blank'>
                                     <Location />
                                 </IcoContainer>
-                                <LinkContainer href="https://goo.gl/maps/nobDJAwWm8VpmAkD9" rel='noopener' target='_blank'>
+                                <LinkContainer href="https://goo.gl/maps/KCVAnPQQUunnR4Zs9" rel='noopener' target='_blank'>
                                     <FooterText>
                                         {t("footer.office")}
                                     </FooterText>

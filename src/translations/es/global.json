@@ -34,7 +34,7 @@
     "info_home":{
         "des":{
             "title":"Descubre nuestros servicios",
-            "text":"Descubra qué servicios ofrecemos para impulsar su negocio, ahorrando tiempo, siendo mas rentable e incorporando su organización a las nuevas tecnologías digitales",
+            "text":"Descubra qué servicios ofrecemos para impulsar su negocio ahorrando tiempo, siendo mas rentable e incorporando su organización a las nuevas tecnologías digitales",
             "button": "Saber más"
         },
         "info":{
@@ -54,11 +54,12 @@
         "titlehr": "Recursos Humanos",
         "titleau": "CAAV",
         "titleco": "Contáctanos",
+        "titleca": "Carreras",
         "subtitleau1" : "SOMOS",
         "subtitleau2": "International Solutions",
         "desmar": "En CAAV contamos con un amplio portafolio de servicios de marketing para darle a su empresa una identidad de marca exitosa",
-        "deshru": "En Santiago de Cali tenemos acceso a un excelente talento humano. Ex alumnos de varias de las mejores universidades de Colombia",
-        "desau": "CAAV International Solutions ofrece a empresas de todos los tamaños soluciones de talento a través de las fronteras conectando el talento adecuado con la necesidad adecuada."
+        "deshru": "En Santiago de Cali tenemos acceso a un excelente talento humano. Egresados de varias de las mejores universidades de Colombia",
+        "desau": "CAAV International Solutions ofrece a empresas de todos los tamaños soluciones a través de las fronteras conectando el talento adecuado con la necesidad adecuada."
     },
     "pagestitles":{
         "pagehr": "Recursos Humanos",
@@ -66,7 +67,9 @@
         "pagehome": "Inicio",
         "pageabout": "Quienes Somos",
         "pagecontact": "Contáctanos",
-        "pageser": "Servicios"
+        "pageser": "Servicios",
+        "pageca": "Carrera",
+        "page404": "No Encontrada"
     },
     "show":{
         "marketing":{
@@ -163,5 +166,9 @@
             "ctitle1": "Marketing Digital",
             "ctitle2": "Recursos Humanos"
         }
-    }
+    },
+    "404": "No deberías ver esto, esta página no existe",
+    "404B": "Inicio"
+
+
 }

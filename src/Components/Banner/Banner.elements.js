@@ -4,6 +4,8 @@ import MarImg from '../../Images/Services/ServicesImg2.jpg'
 import HRImg from '../../Images/Services/ServicesImg3.jpg'
 import AuImg from '../../Images/Company/CompanyImg1.jpg'
 import CoImg from '../../Images/Company/CompanyImg2.jpg'
+import CaImg from '../../Images/Career/CareerImg1.avif'
+
 import GlobalStyle from "../../globlalStyles";
 
 
@@ -76,6 +78,23 @@ export const BannerSectionCn = styled.section`
     max-height: 400px; 
     padding-top: 1vh;
     background-image: url(${CoImg});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: optimizeSpeed;
+    @media screen and (max-device-width: 1400px) {
+        max-height: 350px;
+    }
+    @media screen and (max-width: 960px) {
+        max-height: 200px;
+    }
+`;
+
+export const BannerSectionCa = styled.section`
+    height: 50vh;
+    max-height: 400px; 
+    padding-top: 1vh;
+    background-image: url(${CaImg});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

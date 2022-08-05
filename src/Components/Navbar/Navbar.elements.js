@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import { Container } from "../../globlalStyles";
 import { Link } from "react-router-dom";
-import { FaMagento, FaCaretDown } from "react-icons/fa";
-
-//This file gives the style to the Navbar
+import { FaCaretDown } from "react-icons/fa";
 
 export const Nav = styled.nav`
     background: #F1F1F1;

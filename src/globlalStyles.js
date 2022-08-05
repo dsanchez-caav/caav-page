@@ -34,7 +34,7 @@ export const Container = styled.div`
 
 export const Button = styled.button`
     border-radius: 10px;
-    background: ${({ primary }) => (primary ? "#C9EFF2" : "#6EDAE4")};
+    background: ${({ primary }) => (primary ? "#C9EFF2" : "#54DAE4")};
     white-space: nowrap;
     padding: ${({ big }) => (big ? "0.75rem 4rem" : "0.63rem 1.25rem")};
     color: #606568;

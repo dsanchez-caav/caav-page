@@ -25,7 +25,7 @@ export const Menuitems = [
     {
         id: 4,
         title: "Careers",
-        path: "./",
+        path: "./Career",
         cName: "NavItem",
         tras: "nav.careers"
     },
