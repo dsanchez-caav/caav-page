@@ -34,7 +34,7 @@
     "info_home":{
         "des":{
             "title":"Descubre nuestros servicios",
-            "text":"Descubra qué servicios ofrecemos para impulsar su negocio ahorrando tiempo, siendo mas rentable e incorporando su organización a las nuevas tecnologías digitales",
+            "text":"Descubra qué servicios ofrecemos para impulsar su negocio ahorrando tiempo, siendo más rentable e incorporando su organización a las nuevas tecnologías digitales.",
             "button": "Saber más"
         },
         "info":{
@@ -81,7 +81,7 @@
                 "list3": "\\ Colores de marca"
             },
             "digital":{
-                "title": "\\ Digital Marketing",
+                "title": "\\ Marketing Digital",
                 "des": "Campañas de marketing digital con los beneficios de la industria digital, diseñadas para llegar al público adecuado",
                 "list1": "\\ Publico Objetivo",
                 "list2": "\\ Diseño Web",
@@ -118,7 +118,7 @@
         },
         "aboutus":{
             "title": "Ahora que nos conoces, queremos conocerte",
-            "desc": "¿No sabes por dónde empezar? Contacta con nosotros y te ayudaremos",
+            "desc": "¿No sabes por dónde empezar? Contáctanos y te ayudaremos",
             "button": "Contáctanos"
         },
         "hr":{

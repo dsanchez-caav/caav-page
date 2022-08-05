@@ -95,9 +95,6 @@ const Footer = () => {
                                 <IcoContainer href="https://www.instagram.com/caav_is/?igshid=YmMyMTA2M2Y%3D" rel='noopener' target='_blank'>
                                     <Instagram />
                                 </IcoContainer>
-                                <IcoContainer>
-                                    <Facebook />
-                                </IcoContainer>
                             </Contactinfo>
                         </InfoContainer>
                     </InfoRow>
