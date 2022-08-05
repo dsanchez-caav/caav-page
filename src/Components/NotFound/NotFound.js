@@ -104,7 +104,7 @@ const NotFound = () => {
                                 </TextNot>
                             </TitleNotC>
                             <ButtonNotC to="/">
-                                <Button >
+                                <Button primary>
                                     {t("404B")}
                                 </Button>
                             </ButtonNotC>
