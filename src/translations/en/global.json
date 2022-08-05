@@ -125,7 +125,7 @@
             "button": "Contact Us"
         },
         "ser":{
-            "title": "Let's connect your needs wiht the right solutions",
+            "title": "Let's connect your needs with the right solutions",
             "desc": "Don't know where to start? Contact us and meet our services portfolio",
             "button": "Contact Us"
         }
@@ -158,8 +158,14 @@
         "ourservicesT":"What we offer?",
         "ourservices": "CAAV brings you the best talent for your company, connecting the right solutions for your needs.",
         "ourpromiseT": "What we promise?",
-        "ourpromise": "We optimize the processes of your company, reducing the times of different processes, increasing productivity, all this with the best talent."
+        "ourpromise": "We optimize the processes of your company, reducing the times of different processes, increasing productivity, all this with the best talent.",
+        "cards":{
+            "title": "Discover our services",
+            "ctitle1": "Digital Marketing",
+            "ctitle2": "Human Resources"
+        }
     }
+
 
 }
 

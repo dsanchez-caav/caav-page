@@ -82,7 +82,7 @@ export const FooterText = styled.p`
 
     &.copy{
         font-size: 1.2rem;
-        opacity: 50%;
+        opacity: 90%;
         font-weight: 300;
         @media screen and (max-device-width: 1400px){
         font-size: 1rem;
@@ -167,3 +167,5 @@ export const Instagram = styled(AiOutlineInstagram)`
         font-size: 2.5rem;
     }
 `
+
+

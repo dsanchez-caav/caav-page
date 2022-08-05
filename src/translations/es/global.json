@@ -157,6 +157,11 @@
         "ourservicesT":"¿Qué ofrecemos?",
         "ourservices": "CAAV te brinda el mejor talento para tu empresa, conectando las soluciones correctas para tus necesidades.",
         "ourpromiseT":"¿Qué Prometemos?",
-        "ourpromise": "Optimizamos los procesos de tu compañía, disminuyendo los tiempos de diferentes procesos, aumentando la productividad, todo esto con el mejor talento."
+        "ourpromise": "Optimizamos los procesos de tu compañía, disminuyendo los tiempos de diferentes procesos, aumentando la productividad, todo esto con el mejor talento.",
+        "cards":{
+            "title": "Descubre nuestros servicios",
+            "ctitle1": "Marketing Digital",
+            "ctitle2": "Recursos Humanos"
+        }
     }
 }

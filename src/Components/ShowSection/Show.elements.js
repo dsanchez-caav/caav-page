@@ -37,7 +37,6 @@ export const ShowCard = styled.div`
 export const ShowRows = styled.div`
     display: flex;
     flex-direction: column;
-    
 `
 
 export const Texttitle = styled.h3`

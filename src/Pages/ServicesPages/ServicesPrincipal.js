@@ -1,6 +1,6 @@
 import React from 'react'
-import { Banner, Contact, Description } from '../../Components'
-import { BannerServices, ContactitemsSer, Servicesitem1, Servicesitem2 } from './ServicesData'
+import { Banner, Cards, Contact, Description } from '../../Components'
+import { BannerServices, CardsSection, ContactitemsSer, Servicesitem1, Servicesitem2 } from './ServicesData'
 import { Helmet } from 'react-helmet'
 import { useTranslation } from "react-i18next";
 
@@ -19,6 +19,7 @@ const ServicesPrincipal = () => {
             <Banner {...BannerServices} />
             <Description {...Servicesitem1} />
             <Description {...Servicesitem2} />
+            <Cards {...CardsSection} />
             <Contact {...ContactitemsSer} />
         </>
     )

@@ -8,3 +8,4 @@ export { default as Contact } from "./ContactSection/Contact";
 export { default as Company } from "./CompanySection/Company";
 export { default as Form } from "./ContactForm/Form";
 export { default as Description } from "./SerDescripcion/SerDescription";
+export { default as Cards } from "./SerDescripcion/Ourservices";

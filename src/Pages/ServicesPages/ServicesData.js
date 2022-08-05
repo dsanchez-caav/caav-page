@@ -90,3 +90,9 @@ export const ContactitemsSer = {
     Cbutton: "contactshow.ser.button"
 }
 
+export const CardsSection = {
+    title: "services.cards.title",
+    ctitle1: "services.cards.ctitle1",
+    ctitle2: "services.cards.ctitle2",
+
+}
