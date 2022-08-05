@@ -45,7 +45,6 @@ export const FormInput = styled.input`
             outline: 1px solid #6EDAE4;
             border: 1px solid #6EDAE4;
     }
-        
     }
     ::placeholder{
         font-size: 1.8rem;
@@ -65,7 +64,6 @@ export const FormInput = styled.input`
         height: 3rem;
     }
 `
-
 
 export const TextForm = styled.p`
     font-family: 'Jost', sans-serif;
@@ -112,8 +110,6 @@ export const TextFormA = styled.textarea`
     min-height: 12rem;
     resize: vertical;
     outline: none;
-
-    //Media
     ::placeholder{
         font-size: 1.8rem;
         opacity: 50%;
@@ -133,8 +129,6 @@ export const TextFormA = styled.textarea`
             border: 1px solid #6EDAE4;
     }
     }
-    //CloseMedia
-
     @media screen and (max-device-width: 1400px) {
         font-size: 1.6rem;
     }
@@ -151,7 +145,6 @@ export const ButtonWrapper = styled.div`
     align-self: center;
     float: right;
     gap: 3rem;
-
     @media only screen and (max-width: 960px){
         width: 100%;
         flex-direction: column-reverse;

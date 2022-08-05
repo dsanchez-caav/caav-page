@@ -11,10 +11,10 @@ const ContactUs = () => {
   return (
     <>
       <Helmet>
-      <title>CAAV - {t("pagestitles.pagecontact")} </title>
+        <title>CAAV - {t("pagestitles.pagecontact")} </title>
       </Helmet>
       <Banner {...BannerCo} />
-      <Form/>
+      <Form />
     </>
   )
 }

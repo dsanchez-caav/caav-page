@@ -14,27 +14,18 @@ import {
 } from "./Navbar.elements";
 import { Menuitems } from "./Menuitems";
 import { useTranslation } from "react-i18next";
-
 import { DropdownS, DropdownC, DropdownL } from "./Dropdown";
-
 import { useLocation } from 'react-router-dom';
-
 import Logo from "../../Images/Logos/LogoOriginal.svg"
 
 const Navbar = () => {
 
-  //Constants declarations 
-
   const [click, setClick] = useState(false)
-
   const handleClick = () => setClick(!click)
-
   const [t, i18n] = useTranslation("global");
-
   const [dropdownS, setDropdownS] = useState(false)
   const [dropdownC, setDropdownC] = useState(false)
   const [dropdownL, setDropdownL] = useState(false)
-
   let location = useLocation();
 
   return (
@@ -72,13 +63,13 @@ const Navbar = () => {
                 if (window.innerWidth < 960) {
                   return (
                     <NavItem className="language">
-                    <NavLinks to={location} onClick={() => i18n.changeLanguage("en")} >
-                      {t("drop.drop_len.english")}
-                    </NavLinks>
-                    <NavLinks to={location} onClick={() => i18n.changeLanguage("es")}>
-                      {t("drop.drop_len.spanish")}
-                    </NavLinks>
-                  </NavItem>
+                      <NavLinks to={location} onClick={() => i18n.changeLanguage("en")} >
+                        {t("drop.drop_len.english")}
+                      </NavLinks>
+                      <NavLinks to={location} onClick={() => i18n.changeLanguage("es")}>
+                        {t("drop.drop_len.spanish")}
+                      </NavLinks>
+                    </NavItem>
                   )
                 } else {
                   return (
@@ -90,7 +81,6 @@ const Navbar = () => {
                     </NavItem>
                   );
                 }
-                
               } else
                 return (
                   <NavItem key={item.id}>
@@ -104,10 +94,8 @@ const Navbar = () => {
           </NavMenu>
         </NavbarContainer>
       </Nav>
-
     </>
   );
 };
 
 export default Navbar;
-

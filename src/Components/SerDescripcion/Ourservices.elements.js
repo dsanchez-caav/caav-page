@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
 import {BsMegaphoneFill, BsFillPersonPlusFill} from "react-icons/bs";
 
 export const OurContainer = styled.section`
@@ -101,7 +100,6 @@ export const MarkIco = styled(BsMegaphoneFill)`
     color: #222D5A;
     @media screen and (max-width: 960px) {
         height: 3.8rem;
-        
     }
     
 `
@@ -111,7 +109,6 @@ export const HRIco = styled(BsFillPersonPlusFill)`
     color: #222D5A;
     @media screen and (max-width: 960px) {
         height: 3.8rem;
-        
     }
 `
 

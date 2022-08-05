@@ -16,11 +16,9 @@ const NotContainer = styled.div`
     width: 100%;
     padding-top: 20%;
     flex-wrap: nowrap;
-
     @media screen and (max-device-width: 1400px) {
         padding-top: 10%;
     }
-    
     @media screen and (max-width: 960px){
         flex-wrap: wrap;
         gap: 5rem;
@@ -32,7 +30,6 @@ const NotRow = styled.div`
     display: flex;
     flex-direction: column;
     width: 50%;
-    
     @media screen and (max-width: 960px){
         gap: 2rem;
         width: 100%;
@@ -41,7 +38,6 @@ const NotRow = styled.div`
 `
 
 const TitleNotC = styled.div`
-    
 `
 
 const TitleNot = styled.h2`
@@ -61,7 +57,6 @@ const TextNot = styled.p`
     font-family: 'Jost', sans-serif;
     color: #262728;
     font-size: 2rem;
-
     @media screen and (max-device-width: 1400px) {
         font-size: 1.6rem;
     }
@@ -80,10 +75,6 @@ const NotImg = styled.img`
     width: 100%;
     height: auto;
 `
-
-
-
-
 
 const NotFound = () => {
     const [t, i18n] = useTranslation("global");

@@ -1,12 +1,10 @@
 import styled from "styled-components";
-//
 import VisImg from '../../Images/Company/Mision.jpg'
 import MisImg from '../../Images/Company/Vision.jpg'
 
 export const Companysection = styled.section`
     background: #F9F9F9;
     height: auto;
-
 `
 export const Infocontainer = styled.div`
     display: flex;
@@ -27,12 +25,10 @@ export const ImgContainer = styled.div`
     width: 100%;
     align-items: center;
     align-content: center;
-
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     image-rendering: optimizeSpeed;
-
     &.vis{
         background-image: url(${VisImg});
     }
@@ -41,7 +37,6 @@ export const ImgContainer = styled.div`
         order: 4;
     }
     @media screen and (max-width: 960px) {
-
         &.mis{
         order: 0;
     }
@@ -86,25 +81,11 @@ export const Companytitle = styled.h2`
         font-size: 2.4rem;
     }
 `
+
 export const TitleContainer = styled.div`
     align-content: center;
     align-self: center;
     padding: 0 2vh 0 2vh;
     z-index: auto;
     width: 100%;
-`
-export const Img = styled.img`
-    padding-right: 0px;
-    border: 0;
-    max-height: 100%;
-    vertical-align: middle;
-    max-width: 40vh;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    position: relative;
-    image-rendering: optimizeSpeed;
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
-    background-position: right top;
-
 `

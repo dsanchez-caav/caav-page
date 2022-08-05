@@ -10,9 +10,7 @@ import {
     Textdes
 } from './Show.elements'
 import { Container } from '../../globlalStyles'
-
 import { useTranslation } from "react-i18next";
-
 
 const Show = ({ titletrasC1,
     destrasC1,
@@ -29,7 +27,7 @@ const Show = ({ titletrasC1,
     list1C3,
     list2C3,
     list3C3 }) => {
-
+    
     const [t, i18n] = useTranslation("global");
 
     return (

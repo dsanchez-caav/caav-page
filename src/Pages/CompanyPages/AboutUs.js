@@ -11,7 +11,7 @@ const AboutUs = () => {
     return (
         <>
             <Helmet>
-            <title>CAAV - {t("pagestitles.pageabout")} </title>
+                <title>CAAV - {t("pagestitles.pageabout")} </title>
             </Helmet>
             <Banner {...BannerAu} />
             <Company {...CompanyInfo} />

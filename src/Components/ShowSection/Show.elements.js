@@ -17,7 +17,6 @@ export const ShowColumns = styled.div`
 `
 
 export const ShowCard = styled.div`
-
     width: 31%;
     height: auto;
     background: #F1F1F1;
@@ -56,7 +55,6 @@ export const Textdes = styled.p`
     font-family: 'Jost', sans-serif;
     color: #262728;
     font-size: 2rem;
-
     @media screen and (max-device-width: 1400px) {
         font-size: 1.6rem;
     }
@@ -64,14 +62,11 @@ export const Textdes = styled.p`
         font-size: 1.3rem;
         text-align: center;
     }
-
-
 `
 
 export const Titlecont = styled.div`
     display: flex;
     width: 100%;
-
     padding: 13% 8% 8% 10% ;
     @media screen and (max-width: 960px) {
         align-self: center;
@@ -81,11 +76,9 @@ export const Titlecont = styled.div`
 
 `
 
-
 export const Textcont = styled.div`
     display: flex;
     padding: 0 8% 5% 10% ;
-
     &.list{
         padding-top: 2%;
     }

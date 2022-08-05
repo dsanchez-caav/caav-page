@@ -11,7 +11,6 @@ import {
 } from './Contact.elements'
 import { useTranslation } from 'react-i18next'
 
-
 const Contact = ({ Ctitle, Cdescription, Cbutton }) => {
 
     const [t, i18n] = useTranslation("global");
@@ -38,7 +37,6 @@ const Contact = ({ Ctitle, Cdescription, Cbutton }) => {
                 </Buttoncont>
             </Container>
         </ContactSection>
-
     )
 }
 

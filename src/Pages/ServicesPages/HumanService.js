@@ -10,14 +10,13 @@ const HumanService = () => {
     window.scrollTo(0, 0);
 
     return (
-        
         <>
-        <Helmet>
-            <title>CAAV - {t("pagestitles.pagehr")} </title>
-        </Helmet>
+            <Helmet>
+                <title>CAAV - {t("pagestitles.pagehr")} </title>
+            </Helmet>
             <Banner {...BannerHR} />
             <Show {...Showitemshr} />
-            <Contact {...Contactitemshr}/>
+            <Contact {...Contactitemshr} />
         </>
     )
 }

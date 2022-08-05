@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { Banner, Company, Contact } from '../../Components';
+import { Banner } from '../../Components';
 import { Helmet } from 'react-helmet'
 import { BannerCareer } from './CareerData';
 

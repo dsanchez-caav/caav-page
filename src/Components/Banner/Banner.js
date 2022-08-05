@@ -35,7 +35,6 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
                 </BannerSectionSer>
             </>
         )
-
     } else if (title === "Marketing") {
         return (
             <>

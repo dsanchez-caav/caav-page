@@ -12,20 +12,13 @@ import {
     TextFormA,
     CancelButton
 } from './Form.elements'
-
 import { useTranslation } from "react-i18next";
-
 import emailjs from '@emailjs/browser';
 
-
 const Form = () => {
-
-
     const form = useRef();
-
     const sendEmail = (e) => {
         e.preventDefault();
-
         emailjs.sendForm('service_0y5iw8f', 'template_wv3eeru', form.current, '9zEfrRSR762arBP9R')
             .then((result) => {
                 console.log(result.text);
@@ -33,9 +26,7 @@ const Form = () => {
                 console.log(error.text);
             });
     };
-
     const [t, i18n] = useTranslation("global");
-
     const resetF = window.scrollTo(0, 0);
 
     return (

@@ -16,13 +16,13 @@ const Hero = () => {
         <ButtonWrapper>
           <Link to="/Services" title='Descubre'>
             <Button fontBig >
-            {t("hero.button")}
+              {t("hero.button")}
             </Button>
           </Link>
         </ButtonWrapper>
       </Container>
     </Herosection>
-    
+
   );
 };
 

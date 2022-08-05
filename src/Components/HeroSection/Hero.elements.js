@@ -53,7 +53,6 @@ export const ButtonWrapper = styled.div`
     align-items: flex-end;
     align-self: stretch;
     float: right;
-
     @media only screen and (max-width: 960px){
         display: block;
     }

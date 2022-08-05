@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 
 const ServicesPrincipal = () => {
-
+    
     window.scrollTo(0, 0);
 
     const [t, i18n] = useTranslation("global");
@@ -14,7 +14,7 @@ const ServicesPrincipal = () => {
     return (
         <>
             <Helmet>
-            <title>CAAV - {t("pagestitles.pageser")} </title>
+                <title>CAAV - {t("pagestitles.pageser")} </title>
             </Helmet>
             <Banner {...BannerServices} />
             <Description {...Servicesitem1} />

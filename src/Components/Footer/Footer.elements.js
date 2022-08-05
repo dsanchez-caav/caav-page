@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { MdMail, MdLocationOn, MdPhone } from "react-icons/md";
 import { AiOutlineLinkedin, AiOutlineFacebook, AiOutlineInstagram} from "react-icons/ai";
 
-
 export const FooterSection = styled.section`
     height: auto;
     background-color: #606568;
@@ -15,26 +14,19 @@ export const FooterSection = styled.section`
 export const Logocontainer = styled.div`
     width: 100%;
     padding-top: 3%;
-
-    
     @media screen and (max-width: 960px){
         padding-top: 8%;
         align-self: center;
-
     }
 `
 
 export const CaavLogo = styled.img`
     height: 80px;
     width: auto;
-    alt: "CAAV";
-
     @media screen and (max-device-width: 1400px){
         height: 60px;
         align-self: center;
     }
-
-
     @media screen and (max-width: 960px){
         height: 60px;
         align-self: center;
@@ -104,8 +96,6 @@ export const InfoRow = styled.div`
 
 `
 
-//Iconos
-
 export const Phone = styled(MdPhone)`
     color: #F9F9F9;
     font-size: 2rem;
@@ -133,7 +123,6 @@ export const Location = styled(MdLocationOn)`
     
 `
 
-//Network
 export const Linkedin = styled(AiOutlineLinkedin)`
     color: #F9F9F9;
     font-size: 3rem;
@@ -167,5 +156,3 @@ export const Instagram = styled(AiOutlineInstagram)`
         font-size: 2.5rem;
     }
 `
-
-

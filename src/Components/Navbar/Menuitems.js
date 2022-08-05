@@ -1,7 +1,5 @@
 export const Menuitems = [
-
     {
-
         id: 1,
         title: "Home",
         path: "./",

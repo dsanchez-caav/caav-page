@@ -6,12 +6,9 @@ import {
     ImgContainer,
     TextContainer,
     Companytext,
-    Img,
     Companytitle,
     TitleContainer
 } from './Company.elements'
-
-
 
 import { useTranslation } from 'react-i18next'
 

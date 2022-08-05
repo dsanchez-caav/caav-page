@@ -7,17 +7,13 @@ import {
     Dropitem,
     Droplink
 } from "./Dropdown.elements"
-
 import { useTranslation } from "react-i18next";
-
 import { useLocation } from 'react-router-dom';
 
 export function DropdownS() {
+
     const [t, i18n] = useTranslation("global");
     const [dropdown, setDropdown] = useState(false);
-
-
-
     return (
         <>
             <DropmenuS className={dropdown ? "Drop-click" : "Dropmenu"} onClick={() => setDropdown(!dropdown)} >
@@ -34,7 +30,6 @@ export function DropdownS() {
         </>
     );
 };
-
 export function DropdownC() {
     const [t, i18n] = useTranslation("global");
     const [dropdown, setDropdown] = useState(false);
@@ -54,7 +49,6 @@ export function DropdownC() {
         </>
     );
 };
-
 export function DropdownL() {
     let location = useLocation();
     const [t, i18n] = useTranslation("global");

@@ -1,13 +1,10 @@
 import styled from "styled-components";
-import SerImg from '../../Images/Services/ServicesImg1.jpg'
-import MarImg from '../../Images/Services/ServicesImg2.jpg'
-import HRImg from '../../Images/Services/ServicesImg3.jpg'
-import AuImg from '../../Images/Company/CompanyImg1.jpg'
-import CoImg from '../../Images/Company/CompanyImg2.jpg'
+import SerImg from '../../Images/Services/ServicesImg1.avif'
+import MarImg from '../../Images/Services/ServicesImg2.avif'
+import HRImg from '../../Images/Services/ServicesImg3.avif'
+import AuImg from '../../Images/Company/CompanyImg1.avif'
+import CoImg from '../../Images/Company/CompanyImg2.avif'
 import CaImg from '../../Images/Career/CareerImg1.avif'
-
-import GlobalStyle from "../../globlalStyles";
-
 
 export const BannerSectionMar = styled.section`
     height: 50vh;
@@ -107,7 +104,6 @@ export const BannerSectionCa = styled.section`
     }
 `;
 
-
 export const BannerTagline = styled.h4`
     color: #F9F9F9;
     text-align: center;
@@ -117,11 +113,9 @@ export const BannerTagline = styled.h4`
     font-weight: 400;
     font-size: 2.8rem;
     padding-top: 8%;
-
     &.caav{
         padding-top: 4%;
     }
-
     @media screen and (max-device-width: 1400px) {
         font-size: 2.2rem;
     }
@@ -139,7 +133,6 @@ export const BannerTaglineA = styled.h4`
     letter-spacing: 1vh;
     font-weight: 400;
     font-size: 2.8rem;
-    
     @media screen and (max-width: 1400px) {
         font-size: 2.2rem;
     }
@@ -158,14 +151,12 @@ export const BannerTitle = styled.h3`
     &.caav{
         letter-spacing: 2rem;
     }
-
     @media screen and (max-device-width: 1400px) {
         font-size: 6rem;
     }
     @media screen and (max-width: 960px) {
         font-size: 4rem;
     }
-
 `;
 
 export const BannerSectionDes = styled.section`

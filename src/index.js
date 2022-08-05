@@ -1,13 +1,8 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
-
 import App from './App';
-
-
-//test
 import { I18nextProvider } from 'react-i18next'
 import i18next from 'i18next';
-
 import global_es from './translations/es/global.json'
 import global_en from './translations/en/global.json'
 
@@ -22,7 +17,6 @@ i18next.init({
       global: global_en
     }
   }
-
 });
 
 const loadingMarkup = (

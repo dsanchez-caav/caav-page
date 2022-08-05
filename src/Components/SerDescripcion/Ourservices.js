@@ -16,8 +16,6 @@ import {
 } from './Ourservices.elements'
 import { useTranslation } from "react-i18next";
 
-
-
 const Ourservices = ({ title, ctitle1, ctitle2 }) => {
 
     const [t, i18n] = useTranslation("global");
@@ -31,9 +29,9 @@ const Ourservices = ({ title, ctitle1, ctitle2 }) => {
                             {t(title)}
                         </OurTitle>
                     </TitleContainer>
-                    <ServicesColumn>  
+                    <ServicesColumn>
                         <ServiceCard>
-                        <CLink to="/Marketing">
+                            <CLink to="/Marketing">
                                 <CardRow>
                                     <CtitleCont>
                                         <CardTitle>
@@ -44,10 +42,10 @@ const Ourservices = ({ title, ctitle1, ctitle2 }) => {
                                         <MarkIco />
                                     </Icontainer>
                                 </CardRow>
-                                </CLink>
+                            </CLink>
                         </ServiceCard>
                         <ServiceCard>
-                        <CLink to="/Human-Resources">
+                            <CLink to="/Human-Resources">
                                 <CardRow>
                                     <CtitleCont>
                                         <CardTitle>
@@ -58,8 +56,8 @@ const Ourservices = ({ title, ctitle1, ctitle2 }) => {
                                         <HRIco />
                                     </Icontainer>
                                 </CardRow>
-                                </CLink>
-                            </ServiceCard>
+                            </CLink>
+                        </ServiceCard>
                     </ServicesColumn>
                 </Container>
             </OurContainer>

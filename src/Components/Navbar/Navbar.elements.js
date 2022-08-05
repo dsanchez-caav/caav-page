@@ -20,7 +20,6 @@ export const NavbarContainer = styled(Container)`
     display: flex;
     justify-content: space-between;
     height: 80px;
-
     ${Container}
 `;
 
@@ -44,7 +43,6 @@ export const CaavLogo = styled.img`
 
 export const MobileIcon = styled.div`
     display: none;
-
     @media screen and (max-width: 960px){
         display: block;
         position: absolute;
@@ -62,7 +60,6 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-
     @media screen and (max-width: 960px){
         display: ${({ click }) => (click ? "flex" : "none")};
         flex-direction: column;
@@ -81,15 +78,12 @@ export const NavItem = styled.li`
     height: 80px;
     border-bottom: 2px solid transparent;
     font-family: 'Jost', sans-serif;
-
     &:hover {
         transition: all 0.3s ease-out;
         border-bottom: 5px solid #6EDAE4;
     }
-
     @media screen and (max-width: 960px){
         width: 100%;
-
         &:hover {
             border: none;
         }
@@ -112,14 +106,11 @@ export const NavLinks = styled(Link)`
         padding: 2rem;
         width: 100%;
         display: table;
-
     }
     &hover{
             transition: all 0.3s ease;
             color: #262728;
         }
-
-    
 `;
 
 export const Dropico = styled(FaCaretDown)`

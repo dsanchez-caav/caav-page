@@ -11,7 +11,6 @@ import ContactUs from "./Pages/CompanyPages/ContactUs";
 import Career from "./Pages/Careers/Careers";
 import NotFoundP from "./Pages/404/404";
 
-
 function App() {
   return (
     <Router>

@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const ContactSection = styled.section`
     height: auto;
     background: #F9F9F9;
-
-
 `
 
 export const Titlecont = styled.div`
@@ -59,5 +57,4 @@ export const Buttoncont = styled.div`
         width: 100%;
         display: block;
     }
-
 `

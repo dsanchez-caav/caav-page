@@ -14,22 +14,15 @@ import {
     Location,
     Linkedin,
     Instagram,
-    Facebook
 } from './Footer.elements';
 import { Container } from '../../globlalStyles'
-
 import { useTranslation } from "react-i18next";
-
 import Logo from "../../Images/Logos/LogoWhite.svg"
-
 
 const Footer = () => {
 
-
     var currentTime = new Date()
-
     var year = currentTime.getFullYear()
-
     const [t, i18n] = useTranslation("global");
 
     return (

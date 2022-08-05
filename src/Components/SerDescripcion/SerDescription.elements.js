@@ -16,12 +16,9 @@ export const DesContainer = styled.div`
     @media screen and (max-width: 960px){
         flex-wrap: wrap;
     }
-
 `
 
-
 export const TitleContainer = styled.div`
-
     max-width: 40%;
     align-content: center;
     padding: 0 2vh 0 2vh;
@@ -71,4 +68,3 @@ export const TextDes = styled.p`
         padding: 10% 0 0 0;
     }
 `
-

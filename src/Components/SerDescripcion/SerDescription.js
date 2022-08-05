@@ -1,7 +1,5 @@
 import React from "react";
-
 import { Container } from "../../globlalStyles";
-
 import {
     DesSection,
     DesContainer,
@@ -10,7 +8,6 @@ import {
     TextContainer,
     TextDes
 } from "./SerDescription.elements";
-
 import { useTranslation } from "react-i18next";
 
 const SerDescription = ({ start, title, des }) => {
@@ -38,4 +35,3 @@ const SerDescription = ({ start, title, des }) => {
 }
 
 export default SerDescription
-
