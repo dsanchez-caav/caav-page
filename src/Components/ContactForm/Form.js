@@ -16,6 +16,7 @@ import { useTranslation } from "react-i18next";
 import emailjs from '@emailjs/browser';
 
 const Form = () => {
+    window.scrollTo(0, 0);
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
@@ -27,7 +28,9 @@ const Form = () => {
             });
     };
     const [t, i18n] = useTranslation("global");
-    const resetF = window.scrollTo(0, 0);
+    function resetF() {
+        window.scrollTo(0, 0);
+    } 
 
     return (
         <>
@@ -72,10 +75,10 @@ const Form = () => {
                                 </TextFormA>
                             </InputContainer>
                             <ButtonWrapper>
-                                <CancelButton type='reset'>
+                                <CancelButton type='reset' onClick={resetF}>
                                     {t("contact.form.buttonb")}
                                 </CancelButton>
-                                <Button type='submit' >
+                                <Button type='submit' onClick={resetF}>
                                     {t("contact.form.buttona")}
                                 </Button>
                             </ButtonWrapper>
