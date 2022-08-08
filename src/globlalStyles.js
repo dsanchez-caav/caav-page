@@ -69,6 +69,7 @@ export const MainHeader = styled.h1`
     text-align: right;  
     @media only screen and (max-device-width: 1400px) {
         font-size: 6.5rem;
+        padding-top: 3%;
     }
     @media screen and (max-width: 960px){
         justify-content: center;

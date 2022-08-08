@@ -3,7 +3,7 @@
         "home": "Inicio",
         "services": "Servicios",
         "company": "Compañia",
-        "careers": "Carrera",
+        "careers": "Vacantes",
         "languaje": "Español"
     },
     "footer":{
@@ -27,7 +27,7 @@
         }
     },
     "hero":{
-        "title": "Tenemos la solución correcta para tu empresa",
+        "title": "Tenemos la Solución correcta para tu empresa",
         "text": "Conectamos las soluciones correctas con las necesidades correctas",
         "button": "Saber más"
     },
@@ -54,7 +54,7 @@
         "titlehr": "Recursos Humanos",
         "titleau": "CAAV",
         "titleco": "Contáctanos",
-        "titleca": "Carreras",
+        "titleca": "Vacantes",
         "subtitleau1" : "SOMOS",
         "subtitleau2": "International Solutions",
         "desmar": "En CAAV contamos con un amplio portafolio de servicios de marketing para darle a su empresa una identidad de marca exitosa",
@@ -68,7 +68,7 @@
         "pageabout": "Quienes Somos",
         "pagecontact": "Contáctanos",
         "pageser": "Servicios",
-        "pageca": "Carrera",
+        "pageca": "Vacantes",
         "page404": "No Encontrada"
     },
     "show":{

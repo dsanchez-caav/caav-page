@@ -82,7 +82,7 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
     } else if (title === "About Us") {
         return (
             <>
-                <BannerSectionAu>
+                <BannerSectionAu >
                     <Container>
                         <BannerTagline className="caav">
                             {t(SubtitleA)}

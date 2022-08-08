@@ -21,8 +21,7 @@ export const Dropitem = styled.li`
         background: #C9EFF2;
     }
     @media screen and (max-width: 960px){
-        display: flex;
-        width: 100%;
+        display: none;
     }
 `;
 

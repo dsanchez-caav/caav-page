@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import Home_imgA from '../../Images/Home.png';
 import Home_img from '../../Images/Home.avif';
 
 export const Herosection = styled.section`
     height: 95vh;
     max-height: 1400px;
-    background-image: url(${Home_img});
+    background-image: url(${Home_img}), url(${Home_imgA});
     justify-content: right;
     background-position: top;
     background-size: cover;
@@ -12,6 +13,7 @@ export const Herosection = styled.section`
     align-items: top;
     object-fit: contain;
     image-rendering: optimizeSpeed;
+    
     
 
     @media screen and (max-width: 960px){
@@ -33,7 +35,7 @@ export const HeroText = styled.p`
     color: #F9F9F9;
 
     @media screen and (max-device-width: 1400px){
-        padding-left: 50%;
+        padding-left: 40%;
         font-size: 2.6rem;
 
     }

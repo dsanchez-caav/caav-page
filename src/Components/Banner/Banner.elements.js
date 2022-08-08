@@ -1,31 +1,41 @@
 import styled from "styled-components";
 import SerImg from '../../Images/Services/ServicesImg1.avif'
+import SerImgA from '../../Images/Services/ServicesImg1.png'
 import MarImg from '../../Images/Services/ServicesImg2.avif'
+import MarImgA from '../../Images/Services/ServicesImg2.png'
 import HRImg from '../../Images/Services/ServicesImg3.avif'
+import HRImgA from '../../Images/Services/ServicesImg3.png'
 import AuImg from '../../Images/Company/CompanyImg1.avif'
+import AuImgA from '../../Images/Company/CompanyImg1.png'
 import CoImg from '../../Images/Company/CompanyImg2.avif'
+import CoImgA from '../../Images/Company/CompanyImg2.png'
 import CaImg from '../../Images/Career/CareerImg1.avif'
+import CaImgA from '../../Images/Career/CareerImg1.png'
 
 export const BannerSectionMar = styled.section`
     height: 50vh;
     max-height: 400px; 
-    background-image: url(${MarImg});
+
+    background-image: url(${MarImg}), url(${MarImgA});
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     image-rendering: optimizeSpeed;
+    
     @media screen and (max-device-width: 1400px) {
         max-height: 350px;
     }
     @media screen and (max-width: 960px) {
         max-height: 250px;
     }
+    
 `;
 
 export const BannerSectionSer = styled.section`
     height: 50vh;
     max-height: 400px; 
-    background-image: url(${SerImg});
+    background-image: url(${SerImg}), url(${SerImgA});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,7 +51,7 @@ export const BannerSectionSer = styled.section`
 export const BannerSectionHr = styled.section`
     height: 50vh;
     max-height: 400px; 
-    background-image: url(${HRImg});
+    background-image: url(${HRImg}),  url(${HRImgA});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,7 +67,7 @@ export const BannerSectionHr = styled.section`
 export const BannerSectionAu = styled.section`
     height: 50vh;
     max-height: 400px; 
-    background-image: url(${AuImg});
+    background-image: url(${AuImg}), url(${AuImgA});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,7 +84,7 @@ export const BannerSectionCn = styled.section`
     height: 50vh;
     max-height: 400px; 
     padding-top: 1vh;
-    background-image: url(${CoImg});
+    background-image: url(${CoImg}), url(${CoImgA});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,7 +101,7 @@ export const BannerSectionCa = styled.section`
     height: 50vh;
     max-height: 400px; 
     padding-top: 1vh;
-    background-image: url(${CaImg});
+    background-image: url(${CaImg}), url(${CaImgA});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
