@@ -4,11 +4,13 @@ import App from './App';
 import { I18nextProvider } from 'react-i18next'
 import i18next from 'i18next';
 import global_es from './translations/es/global.json'
-import global_en from './translations/en/global.json'
+import global_en from './translations/en/global.json';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
-i18next.init({
+i18next
+  .use(LanguageDetector)
+  .init({
   interpolation: { escapeValue: false },
-  lng: "en",
   resources: {
     es: {
       global: global_es
