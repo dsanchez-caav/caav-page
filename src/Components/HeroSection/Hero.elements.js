@@ -14,6 +14,10 @@ export const Herosection = styled.section`
     object-fit: contain;
     image-rendering: optimizeSpeed;
     
+    @media only screen and (max-device-width: 1700px) {
+        max-height: 1100px;
+    }
+    
     
 
     @media screen and (max-width: 960px){
@@ -33,6 +37,12 @@ export const HeroText = styled.p`
     font-family: 'Jost', sans-serif;
     line-height: normal;
     color: #F9F9F9;
+
+    
+    @media only screen and (max-device-width: 1600px) {
+        font-size: 2.8rem;
+        padding-top: 3%;
+    }
 
     @media screen and (max-device-width: 1400px){
         padding-left: 40%;

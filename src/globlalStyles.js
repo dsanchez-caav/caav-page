@@ -67,6 +67,12 @@ export const MainHeader = styled.h1`
     display: flex;
     align-items: flex-start;
     text-align: right;  
+
+    @media only screen and (max-device-width: 1700px) {
+        font-size: 7rem;
+        padding-top: 2%;
+        margin-bottom: 2rem;
+    }
     @media only screen and (max-device-width: 1400px) {
         font-size: 6.5rem;
         padding-top: 3%;
