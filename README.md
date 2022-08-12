@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# caav-page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is property of CAAV International Solutions
 
-## Available Scripts
+This project is the redesign and implementation of the main page of CAAV International Solutions
 
-In the project directory, you can run:
+See the latest version on the page [CAAV](https://caav.com.co)
 
-### `npm start`
+![relese][relese]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div >
+<br />
+  <a href="https://caav.com.co">
+    <img src="src/Images/Logos/LogoOriginal.svg" alt="Logo" width="250" height="auto" align="left" >
+    <br />
+  </a>
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Modify the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Start the project
+<br />
 
-### `npm run build`
+To modify the project you need to have node installed on your computer and install its dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Install npm
+```sh
+npm install npm@latest -g
+```
+- Install the dependencies
+```sh
+npm install 
+```
+- Start the project 
+```sh
+npm start
+```
+- Relese a build
+```sh
+npm run build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Used technologies
+<br />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Firebase][Firebase]<br />
+![NodeJS][Node] <br />
+![React][React]<br />
+![NPM][Npm] <br />
 
-### `npm run eject`
+### Desing
+[![Figma][Figma]][FigmaUrl]
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+[Node]:https://img.shields.io/badge/node.js-606568?style=for-the-badge&logo=node.js&logoColor=7cce3c
+[Npm]: https://img.shields.io/badge/NPM-606568.svg?style=for-the-badge&logo=npm&logoColor=cc3838
+[React]:https://img.shields.io/badge/react-606568.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
+[Firebase]: https://img.shields.io/badge/Firebase-606568?style=for-the-badge&logo=Firebase&logoColor=ffca2b
+[relese]:https://img.shields.io/github/v/release/dsanchez-caav/caav-page?color=green&style=for-the-badge
+[Figma]: https://img.shields.io/badge/figma-606568.svg?style=for-the-badge&logo=figma&logoColor=white
+[FigmaUrl]:https://www.figma.com/file/k4IKsgHnz8hpomiqb3liOJ/Hi-Fi-Prototipe?node-id=2%3A320
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Understand the project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The project is built by components, each component is composed of two parts:
 
-### Code Splitting
+- JS file with programming (component.js)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- JS file with the styles (component.elements.js)

@@ -3,5 +3,5 @@
 User-agent: Google
 Disallow:
 
-User-agent: *
-Disallow: /
+User-agent: Googlebot
+Disallow:
