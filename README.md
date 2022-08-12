@@ -29,21 +29,21 @@ See the latest version on the page [CAAV](https://caav.com.co)
 To modify the project you need to have node installed on your computer and install its dependencies:
 
 - Install npm
-```sh
-npm install npm@latest -g
-```
+    ```sh
+    npm install npm@latest -g
+    ```
 - Install the dependencies
-```sh
-npm install 
-```
+    ```sh
+    npm install 
+    ```
 - Start the project 
-```sh
-npm start
-```
+    ```sh
+    npm start
+    ```
 - Relese a build
-```sh
-npm run build
-```
+    ```sh
+    npm run build
+    ```
 
 ### Used technologies
 <br />
