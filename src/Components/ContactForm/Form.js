@@ -20,13 +20,15 @@ const Form = () => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_0y5iw8f', 'template_wv3eeru', form.current, '9zEfrRSR762arBP9R')
+            emailjs.sendForm('service_0y5iw8f', 'template_wv3eeru', form.current, '9zEfrRSR762arBP9R')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
             });
-    };
+    
+        }
+        
     const [t, i18n] = useTranslation("global");
     function resetF() {
         window.scrollTo(0, 0);
@@ -44,7 +46,7 @@ const Form = () => {
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <FormInput placeholder={t("contact.hints.name")} type="text" name="user_name" id="name" required>
+                                <FormInput placeholder={t("contact.hints.name")} type="text" name="user_name" id="user_name" required>
                                 </FormInput>
                             </InputContainer>
                             <TextContainer>
@@ -53,7 +55,7 @@ const Form = () => {
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <FormInput placeholder={t("contact.hints.email")} name="user_email" type="email" id="mail" required>
+                                <FormInput placeholder={t("contact.hints.email")} name="user_email" type="email" id="user_email" required>
                                 </FormInput>
                             </InputContainer>
                             <TextContainer>
@@ -62,7 +64,7 @@ const Form = () => {
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <FormInput placeholder={t("contact.hints.phone")} type="tel" name="user_phone" id="phone" minLength={5} required>
+                                <FormInput placeholder={t("contact.hints.phone")} type="tel" name="user_phone" id="user_phone" minLength={5} required>
                                 </FormInput>
                             </InputContainer>
                             <TextContainer>
@@ -71,7 +73,7 @@ const Form = () => {
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <TextFormA placeholder={t("contact.hints.description")} name="message" type="text" maxLength={300} required>
+                                <TextFormA placeholder={t("contact.hints.description")} name="message" id="message" type="text" maxLength={300} required>
                                 </TextFormA>
                             </InputContainer>
                             <ButtonWrapper>

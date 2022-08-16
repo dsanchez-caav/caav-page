@@ -12,6 +12,8 @@ export const Careeritem1 = {
     item2: "career.item2",
     item3: "career.item3",
     item4: "career.item4",
-    item5: "career.item5"
+    item5: "career.item5",
+    title2: "career.title2",
+    des2: "career.des2"
 }
 
