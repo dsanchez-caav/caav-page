@@ -57,9 +57,10 @@
         "titleca": "Vacantes",
         "subtitleau1" : "SOMOS",
         "subtitleau2": "International Solutions",
-        "desmar": "En CAAV contamos con un amplio portafolio de servicios de marketing para darle a su empresa una identidad de marca exitosa",
-        "deshru": "En Santiago de Cali tenemos acceso a un excelente talento humano. Egresados de varias de las mejores universidades de Colombia",
-        "desau": "CAAV International Solutions ofrece a empresas de todos los tamaños soluciones a través de las fronteras conectando el talento adecuado con la necesidad adecuada."
+        "desmar": "En CAAV contamos con un amplio portafolio de servicios de marketing para darle a su empresa una identidad de marca exitosa.",
+        "deshru": "En Santiago de Cali tenemos acceso a un excelente talento humano. Egresados de varias de las mejores universidades de Colombia.",
+        "desau": "CAAV International Solutions ofrece a empresas de todos los tamaños soluciones a través de las fronteras conectando el talento adecuado con la necesidad adecuada.",
+        "desca": "En CAAV reclutamos el mejor talento para nuestros clientes, y tu puedes hacer parte de nuestra empresa."
     },
     "pagestitles":{
         "pagehr": "Recursos Humanos",
@@ -168,7 +169,14 @@
         }
     },
     "404": "No deberías ver esto, esta página no existe",
-    "404B": "Inicio"
-
-
+    "404B": "Inicio",
+    "career":{
+        "titlec": "¿Por qué hacer parte de CAAV?",
+        "des": "En CAAV tenemos excelentes oportunidades para que puedas impulsar tu carrera como profesional, con beneficios como:",
+        "item1": "\\ Experiencia internacional de trabajo",
+        "item2": "\\ Excelente ambiente de trabajo",
+        "item3": "\\ Posibilidades de crecimiento",
+        "item4": "\\ Aprendizaje constante",
+        "item5": "\\ Excelentes instalaciones fisicas"
+    }
 }

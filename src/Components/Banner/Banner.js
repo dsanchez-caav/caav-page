@@ -132,6 +132,13 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
                         </BannerTitle>
                     </Container>
                 </BannerSectionCa>
+                <BannerSectionDes>
+                    <Container>
+                        <BannerDes>
+                            {t(destras)}
+                        </BannerDes>
+                    </Container>
+                </BannerSectionDes>
             </>
         )
     }

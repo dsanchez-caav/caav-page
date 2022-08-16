@@ -29,19 +29,19 @@ See the latest version on the page [CAAV](https://caav.com.co)
 To modify the project you need to have node installed on your computer and install its dependencies:
 
 - Install npm
-    ```sh
+    ```js
     npm install npm@latest -g
     ```
 - Install the dependencies
-    ```sh
+    ```js
     npm install 
     ```
 - Start the project 
-    ```sh
+    ```js
     npm start
     ```
 - Relese a build
-    ```sh
+    ```js
     npm run build
     ```
 
@@ -75,3 +75,4 @@ The project is built by components, each component is composed of two parts:
 - JS file with programming (component.js)
 
 - JS file with the styles (component.elements.js)
+

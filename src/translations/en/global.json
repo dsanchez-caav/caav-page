@@ -8,7 +8,7 @@
     },
     "footer":{
         "media": "Our social media",
-        "office": "19th street North 2N-29, Office 2202A, Santiago de Cali, Valle del Cauca 760046, CO",
+        "office": "19th North Street 2N-29, Office 2202A, Santiago de Cali, Valle del Cauca 760046, CO",
         "copya": "Copyright © ",
         "copyb": " CAAV International Solutions. All Rights Reserved."
     },
@@ -57,9 +57,10 @@
         "titleca": "Careers",
         "subtitleau1" : "WE ARE",
         "subtitleau2": "International Solutions",
-        "desmar": "At CAAV we have a wide portfolio of marketing services to give your company a successful brand identity",
-        "deshru": "In Santiago de Cali we have access to excellent human talent. Alumni from several of the best universities in Colombia",
-        "desau": "CAAV International Solutions offers companies of all sizes talent solutions across borders by connecting the right talent with the right need."
+        "desmar": "At CAAV we have a wide portfolio of marketing services to give your company a successful brand identity.",
+        "deshru": "In Santiago de Cali we have access to excellent human talent. Alumni from several of the best universities in Colombia.",
+        "desau": "CAAV International Solutions offers companies of all sizes talent solutions across borders by connecting the right talent with the right need.",
+        "desca": "At CAAV we recruit the best talent for our clients, and you can be part of our company."
     },
     "pagestitles":{
         "pagehr": "Human Resources",
@@ -109,7 +110,6 @@
                     "des": "We advise you to take your company to the next level with the best employment"
                 }
             }
-        
     },
     "contactshow":{
         "marketing":{
@@ -169,8 +169,14 @@
         }
     },
     "404": "you shouldn't see this, this page does not exist",
-    "404B": "Back Home"
-
-
+    "404B": "Back Home",
+    "career":{
+        "titlec": "Why join to the CAAV family?",
+        "des": "At CAAV we have excellent opportunities for you to boost your career as a professional, with benefits such as:",
+        "item1": "\\ International work experience",
+        "item2": "\\ Excellent work place",
+        "item3": "\\ Possibilities of growing",
+        "item4": "\\ Constant Learning",
+        "item5": "\\ Excellent physical facilities"
+    }
 }
-

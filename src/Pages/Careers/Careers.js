@@ -1,8 +1,8 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { Banner } from '../../Components';
+import { Banner, CareerDes } from '../../Components';
 import { Helmet } from 'react-helmet'
-import { BannerCareer } from './CareerData';
+import { BannerCareer, Careeritem1 } from './CareerData';
 
 const Career = () => {
     window.scrollTo(0, 0);
@@ -14,6 +14,8 @@ const Career = () => {
             <title>CAAV - {t("pagestitles.pageca")} </title>
             </Helmet>
             <Banner {...BannerCareer} />
+            <CareerDes {...Careeritem1} />
+            
         </>
     )
 }
