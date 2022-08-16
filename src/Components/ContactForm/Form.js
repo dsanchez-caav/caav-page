@@ -20,15 +20,13 @@ const Form = () => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-            emailjs.sendForm('service_0y5iw8f', 'template_wv3eeru', form.current, '9zEfrRSR762arBP9R')
+        emailjs.sendForm('service_0y5iw8f', 'template_wv3eeru', form.current, '9zEfrRSR762arBP9R')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
             });
-    
-        }
-        
+    };     
     const [t, i18n] = useTranslation("global");
     function resetF() {
         window.scrollTo(0, 0);
