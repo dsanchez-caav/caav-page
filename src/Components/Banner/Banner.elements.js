@@ -16,8 +16,7 @@ export const BannerSectionMar = styled.section`
     height: 50vh;
     max-height: 400px; 
 
-    background-image: url(${MarImg}), url(${MarImgA});
-    
+    background-image: url(${MarImg}), url(${MarImgA}); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

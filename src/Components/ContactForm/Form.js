@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Container } from '../../globlalStyles'
 import {
     ButtonWrapper,
@@ -13,39 +13,61 @@ import {
     CancelButton
 } from './Form.elements'
 import { useTranslation } from "react-i18next";
-import emailjs from '@emailjs/browser';
+//import emailjs from '@emailjs/browser';
+
+
+const initialState = {
+    user_name: "",
+    user_email: "",
+    user_phone: "",
+    message: ""
+}
 
 const Form = () => {
-    window.scrollTo(0, 0);
-    const form = useRef();
-    const sendEmail = (e) => {
-        e.preventDefault();
-        emailjs.sendForm('service_0y5iw8f', 'template_wv3eeru', form.current, '9zEfrRSR762arBP9R')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-    };     
+
     const [t, i18n] = useTranslation("global");
     function resetF() {
         window.scrollTo(0, 0);
     } 
+
+    const [state, setState] = useState(initialState);
+    const [data, setData] = useState({});
+
+    const { user_name, user_email, user_phone, message } = state;
+
+    const handleInputChange = (e) => { 
+        const { name, value } = e.target;
+        setState({ ...state, [name]: value });
+    };
+
+
+    const handleSubmit = (e) => { 
+        e.preventDefault();
+        if (!user_name || !user_email || !user_phone || !message) {
+            alert("Vacio")
+        }
+    };
 
     return (
         <>
             <FormSection>
                 <Container>
                     <FormContainer>
-                        <FormColumn onSubmit={sendEmail} ref={form} id="form">
+                        <FormColumn onSubmit={handleSubmit} id="form">
                             <TextContainer>
                                 <TextForm>
                                     {t("contact.form.name")}
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <FormInput placeholder={t("contact.hints.name")} type="text" name="user_name" id="user_name" required>
-                                </FormInput>
+                                <FormInput
+                                    placeholder={t("contact.hints.name")}
+                                    type="text"
+                                    name="user_name"
+                                    id="user_name"
+                                    value={user_name} 
+                                    onChange={handleInputChange}
+                                />
                             </InputContainer>
                             <TextContainer>
                                 <TextForm>
@@ -53,8 +75,15 @@ const Form = () => {
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <FormInput placeholder={t("contact.hints.email")} name="user_email" type="email" id="user_email" required>
-                                </FormInput>
+                                <FormInput
+                                    placeholder={t("contact.hints.email")}
+                                    name="user_email"
+                                    type="email"
+                                    id="user_email"
+                                    
+                                    value={user_email} 
+                                    onChange={handleInputChange}
+                                />
                             </InputContainer>
                             <TextContainer>
                                 <TextForm>
@@ -62,8 +91,16 @@ const Form = () => {
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <FormInput placeholder={t("contact.hints.phone")} type="tel" name="user_phone" id="user_phone" minLength={5} required>
-                                </FormInput>
+                                <FormInput
+                                    placeholder={t("contact.hints.phone")}
+                                    type="tel"
+                                    name="user_phone"
+                                    id="user_phone"
+                                    minLength={5}
+                                    
+                                    value={user_phone} 
+                                    onChange={handleInputChange}
+                                    />
                             </InputContainer>
                             <TextContainer>
                                 <TextForm>
@@ -71,8 +108,16 @@ const Form = () => {
                                 </TextForm>
                             </TextContainer>
                             <InputContainer>
-                                <TextFormA placeholder={t("contact.hints.description")} name="message" id="message" type="text" maxLength={300} required>
-                                </TextFormA>
+                                <TextFormA
+                                    placeholder={t("contact.hints.description")}
+                                    name="message"
+                                    id="message"
+                                    type="text"
+                                    maxLength={300}
+                                    
+                                    value={message}
+                                    onChange={handleInputChange}
+                                />
                             </InputContainer>
                             <ButtonWrapper>
                                 <CancelButton type='reset' onClick={resetF}>

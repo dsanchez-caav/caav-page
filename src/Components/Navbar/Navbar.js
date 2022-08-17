@@ -34,7 +34,7 @@ const Navbar = () => {
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
-            <CaavLogo src={Logo} alt="CAAV" />
+            <CaavLogo src={Logo} alt="CAAV" name="CAAV" />
           </NavLogo>
           <MobileIcon onClick={handleClick}>
             {click ? <FaTimes color="#262728" /> : <FaBars color="#262728" />}
