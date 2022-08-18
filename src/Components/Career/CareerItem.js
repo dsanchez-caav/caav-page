@@ -27,7 +27,7 @@ const CareerItem = () => {
                         <ItemColumn>
                             <TitleConatiner>
                                 <Title>
-                                    Account executive 
+                                    Account executive |&nbsp;
                                 </Title>
                             </TitleConatiner>
                             <TitleConatiner>

@@ -41,19 +41,18 @@ export const Button = styled.button`
     width: ${({ complete }) => (complete ? "100%" : "auto")};
 
     &.cancel{
-
-    background: none;
-    outline: 2px solid #6EDAE4;
-    &:hover {
-        transition: all 0.3s ease-out;
         background: none;
-        color: #4D5053;
-        outline: 2px solid #C9EFF2;
-    }
-    :active{
-        outline: 2px solid #22B3E4;
-        background: none;
-    }
+        outline: 2px solid #6EDAE4;
+        &:hover {
+            transition: all 0.3s ease-out;
+            background: none;
+            color: #4D5053;
+            outline: 2px solid #C9EFF2;
+        }
+        :active{
+            outline: 2px solid #22B3E4;
+            background: none;
+        }
     }
     
     &:hover {
