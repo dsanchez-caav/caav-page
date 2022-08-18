@@ -11,3 +11,4 @@ export { default as Description } from "./SerDescripcion/SerDescription";
 export { default as Cards } from "./SerDescripcion/Ourservices";
 export { default as NotFound } from "./NotFound/NotFound";
 export { default as CareerDes } from "./CareerDes/Careerdes";
+export { default as CareerTable } from "./Career/CareerTable";

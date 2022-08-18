@@ -38,6 +38,8 @@ export const Button = styled.button`
     cursor: pointer;
     font-family: 'Jost', sans-serif;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    width: ${({ complete }) => (complete ? "100%" : "auto")};
+    
     &:hover {
         transition: all 0.3s ease-out;
         background: ${({ primary }) => (primary ? "#54DAE4" : "#C9EFF2")};

@@ -1,16 +1,14 @@
 import React from 'react'
 import { Container } from '../../globlalStyles'
+import CareerItem from './CareerItem'
+import { TableContainer } from './CareerTable.elements'
 
 const CareerTable = () => {
     return (
-        <> 
+        <>
             <TableContainer>
                 <Container>
-                    <CareerTable>
-                        <THead>
-                        
-                        </THead>
-                    </CareerTable>
+                    <CareerItem />
                 </Container>
             </TableContainer>
         </>

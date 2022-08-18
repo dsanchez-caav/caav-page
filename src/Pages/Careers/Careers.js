@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { Banner, CareerDes } from '../../Components';
+import { Banner, CareerDes, CareerTable } from '../../Components';
 import { Helmet } from 'react-helmet'
 import { BannerCareer, Careeritem1 } from './CareerData';
 
@@ -15,7 +15,7 @@ const Career = () => {
             </Helmet>
             <Banner {...BannerCareer} />
             <CareerDes {...Careeritem1} />
-            
+            <CareerTable/>
         </>
     )
 }
