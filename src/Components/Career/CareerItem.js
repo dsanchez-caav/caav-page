@@ -14,7 +14,11 @@ import {
     TitleConatiner
 } from './CareerItem.elements'
 
+import { useTranslation } from 'react-i18next'
+
 const CareerItem = () => {
+
+    const [t, i18n] = useTranslation("global");
     return (
         <>
             <Item>
@@ -23,7 +27,7 @@ const CareerItem = () => {
                         <ItemColumn>
                             <TitleConatiner>
                                 <Title>
-                                    Account executive |
+                                    Account executive 
                                 </Title>
                             </TitleConatiner>
                             <TitleConatiner>
@@ -45,7 +49,7 @@ const CareerItem = () => {
                             <ButtonContainer>
                                 <Link to='/' >
                                     <Button complete >
-                                        Mas info
+                                        {t("career.buttoninfo")}
                                     </Button>
                                 </Link>
                             </ButtonContainer>

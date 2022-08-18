@@ -9,8 +9,7 @@ import {
     InputContainer,
     TextContainer,
     TextForm,
-    TextFormA,
-    CancelButton
+    TextFormA
 } from './Form.elements'
 import { useTranslation } from "react-i18next";
 //import emailjs from '@emailjs/browser';
@@ -120,9 +119,9 @@ const Form = () => {
                                 />
                             </InputContainer>
                             <ButtonWrapper>
-                                <CancelButton type='reset' onClick={resetF}>
+                                <Button type='reset' onClick={resetF} className='cancel'>
                                     {t("contact.form.buttonb")}
-                                </CancelButton>
+                                </Button>
                                 <Button type='submit' onClick={resetF}>
                                     {t("contact.form.buttona")}
                                 </Button>
