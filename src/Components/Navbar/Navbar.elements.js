@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container } from "../../globlalStyles";
+import { Button, Container } from "../../globlalStyles";
 import { Link } from "react-router-dom";
 import { FaCaretDown } from "react-icons/fa";
 
@@ -113,6 +113,25 @@ export const NavLinks = styled(Link)`
         }
 `;
 
+export const NavItemBtn = styled.li`
+   @media screen and (max-width: 960px){
+        display: none;
+    }
+
+`
+
+export const NavBtnLink = styled(Link)`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 8px 16px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+`
+
 export const Dropico = styled(FaCaretDown)`
     margin-left: 0.2rem;
     color: #262728;
@@ -120,3 +139,8 @@ export const Dropico = styled(FaCaretDown)`
         display: none;
     }
 `;
+
+export const LoginBtn = styled(Button)`
+    font-size: 1.2rem;
+    padding: 0.3rem 1.25rem;
+`

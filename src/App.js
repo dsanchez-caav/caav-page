@@ -13,21 +13,23 @@ import NotFoundP from "./Pages/404/404";
 import Job from "./Pages/Careers/Job";
 import CareerAdmin from "./Pages/Admin/CareerAdmin";
 import CareerForm from "./Pages/Admin/CareerForm";
+import { AuthContextPrivider } from "./Context/AuthContexts";
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
+      <AuthContextPrivider>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/services" element={<ServicesPrincipal />} />
-        <Route exact path="/Marketing" element={<MarketingService />} />
+        <Route exact path="/services/marketing" element={<MarketingService />} />
         <Route exact path="/services/human-resources" element={<HumanService />} />
-        <Route exact path="/About-us" element={<AboutUs />} />
-        <Route exact path="/Contact" element={<ContactUs />} />
-        <Route exact path="/Career" element={< Career/>} />
+        <Route exact path="/about-us" element={<AboutUs />} />
+        <Route exact path="/contact" element={<ContactUs />} />
+        <Route exact path="/career" element={< Career/>} />
         <Route exact path="/Job" element={< Job/>} />
         <Route exact path="/admin/career/principal" element={< CareerAdmin />} />
         <Route exact path="/admin/career/create" element={< CareerForm />} />
@@ -35,6 +37,7 @@ function App() {
         <Route path="*" element={< NotFoundP/>} />
       </Routes>
       <Footer />
+      </AuthContextPrivider>
     </Router>
   );
 };

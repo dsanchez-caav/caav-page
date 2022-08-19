@@ -23,7 +23,7 @@ export const Menuitems = [
     {
         id: 4,
         title: "Careers",
-        path: "./Career",
+        path: "./career",
         cName: "NavItem",
         tras: "nav.careers"
     },
@@ -47,7 +47,7 @@ export const ServicesDrop = [
     {
         id: 2,
         title: "Marketing",
-        path: "./Marketing",
+        path: "./services/marketing",
         cName: "submenuItem",
         tras: "drop.drop_ser.marketing"
     }
@@ -57,14 +57,14 @@ export const CompanyDrop = [
     {
         id: 1,
         title: "About Us",
-        path: "./About-us",
+        path: "./about-us",
         cName: "submenuItem",
         tras: "drop.drop_com.about"
     },
     {
         id: 2,
         title: "Contact Us",
-        path: "./Contact",
+        path: "./contact",
         cName: "submenuItem",
         tras: "drop.drop_com.contact"
     }

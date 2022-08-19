@@ -10,15 +10,31 @@ import {
   NavItem,
   NavLinks,
   Dropico,
-  CaavLogo
+  CaavLogo,
+  NavItemBtn,
+  LoginBtn
 } from "./Navbar.elements";
 import { Menuitems } from "./Menuitems";
 import { useTranslation } from "react-i18next";
 import { DropdownS, DropdownC, DropdownL } from "./Dropdown";
 import { useLocation } from 'react-router-dom';
 import Logo from "../../Images/Logos/LogoOriginal.svg"
+import { UserAuth } from "../../Context/AuthContexts";
+import { async } from "@firebase/util";
 
 const Navbar = () => {
+
+  const { googleSingIn } = UserAuth();
+
+  
+
+  const handleGoogleSingIn = async () => {
+    try {
+      await googleSingIn();
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   const [click, setClick] = useState(false)
   const handleClick = () => setClick(!click)
@@ -70,6 +86,7 @@ const Navbar = () => {
                         {t("drop.drop_len.spanish")}
                       </NavLinks>
                     </NavItem>
+
                   )
                 } else {
                   return (
@@ -89,8 +106,18 @@ const Navbar = () => {
                     </NavLinks>
                   </NavItem>
                 );
-            }
+
+            },
             )}
+
+            <NavItemBtn>
+
+                <LoginBtn onClick={handleGoogleSingIn}>
+                  Log In
+                </LoginBtn>
+
+
+            </NavItemBtn>
           </NavMenu>
         </NavbarContainer>
       </Nav>
