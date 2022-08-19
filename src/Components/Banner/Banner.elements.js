@@ -11,6 +11,7 @@ import CoImg from '../../Images/Company/CompanyImg2.avif'
 import CoImgA from '../../Images/Company/CompanyImg2.png'
 import CaImg from '../../Images/Career/CareerImg1.avif'
 import CaImgA from '../../Images/Career/CareerImg1.png'
+import JoImg from '../../Images/Career/CareerImg2.png'
 
 export const BannerSectionMar = styled.section`
     height: 50vh;
@@ -101,6 +102,22 @@ export const BannerSectionCa = styled.section`
     max-height: 400px; 
     padding-top: 1vh;
     background-image: url(${CaImg}), url(${CaImgA});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: optimizeSpeed;
+    @media screen and (max-device-width: 1400px) {
+        max-height: 350px;
+    }
+    @media screen and (max-width: 960px) {
+        max-height: 200px;
+    }
+`;
+export const BannerSectionJo = styled.section`
+    height: 30vh;
+    max-height: 400px; 
+    padding-top: 1vh;
+    background-image: url(${JoImg});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

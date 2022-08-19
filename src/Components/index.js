@@ -12,3 +12,5 @@ export { default as Cards } from "./SerDescripcion/Ourservices";
 export { default as NotFound } from "./NotFound/NotFound";
 export { default as CareerDes } from "./CareerDes/Careerdes";
 export { default as CareerTable } from "./Career/CareerTable";
+export { default as AdminCareer } from "./Admin/AdminCareer";
+export { default as ACareerForm } from "./Admin/CareerForm";

@@ -5,6 +5,14 @@ export const BannerCareer = {
     destras: "banner.desca"
 };
 
+export const BannerJob = {
+    title: "Job",
+    Subtitle: "CAAV",
+    titletras: "banner.titleca",
+    destras: "banner.desca"
+};
+
+
 export const Careeritem1 = {
     title: "career.titlec",
     des: "career.des",

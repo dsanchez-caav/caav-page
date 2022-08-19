@@ -93,3 +93,5 @@ The project is built by components, each component is composed of two parts:
 
 - **Vision** Photo by <a href="https://unsplash.com/@fzeo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Muhammad Faiz Zulkeflee</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
+- **Job** Photo by <a href="https://unsplash.com/@homajob?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Graham</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
