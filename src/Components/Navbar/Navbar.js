@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { BsGlobe } from "react-icons/bs";
 import {
@@ -12,29 +12,45 @@ import {
   Dropico,
   CaavLogo,
   NavItemBtn,
-  LoginBtn
+  LoginBtn,
+  NavBtnLink
 } from "./Navbar.elements";
 import { Menuitems } from "./Menuitems";
 import { useTranslation } from "react-i18next";
 import { DropdownS, DropdownC, DropdownL } from "./Dropdown";
-import { useLocation } from 'react-router-dom';
+import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 import Logo from "../../Images/Logos/LogoOriginal.svg"
 import { UserAuth } from "../../Context/AuthContexts";
-import { async } from "@firebase/util";
 
 const Navbar = () => {
 
-  const { googleSingIn } = UserAuth();
+  const { googleSingIn, user, logOut } = UserAuth();
 
-  
+  const navigate = useNavigate();
+
 
   const handleGoogleSingIn = async () => {
     try {
-      await googleSingIn();
+      await googleSingIn()
+
+
     } catch (error) {
       console.log(error);
     }
   }
+
+
+
+  const handleGoogleSingOut = async () => {
+    try {
+      await logOut()
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+
+
 
   const [click, setClick] = useState(false)
   const handleClick = () => setClick(!click)
@@ -46,7 +62,6 @@ const Navbar = () => {
 
   return (
     <>
-
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
@@ -86,7 +101,6 @@ const Navbar = () => {
                         {t("drop.drop_len.spanish")}
                       </NavLinks>
                     </NavItem>
-
                   )
                 } else {
                   return (
@@ -106,17 +120,22 @@ const Navbar = () => {
                     </NavLinks>
                   </NavItem>
                 );
-
             },
             )}
-
             <NavItemBtn>
-
-                <LoginBtn onClick={handleGoogleSingIn}>
-                  Log In
-                </LoginBtn>
-
-
+              {user?.displayName ?
+                <NavBtnLink to="/">
+                  <LoginBtn onClick={handleGoogleSingOut} >
+                    {t("nav.button.logout")}
+                  </LoginBtn>
+                </NavBtnLink>
+                :
+                <NavBtnLink to="/admin/career/table">
+                <LoginBtn onClick={handleGoogleSingIn} >
+                  {t("nav.button.login")}
+                  </LoginBtn>
+                  </NavBtnLink>
+              }
             </NavItemBtn>
           </NavMenu>
         </NavbarContainer>

@@ -53,29 +53,34 @@ export const Ctable = styled.table`
 
 export const Cthead = styled.thead`
     background-color: #009879;
-    color: #ffffff;
+    color: #F9F9F9;
     text-align: left;
+    
 `
 
 export const Ctr = styled.tr`
-    background-color: #009879;
-    color: #ffffff;
+    background-color: #54DAE4;
+    color: #F9F9F9;
     text-align: left;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.3rem;
     &.body{
-        background-color: #f3f3f3;
+        background-color: #F1F1F1;
         color: #262728;
-        border-bottom: 1px solid #dddddd;
+        border-bottom: 1px solid #54DAE4;
     }
     :last-of-type{
-        border-bottom: 2px solid #009879;
+        border-bottom: 2px solid #54DAE4;
     }
     :nth-of-type(even){
-        background-color: #009879;
+        background-color: #E5E5E5 ;
     }
 `
 
 export const Cth = styled.th`
     padding: 12px 15px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5rem;
     &.id{
         width: 15%;
     }

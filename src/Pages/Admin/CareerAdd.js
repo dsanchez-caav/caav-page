@@ -1,7 +1,7 @@
 import React from 'react'
 import { ACareerForm } from '../../Components'
 
-const CareerForm = () => {
+const CareerAdd = () => {
     return (
         <>
             <ACareerForm/>
@@ -9,4 +9,4 @@ const CareerForm = () => {
     )
 }
 
-export default CareerForm
+export default CareerAdd

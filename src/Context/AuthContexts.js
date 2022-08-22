@@ -1,10 +1,16 @@
-import { useContext, createContext } from "react";
-import { GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
+import { useContext, createContext, useEffect, useState } from "react";
+import { GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged, signInWithRedirect } from "firebase/auth";
 import { auth } from "../Firebase/Firebase"
+import { useNavigate } from "react-router-dom";
 
 const AuthContext = createContext();
 
 export const AuthContextPrivider = ({ children }) => {
+
+    const navigate = useNavigate();
+
+
+    const [user, setUser] = useState({}); 
 
     const googleSingIn = () => {
         const provider = new GoogleAuthProvider();
@@ -14,8 +20,24 @@ export const AuthContextPrivider = ({ children }) => {
         signInWithPopup(auth, provider)
     }
 
+    const logOut = () => {
+        signOut(auth) 
+    }
+
+    useEffect(() => {
+        const unsuscribe = onAuthStateChanged(auth, (currentUser) => {
+            setUser(currentUser);
+            console.log('User', currentUser)
+        });
+        return () => {
+            unsuscribe();
+        };
+    }, []);
+
+
+
     return (
-        <AuthContext.Provider value={{ googleSingIn }}>
+        <AuthContext.Provider value={{ googleSingIn, logOut, user }}>
             {children}
         </AuthContext.Provider>
     )

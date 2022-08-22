@@ -4,7 +4,11 @@
         "services": "Servicios",
         "company": "Compañia",
         "careers": "Vacantes",
-        "languaje": "Español"
+        "languaje": "Español",
+        "button":{
+            "login": "Ingresar",
+            "logout": "Salir"
+        }
     },
     "footer":{
         "media": "Nuestras Redes sociales",

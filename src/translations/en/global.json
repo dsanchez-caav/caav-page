@@ -4,7 +4,11 @@
         "services": "Services",
         "company": "Company",
         "careers": "Careers",
-        "languaje": "English"
+        "languaje": "English",
+        "button":{
+            "login": "Log In",
+            "logout": "Log Out"
+        }
     },
     "footer":{
         "media": "Our social media",

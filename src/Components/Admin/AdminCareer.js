@@ -1,9 +1,25 @@
 import React from 'react'
 import { Container } from '../../globlalStyles'
+import getAllCareer from '../../Context/CareersContexts'
 
 import { CareerSection, Description, Title, Ctable, Ctd, Cth, Cthead, Ctr, Ctbody } from './Admin.elements'
 
+
+
 const AdminCareer = () => {
+
+    const [careersA, setCareers] = React.useState([]);
+
+    function ActualizarCareers() {
+        getAllCareer().then((careersA) => {
+            setCareers(careersA);
+        });
+    }
+
+    React.useEffect(() => {
+        ActualizarCareers();
+    }, []);
+
     return (
         <>
             <CareerSection>
@@ -18,41 +34,24 @@ const AdminCareer = () => {
                         <Cthead>
                             <Ctr>
                                 <Cth className='id'>
-                                    id
+                                    ID
                                 </Cth>
                                 <Cth className='name'>
-                                    name
+                                    Nombre
                                 </Cth>
                                 <Cth className='actions'>
-                                    actions
+                                    Acciones
                                 </Cth>
                             </Ctr>
                         </Cthead>
                         <Ctbody>
-                            <Ctr className='body'>
-                                <Ctd className='body'>
-                                    id1
-                                </Ctd>
-                                <Ctd>
-                                    name1
-                                </Ctd>
-                                <Ctd>
-                                    action1
-                                    action2
-                                </Ctd>
-                            </Ctr>
-                            <Ctr className='body'>
-                                <Ctd className='body'>
-                                    id1
-                                </Ctd>
-                                <Ctd>
-                                    name1
-                                </Ctd>
-                                <Ctd>
-                                    action1
-                                </Ctd>
-                            </Ctr>
-                            
+                            {careersA && careersA.map((career, index) => (
+                                <Ctr key={index} className='body'>
+                                    <Ctd className='body'> {index + 1} </Ctd>
+                                    <Ctd > {career.Name} </Ctd>
+                                    <Ctd > B1 B2 </Ctd>
+                                </Ctr>
+                            ))}
                         </Ctbody>
                     </Ctable>
                 </Container>
