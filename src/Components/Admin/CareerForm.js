@@ -1,5 +1,5 @@
-import React from 'react'
-import { Container } from '../../globlalStyles'
+import React, { useState } from 'react'
+import { Container, Button } from '../../globlalStyles'
 import {
     Title,
     Description,
@@ -9,50 +9,171 @@ import {
     FormInput,
     InputContainer,
     TextContainer,
-    TextFormA
+    TextFormA,
+    ButtonWrapper
 } from './Admin.elements'
 
+import Swal from 'sweetalert2'
+
+import { useTranslation } from 'react-i18next'
+
+import addCareer from '../../Context/AddCareer'
+
 const CareerForm = () => {
+
+
+    const [t, i18n] = useTranslation("global");
+
+
+    const initialState = {
+        Name: "",
+        Description: "",
+        Salary: ""
+
+    }
+
+    const [values, setState] = useState(initialState);
+
+
+
+
+    const handleInputChange = e => {
+        const { name, value } = e.target;
+        setState({ ...values, [name]: value });
+    };
+
+    const handleReset = (e) => {
+        setState(initialState)
+        window.scrollTo(0, 0)
+    }
+
+
+    const handleSubmit = (e) => {
+
+
+        const ToastE = Swal.mixin({
+            toast: true,
+            position: 'top-right',
+            icon: 'error',
+            background: '#f27474',
+            iconColor: '#F9F9F9',
+            showConfirmButton: false,
+            timer: 1500,
+            timerProgressBar: false
+        })
+
+
+
+        const ToastA = Swal.mixin({
+            toast: true,
+            position: 'top-right',
+            icon: 'success',
+            background: '#a5dc86',
+            iconColor: '#F9F9F9',
+            showConfirmButton: false,
+            timer: 1500,
+            timerProgressBar: false
+        })
+
+        e.preventDefault();
+        if (values.Name == "" || values.Name.length < 5) {
+            ToastE.fire({
+                title: (t("admin.careerform.nameerror"))
+            })
+
+        } else if (values.Description == "" || values.Description.length < 10) {
+            ToastE.fire({
+                title: (t("admin.careerform.deserror")),
+            })
+        } else if (values.Salary == "" || values.Salary < 1000000) {
+            ToastE.fire({
+                title: (t("admin.careerform.salerror")),
+            })
+        } else {
+            addCareer(values)
+            ToastA.fire({
+                title: (t("admin.careerform.aprove"))
+            })
+            setState(initialState)
+
+        }
+        console.log(values)
+
+
+    };
+
     return (
         <>
+            <Container>
+                <Title>
+                    {t("admin.careerform.title")}
+                </Title>
+                <Description>
+                    {t("admin.careerform.dest")}
+                </Description>
+            </Container>
+
             <FormSection>
                 <Container>
-                    <Title>
-                        Portal administrativo
-                    </Title>
-                    <Description>
-                        portal 1
-                    </Description>
+
                     <FormContainer>
-                        <FormColumn>
+                        <FormColumn onSubmit={handleSubmit} id="form">
                             <TextContainer>
                                 <Description>
-                                    holi
+                                    {t("admin.careerform.vname")}
                                 </Description>
                             </TextContainer>
                             <InputContainer>
-                                <FormInput/>
+                                <FormInput
+                                    type="text"
+                                    name="Name"
+                                    onChange={handleInputChange}
+                                    value={values.Name}
+                                />
                             </InputContainer>
                             <TextContainer>
                                 <Description>
-                                    holi2
+                                    {t("admin.careerform.des")}
                                 </Description>
                             </TextContainer>
                             <InputContainer>
-                                <TextFormA/>
+                                <TextFormA
+
+                                    type="text"
+                                    name="Description"
+                                    id="des"
+                                    onChange={handleInputChange}
+                                    value={values.Description}
+                                />
                             </InputContainer>
                             <TextContainer>
                                 <Description>
-                                    holi
+                                    {t("admin.careerform.sal")}
                                 </Description>
                             </TextContainer>
                             <InputContainer>
-                                <FormInput/>
+                                <FormInput
+
+                                    type="number"
+                                    name="Salary"
+                                    id="salary"
+                                    onChange={handleInputChange}
+                                    value={values.Salary}
+                                />
                             </InputContainer>
+                            <ButtonWrapper>
+                                <Button type='reset' onClick={handleReset} className='cancel'>
+                                    {t("contact.form.buttonb")}
+                                </Button>
+                                <Button type='submit' >
+                                    {t("contact.form.buttona")}
+                                </Button>
+                            </ButtonWrapper>
+
                         </FormColumn>
                     </FormContainer>
                 </Container>
-                
+
             </FormSection>
         </>
     )

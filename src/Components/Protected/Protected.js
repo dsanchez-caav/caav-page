@@ -4,10 +4,13 @@ import { UserAuth } from '../../Context/AuthContexts'
 
 const Protected = ({ children }) => {
     const { user } = UserAuth();
-    if (user === null) {
-        return <Navigate to='/' />;
+
+    if (user != null) {
+
+        return children
+        
     }
-    return children
+    return <Navigate to='/' />;
 }
 
 export default Protected

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { Button } from '../../globlalStyles'
+
 /**
 =========Career General styles=================
  */
@@ -100,6 +102,26 @@ export const Ctd = styled.td`
 export const Ctbody = styled.tbody`
     border-bottom: 1px solid #dddddd;
 `
+export const ActionButton = styled(Button)`
+
+    color: #F9F9F9;
+    white-space: normal;
+    padding: 0.6rem 1rem;
+    margin-right: 2px;
+    &.delete{
+        background: #f27474;
+        &:hover {
+            transition: all 0.3s ease-out;
+            background: #e89797;
+            color: #4D5053;
+            :active{
+            
+            background: #cc5656;
+        }
+        }
+    }
+    
+`
 
 /**
 ========= Career Form styles =================
@@ -108,7 +130,7 @@ export const Ctbody = styled.tbody`
 export const FormSection = styled.section`
     height: auto;
     background: #F9F9F9;
-    padding-top: 5%;
+    padding-top: 1%;
     padding-bottom: 10%;
 `
 export const FormContainer = styled.div`
@@ -201,3 +223,20 @@ export const TextFormA = styled.textarea`
         font-size: 1.6rem;
     }
 `
+
+export const ButtonWrapper = styled.div`
+    width: 60%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    align-self: left;
+    float: right;
+    gap: 3rem;
+    @media only screen and (max-width: 960px){
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        padding-top: 5%;
+    }
+    
+`;

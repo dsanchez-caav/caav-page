@@ -184,6 +184,27 @@
         "item5": "\\ Excellent physical facilities",
         "title2": "Look at the available careers",
         "des2": "The list of careers available at this time is as follows:",
-        "buttoninfo": "More info"
+        "buttoninfo": "More info",
+        "req": "Bilingual"
+    },
+    "admin":{
+        "careerform":{
+            "vname": "Career name",
+            "des": "Description",
+            "sal": "Salary",
+            "nameerror": "Error at field: Name",
+            "deserror": "Error at field: Description",
+            "salerror": "Error at field: Salary",
+            "aprove": "Succes add career",
+            "title": "Add career",
+            "dest": "From this form you can create a new career (All fields are required)"
+        },
+        "careertable":{
+            "id": "ID",
+            "name": "Name",
+            "acc": "Actions",
+            "title": "Career table",
+            "des": "In the following table all the careers published at this time are listed, from the action buttons they can be modified or deleted"
+        }
     }
 }

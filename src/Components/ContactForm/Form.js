@@ -47,6 +47,10 @@ const Form = () => {
         }
     };
 
+    function handleReset(){
+        document.getElementById("form").reset();
+    }
+
     return (
         <>
             <FormSection>
@@ -116,10 +120,11 @@ const Form = () => {
                                     
                                     value={message}
                                     onChange={handleInputChange}
+                                    onReset
                                 />
                             </InputContainer>
                             <ButtonWrapper>
-                                <Button type='reset' onClick={resetF} className='cancel'>
+                                <Button type="reset" className='cancel'>
                                     {t("contact.form.buttonb")}
                                 </Button>
                                 <Button type='submit' onClick={resetF}>

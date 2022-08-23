@@ -1,12 +1,28 @@
 import React from 'react'
-import { Container } from '../../globlalStyles'
+import {  Container } from '../../globlalStyles'
 import getAllCareer from '../../Context/CareersContexts'
+import {deleteCareer} from '../../Context/DeleteCareer'
 
-import { CareerSection, Description, Title, Ctable, Ctd, Cth, Cthead, Ctr, Ctbody } from './Admin.elements'
+import { CareerSection, Description, Title, Ctable, Ctd, Cth, Cthead, Ctr, Ctbody, ActionButton } from './Admin.elements'
 
+import { useTranslation } from "react-i18next";
+
+
+
+import { AiOutlineDelete } from "react-icons/ai";
 
 
 const AdminCareer = () => {
+
+
+    const handleDelete = (e, carrerid) => {
+        e.preventDefault();
+        deleteCareer(carrerid);
+
+    }
+
+
+    const [t, i18n] = useTranslation("global");
 
     const [careersA, setCareers] = React.useState([]);
 
@@ -20,36 +36,50 @@ const AdminCareer = () => {
         ActualizarCareers();
     }, []);
 
+
+
+
+
     return (
         <>
             <CareerSection>
                 <Container>
                     <Title>
-                        Portal administrativo
+                        {t("admin.careertable.title")}
                     </Title>
                     <Description>
-                        portal 1
+                    {t("admin.careertable.des")}
                     </Description>
                     <Ctable>
                         <Cthead>
                             <Ctr>
                                 <Cth className='id'>
-                                    ID
+                                {t("admin.careertable.id")}
                                 </Cth>
                                 <Cth className='name'>
-                                    Nombre
+                                {t("admin.careertable.name")}
                                 </Cth>
                                 <Cth className='actions'>
-                                    Acciones
+                                {t("admin.careertable.acc")}
                                 </Cth>
                             </Ctr>
                         </Cthead>
                         <Ctbody>
                             {careersA && careersA.map((career, index) => (
                                 <Ctr key={index} className='body'>
-                                    <Ctd className='body'> {index + 1} </Ctd>
-                                    <Ctd > {career.Name} </Ctd>
-                                    <Ctd > B1 B2 </Ctd>
+                                    <Ctd className='body'> {index +1} </Ctd>
+                                    <Ctd > {career.data().Name} </Ctd>
+                                    
+                                    <Ctd >
+                                        <ActionButton className='delete' onClick={handleDelete(career.id)}  >
+                                            {career.id}
+                                        <AiOutlineDelete />
+                                        </ActionButton>
+                                        <ActionButton>
+                                            <AiOutlineDelete />
+                                        </ActionButton>
+                                    
+                                    </Ctd>
                                 </Ctr>
                             ))}
                         </Ctbody>

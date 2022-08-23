@@ -184,6 +184,27 @@
         "item5": "\\ Excelentes instalaciones fisicas",
         "title2": "Conoce las vacantes disponibles",
         "des2": "La lista de las vacantes disponibles en este momento es la siguiente:",
-        "buttoninfo": "Más Información"
+        "buttoninfo": "Más Información",
+        "req": "Bilingüe"
+    },
+    "admin":{
+        "careerform":{
+            "vname": "Nombre de la vacante",
+            "des": "Descripción",
+            "sal": "Salario",
+            "nameerror": "Error en el campo: Nombre",
+            "deserror": "Error en el campo: Descripción",
+            "salerror": "Error en el campo: Salario",
+            "aprove": "Vacante añadida con exito",
+            "title": "Crear vacante",
+            "dest": "Desde este formulario puedes crear una nueva vacante (Todos los campos son obligatorios)"
+        },
+        "careertable":{
+            "id": "ID",
+            "name": "Nombre",
+            "acc": "Acciones",
+            "title": "Tabla de vacantes",
+            "des": "En la siguiente tabla estan listadas todas las vacantes publicadas en este momento, desde los botones de acción se pueden modificar o eliminar"
+        }
     }
 }

@@ -16,9 +16,13 @@ import {
 
 import { useTranslation } from 'react-i18next'
 
-const CareerItem = () => {
+const CareerItem = ({careerName, salary}) => {
 
     const [t, i18n] = useTranslation("global");
+    const formatter = new Intl.NumberFormat('es-CO', {
+        style: 'currency', currency: 'COP',  maximumFractionDigits: 0,
+    });
+
     return (
         <>
             <Item>
@@ -27,19 +31,19 @@ const CareerItem = () => {
                         <ItemColumn>
                             <TitleConatiner>
                                 <Title>
-                                    Account executive |&nbsp;
+                                    {careerName} &nbsp;
                                 </Title>
                             </TitleConatiner>
                             <TitleConatiner>
                                 <Title className='money'>
-                                    $1'000.000
+                                {formatter.format(salary)}
                                 </Title>
                             </TitleConatiner>
                         </ItemColumn>
                         <ItemColumn>
                             <TextConatiner>
                                 <Text>
-                                    Bilingue
+                                    {t("career.req")}
                                 </Text>
                             </TextConatiner>
                         </ItemColumn>
