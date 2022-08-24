@@ -11,24 +11,21 @@ export const Item = styled.div`
 export const ItemConatainer = styled.div`
     display: flex;
     padding: 2rem;
+    flex-wrap: wrap;
 `
 
 export const ItemRow = styled.div`
     display: flex;
     flex-direction: column;
-    
-
-    
     &.left{
         width: 70%;
     }
     &.right{
         width: 30%;
     }
-
     @media screen and (max-width: 960px) {
         width: 100%; 
-        gap: 3rem;
+        gap: 1rem;
         flex-direction: row;
         flex-wrap: wrap;
     &.left{
@@ -39,34 +36,29 @@ export const ItemRow = styled.div`
         order: 5;
     }
     }
-
 `
 
 export const ItemColumn = styled.div`
     display: flex;
     flex-direction: row;
     &.button{
-        
         justify-content: center;
         align-items: center;
         height: 100%;
     }
     @media screen and (max-width: 960px) {
         width: 100%; 
-        gap: 3rem;
+        gap: 1rem;
         flex-wrap: wrap;
         flex-direction: column;
-
         &.button{
-        
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        order: 5;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            order: 5;
+            gap: 1rem;
+        }
     }
-    }
-
-    
 `
 
 export const TitleConatiner = styled.div`
@@ -74,7 +66,6 @@ export const TitleConatiner = styled.div`
     @media screen and (max-width: 960px) {
         align-self: center;
         align-items: center;
-        display: block;
     }
 
 `
@@ -117,7 +108,4 @@ export const ButtonContainer = styled.div`
     align-self: center;
     align-items: stretch;
     width: 100%;
-
 `
-
-

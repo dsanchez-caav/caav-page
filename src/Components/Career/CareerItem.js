@@ -31,7 +31,7 @@ const CareerItem = ({careerName, salary, carrerid}) => {
                         <ItemColumn>
                             <TitleConatiner>
                                 <Title>
-                                    {careerName} &nbsp;
+                                    {careerName} 
                                 </Title>
                             </TitleConatiner>
                             <TitleConatiner>

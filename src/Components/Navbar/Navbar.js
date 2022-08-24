@@ -26,20 +26,13 @@ const Navbar = () => {
 
   const { googleSingIn, user, logOut } = UserAuth();
 
-  const navigate = useNavigate();
-
-
   const handleGoogleSingIn = async () => {
     try {
       await googleSingIn()
-
-
     } catch (error) {
       console.log(error);
     }
   }
-
-
 
   const handleGoogleSingOut = async () => {
     try {
@@ -48,9 +41,6 @@ const Navbar = () => {
       console.log(error)
     }
   }
-
-
-
 
   const [click, setClick] = useState(false)
   const handleClick = () => setClick(!click)
@@ -130,11 +120,9 @@ const Navbar = () => {
                   </LoginBtn>
                 </NavBtnLink>
                 :
-                
-                  <LoginBtn onClick={handleGoogleSingIn} >
+                <LoginBtn onClick={handleGoogleSingIn} >
                   {t("nav.button.login")}
-                  </LoginBtn>
-                  
+                </LoginBtn>
               }
             </NavItemBtn>
           </NavMenu>

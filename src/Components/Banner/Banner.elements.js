@@ -190,7 +190,11 @@ export const BannerTitle = styled.h3`
         font-size: 6rem;
     }
     @media screen and (max-width: 960px) {
-        font-size: 4rem;
+        font-size: 3.2rem;
+        &.job{
+        text-align: left;
+        padding-top: 0.5rem;
+    }
     }
 `;
 

@@ -11,11 +11,7 @@ export default async function Getcareer(id) {
 
     const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
-        
-        console.log(doc.id, " => ", doc.data());
         careers.push(doc);
-        console.log(careers)
-        
     });
     
     return careers;

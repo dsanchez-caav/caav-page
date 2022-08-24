@@ -39,8 +39,6 @@ const AdminCareer = () => {
         timerProgressBar: false
     })
 
-
-
     return (
         <>
             <CareerSection>

@@ -16,11 +16,8 @@ import {
 
 import { useTranslation } from "react-i18next";
 import { Container } from '../../globlalStyles';
-import Getcareer from '../../Context/SearchCareer';
 
-import { useParams } from "react-router-dom";
-
-const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, SubtitleB }) => {
+const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, SubtitleB, careerName, salary }) => {
 
     const [t, i18n] = useTranslation("global");
 
@@ -28,28 +25,6 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
         style: 'currency', currency: 'COP', maximumFractionDigits: 0,
     });
 
-    //
-
-    let { id } = useParams();
-
-
-    const [careers, setCareer] = React.useState([]);
-
-    function ActualizarCareer(id) {
-        Getcareer(id).then((careers) => {
-            setCareer(careers);
-        });
-    }
-
-    React.useEffect(() => {
-        ActualizarCareer(id);
-    }, []);
-
-
-    console.log(careers)
-
-
-    //
 
     if (title === "Services") {
         return (
@@ -176,22 +151,14 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
         return (
             <>
                 <BannerSectionJo>
-
-                    {careers && careers.map((career) => (
-                        <Container>
-                            <BannerTitle className='job'>
-                                {career.data().Name}
-                            </BannerTitle>
-                            <BannerTagline className='job'>
-                            {formatter.format(career.data().Salary)}
-                            </BannerTagline>
-                        </Container>
-
-                    ))}
-
-
-
-
+                    <Container>
+                        <BannerTitle className='job'>
+                            {careerName}
+                        </BannerTitle>
+                        <BannerTagline className='job'>
+                            {formatter.format(salary)}
+                        </BannerTagline>
+                    </Container>
                 </BannerSectionJo>
             </>
         )
