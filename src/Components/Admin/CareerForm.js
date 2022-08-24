@@ -19,11 +19,14 @@ import { useTranslation } from 'react-i18next'
 
 import addCareer from '../../Context/AddCareer'
 
+import { useNavigate } from 'react-router-dom';
+
 const CareerForm = () => {
 
 
     const [t, i18n] = useTranslation("global");
 
+    const navigate = useNavigate();
 
     const initialState = {
         Name: "",
@@ -71,12 +74,16 @@ const CareerForm = () => {
             background: '#a5dc86',
             iconColor: '#F9F9F9',
             showConfirmButton: false,
-            timer: 1500,
-            timerProgressBar: false
+            timer: 5000,
+            timerProgressBar: true,
+            showConfirmButton: true,
+            confirmButtonColor: '#3085d6',
+
+
         })
 
         e.preventDefault();
-        if (values.Name == "" || values.Name.length < 5) {
+        if (values.Name == "") {
             ToastE.fire({
                 title: (t("admin.careerform.nameerror"))
             })
@@ -92,8 +99,15 @@ const CareerForm = () => {
         } else {
             addCareer(values)
             ToastA.fire({
-                title: (t("admin.careerform.aprove"))
+                title: (t("admin.careerform.aprove")),
+                confirmButtonText: (t("admin.careerform.back")),
+
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    navigate("/admin/career/table")
+                }
             })
+
             setState(initialState)
 
         }

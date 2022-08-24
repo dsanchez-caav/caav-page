@@ -74,7 +74,9 @@
         "pagecontact": "Contáctanos",
         "pageser": "Servicios",
         "pageca": "Vacantes",
-        "page404": "No Encontrada"
+        "page404": "No Encontrada",
+        "pageadminadd": "| Admin - Añadir vacante",
+        "pageadmintable": "| Admin - Tabla vacantes"
     },
     "show":{
         "marketing":{
@@ -196,15 +198,18 @@
             "deserror": "Error en el campo: Descripción",
             "salerror": "Error en el campo: Salario",
             "aprove": "Vacante añadida con exito",
+            "back": "Volver a todas las vacantes",
             "title": "Crear vacante",
             "dest": "Desde este formulario puedes crear una nueva vacante (Todos los campos son obligatorios)"
         },
         "careertable":{
             "id": "ID",
             "name": "Nombre",
+            "sal": "Salario",
             "acc": "Acciones",
             "title": "Tabla de vacantes",
-            "des": "En la siguiente tabla estan listadas todas las vacantes publicadas en este momento, desde los botones de acción se pueden modificar o eliminar"
+            "des": "En la siguiente tabla estan listadas todas las vacantes publicadas en este momento, desde los botones de acción se pueden modificar o eliminar",
+            "del": "Vacante eliminada"
         }
     }
 }

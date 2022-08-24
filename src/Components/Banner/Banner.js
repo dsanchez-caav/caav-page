@@ -16,10 +16,40 @@ import {
 
 import { useTranslation } from "react-i18next";
 import { Container } from '../../globlalStyles';
+import Getcareer from '../../Context/SearchCareer';
+
+import { useParams } from "react-router-dom";
 
 const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, SubtitleB }) => {
 
     const [t, i18n] = useTranslation("global");
+
+    const formatter = new Intl.NumberFormat('es-CO', {
+        style: 'currency', currency: 'COP', maximumFractionDigits: 0,
+    });
+
+    //
+
+    let { id } = useParams();
+
+
+    const [careers, setCareer] = React.useState([]);
+
+    function ActualizarCareer(id) {
+        Getcareer(id).then((careers) => {
+            setCareer(careers);
+        });
+    }
+
+    React.useEffect(() => {
+        ActualizarCareer(id);
+    }, []);
+
+
+    console.log(careers)
+
+
+    //
 
     if (title === "Services") {
         return (
@@ -146,22 +176,23 @@ const Banner = ({ title, Subtitle, titletras, destras, desuni, SubtitleA, Subtit
         return (
             <>
                 <BannerSectionJo>
-                    <Container>
-                        <BannerTagline >
-                            {t(Subtitle)}
-                        </BannerTagline>
-                        <BannerTitle>
-                            {t(titletras)}
-                        </BannerTitle>
-                    </Container>
+
+                    {careers && careers.map((career) => (
+                        <Container>
+                            <BannerTitle className='job'>
+                                {career.data().Name}
+                            </BannerTitle>
+                            <BannerTagline className='job'>
+                            {formatter.format(career.data().Salary)}
+                            </BannerTagline>
+                        </Container>
+
+                    ))}
+
+
+
+
                 </BannerSectionJo>
-                <BannerSectionDes>
-                    <Container>
-                        <BannerDes>
-                            {t(destras)}
-                        </BannerDes>
-                    </Container>
-                </BannerSectionDes>
             </>
         )
     }

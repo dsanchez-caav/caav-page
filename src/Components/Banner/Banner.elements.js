@@ -135,12 +135,17 @@ export const BannerTagline = styled.h4`
     text-align: center;
     justify-content: center;
     font-family: 'Jost', sans-serif;
-    letter-spacing: 1vh;
+    letter-spacing: 1rem;
     font-weight: 400;
     font-size: 2.8rem;
     padding-top: 8%;
     &.caav{
         padding-top: 4%;
+    }
+    &.job{
+        text-align: left;
+        padding-top: 1rem;
+        letter-spacing: normal;
     }
     @media screen and (max-device-width: 1400px) {
         font-size: 2.2rem;
@@ -176,6 +181,10 @@ export const BannerTitle = styled.h3`
     font-size: 6.5rem;
     &.caav{
         letter-spacing: 2rem;
+    }
+    &.job{
+        text-align: left;
+        padding-top: 1rem;
     }
     @media screen and (max-device-width: 1400px) {
         font-size: 6rem;

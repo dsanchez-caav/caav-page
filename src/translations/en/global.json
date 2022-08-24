@@ -74,7 +74,9 @@
         "pagecontact": "Contact Us",
         "pageser": "Services",
         "pageca": "Careers",
-        "page404": "Not Found"
+        "page404": "Not Found",
+        "pageadminadd": "| Admin - Add career",
+        "pageadmintable": "| Admin - Table career"
     },
     "show":{
         "marketing":{
@@ -196,15 +198,18 @@
             "deserror": "Error at field: Description",
             "salerror": "Error at field: Salary",
             "aprove": "Succes add career",
+            "back": "Back to all careers",
             "title": "Add career",
             "dest": "From this form you can create a new career (All fields are required)"
         },
         "careertable":{
             "id": "ID",
             "name": "Name",
+            "sal": "Salary",
             "acc": "Actions",
             "title": "Career table",
-            "des": "In the following table all the careers published at this time are listed, from the action buttons they can be modified or deleted"
+            "des": "In the following table all the careers published at this time are listed, from the action buttons they can be modified or deleted",
+            "del": "Career deleted"
         }
     }
 }

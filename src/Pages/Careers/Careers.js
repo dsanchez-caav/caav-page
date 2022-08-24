@@ -11,11 +11,11 @@ const Career = () => {
     return (
         <>
             <Helmet>
-            <title>CAAV - {t("pagestitles.pageca")} </title>
+                <title>CAAV - {t("pagestitles.pageca")} </title>
             </Helmet>
             <Banner {...BannerCareer} />
             <CareerDes {...Careeritem1} />
-            <CareerTable/>
+            <CareerTable />
         </>
     )
 }

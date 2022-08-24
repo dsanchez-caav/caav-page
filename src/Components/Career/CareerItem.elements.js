@@ -25,6 +25,21 @@ export const ItemRow = styled.div`
     &.right{
         width: 30%;
     }
+
+    @media screen and (max-width: 960px) {
+        width: 100%; 
+        gap: 3rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    &.left{
+        width: 100%;
+    }
+    &.right{
+        width: 100%;
+        order: 5;
+    }
+    }
+
 `
 
 export const ItemColumn = styled.div`
@@ -36,10 +51,32 @@ export const ItemColumn = styled.div`
         align-items: center;
         height: 100%;
     }
+    @media screen and (max-width: 960px) {
+        width: 100%; 
+        gap: 3rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        &.button{
+        
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        order: 5;
+    }
+    }
+
+    
 `
 
 export const TitleConatiner = styled.div`
     max-width: 100%;
+    @media screen and (max-width: 960px) {
+        align-self: center;
+        align-items: center;
+        display: block;
+    }
+
 `
 
 export const Title = styled.h4`
@@ -80,5 +117,7 @@ export const ButtonContainer = styled.div`
     align-self: center;
     align-items: stretch;
     width: 100%;
+
 `
+
 

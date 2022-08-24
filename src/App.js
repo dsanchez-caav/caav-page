@@ -34,7 +34,7 @@ function App() {
           <Route exact path="/about-us" element={<AboutUs />} />
           <Route exact path="/contact" element={<ContactUs />} />
           <Route exact path="/career" element={< Career />} />
-          <Route exact path="/Job" element={< Job />} />
+          <Route exact path="/job/:id" element={< Job />} />
 
 
 

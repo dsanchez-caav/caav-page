@@ -130,11 +130,11 @@ const Navbar = () => {
                   </LoginBtn>
                 </NavBtnLink>
                 :
-                <NavBtnLink to="/admin/career/table">
-                <LoginBtn onClick={handleGoogleSingIn} >
+                
+                  <LoginBtn onClick={handleGoogleSingIn} >
                   {t("nav.button.login")}
                   </LoginBtn>
-                  </NavBtnLink>
+                  
               }
             </NavItemBtn>
           </NavMenu>

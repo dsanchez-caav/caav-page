@@ -16,7 +16,7 @@ import {
 
 import { useTranslation } from 'react-i18next'
 
-const CareerItem = ({careerName, salary}) => {
+const CareerItem = ({careerName, salary, carrerid}) => {
 
     const [t, i18n] = useTranslation("global");
     const formatter = new Intl.NumberFormat('es-CO', {
@@ -51,7 +51,7 @@ const CareerItem = ({careerName, salary}) => {
                     <ItemRow className='right'>
                         <ItemColumn className='button'>
                             <ButtonContainer>
-                                <Link to='/' >
+                                <Link to={'/job/' + carrerid} >
                                     <Button complete >
                                         {t("career.buttoninfo")}
                                     </Button>

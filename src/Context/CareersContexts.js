@@ -15,6 +15,7 @@ export default async function getAllCareer() {
         console.log(doc.id, " => ", doc.data());
         
         careersA.push(doc);
+        
         ;
     });
     return careersA;

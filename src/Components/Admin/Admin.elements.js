@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 import { Button } from '../../globlalStyles'
 
+import { Link } from "react-router-dom";
+
 /**
 =========Career General styles=================
  */
@@ -87,7 +89,10 @@ export const Cth = styled.th`
         width: 15%;
     }
     &.name{
-        width: 50%;
+        width: 30%;
+    }
+    &.sal{
+        width: 20%;
     }
     &.actions{
         width: 35%;
@@ -103,7 +108,7 @@ export const Ctbody = styled.tbody`
     border-bottom: 1px solid #dddddd;
 `
 export const ActionButton = styled(Button)`
-
+    align-items: center; 
     color: #F9F9F9;
     white-space: normal;
     padding: 0.6rem 1rem;
@@ -115,12 +120,21 @@ export const ActionButton = styled(Button)`
             background: #e89797;
             color: #4D5053;
             :active{
-            
             background: #cc5656;
         }
         }
     }
     
+`
+
+export const Addsection = styled.div`
+    display: flex;
+    align-items: flex-end;
+    padding-top: 2rem;
+` 
+
+export const NavBtnLink = styled(Link)`
+
 `
 
 /**
@@ -237,6 +251,13 @@ export const ButtonWrapper = styled.div`
         flex-direction: column-reverse;
         gap: 1rem;
         padding-top: 5%;
+    }
+    &.table{
+        width: auto;
+        align-self: center;
+        justify-content: center;
+        float: left;
+        padding: 0 1rem;
     }
     
 `;

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Banner } from '../../Components'
-import { BannerCareer, BannerJob } from './CareerData'
+import { BannerJob } from './CareerData'
 
 const Job = () => {
     return (
