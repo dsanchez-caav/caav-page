@@ -17,11 +17,12 @@ import Swal from 'sweetalert2'
 
 import { useTranslation } from 'react-i18next'
 
-import addCareer from '../../Context/AddCareer'
+
+import editCareer from '../../Context/EditCareer'
 
 import { useNavigate } from 'react-router-dom';
 
-const CareerForm = () => {
+const CareerEdit = ({id, Name, Des, Sal, Loc}) => {
 
 
     const [t, i18n] = useTranslation("global");
@@ -29,29 +30,23 @@ const CareerForm = () => {
     const navigate = useNavigate();
 
     const initialState = {
-        Name: "",
-        Description: "",
-        Salary: "",
-        Location: ""
+        Name: Name,
+        Description: Des,
+        Salary: Sal,
+        Location: Loc
     }
 
-    var date = new Date();
-
-    var careerDate = date.getDate()  + " - " + (date.getMonth()+1) + " /" + date.getFullYear()
 
     const [values, setState] = useState(initialState);
 
 
-
-
     const handleInputChange = e => {
         const { name, value } = e.target;
-        setState({ ...values, [name]: value, ["Date"]: careerDate });
+        setState({ ...values, [name]: value });
     };
 
     const handleReset = (e) => {
-        setState(initialState)
-        window.scrollTo(0, 0)
+        navigate("/admin/career/table")
     }
 
 
@@ -77,46 +72,29 @@ const CareerForm = () => {
             icon: 'success',
             background: '#a5dc86',
             iconColor: '#F9F9F9',
+            timer: 2000,
             showConfirmButton: false,
-            timer: 5000,
-            timerProgressBar: true,
-            showConfirmButton: true,
-            confirmButtonColor: '#3085d6',
-
-
         })
 
         e.preventDefault();
-        if (values.Name == "") {
+        if (values.Description == "" || values.Description.length < 10) {
             ToastE.fire({
-                title: (t("admin.careerform.nameerror"))
-            })
-
-        } else if (values.Description == "" || values.Description.length < 10) {
-            ToastE.fire({
-                title: (t("admin.careerform.deserror")),
+                title: (t("admin.careeredit.deserror")),
             })
         } else if (values.Salary == "" || values.Salary < 1000000) {
             ToastE.fire({
-                title: (t("admin.careerform.salerror")),
+                title: (t("admin.careeredit.salerror")),
             })
         } else if (values.Location == "") {
             ToastE.fire({
-                title: (t("admin.careerform.locerror")),
+                title: (t("admin.careeredit.locerror")),
             })
         } else {
-            addCareer(values)
+            editCareer(id, values)
+            navigate("/admin/career/table")
             ToastA.fire({
-                title: (t("admin.careerform.aprove")),
-                confirmButtonText: (t("admin.careerform.back")),
-
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    navigate("/admin/career/table")
-                }
+                title: (t("admin.careeredit.aprove")),
             })
-
-            setState(initialState)
 
         }
         console.log(values)
@@ -128,10 +106,10 @@ const CareerForm = () => {
         <>
             <Container>
                 <Title>
-                    {t("admin.careerform.title")}
+                    {t("admin.careeredit.title")}
                 </Title>
                 <Description>
-                    {t("admin.careerform.dest")}
+                    {t("admin.careeredit.dest")}
                 </Description>
             </Container>
 
@@ -142,20 +120,23 @@ const CareerForm = () => {
                         <FormColumn onSubmit={handleSubmit} id="form">
                             <TextContainer>
                                 <Description>
-                                    {t("admin.careerform.vname")}
+                                    {t("admin.careeredit.vname")}
                                 </Description>
                             </TextContainer>
                             <InputContainer>
                                 <FormInput
                                     type="text"
                                     name="Name"
-                                    onChange={handleInputChange}
+                                    
                                     value={values.Name}
+                                    contentEditable='false'
+                                    disabled
                                 />
+
                             </InputContainer>
                             <TextContainer>
                                 <Description>
-                                    {t("admin.careerform.des")}
+                                    {t("admin.careeredit.des")}
                                 </Description>
                             </TextContainer>
                             <InputContainer>
@@ -170,7 +151,7 @@ const CareerForm = () => {
                             </InputContainer>
                             <TextContainer>
                                 <Description>
-                                    {t("admin.careerform.sal")}
+                                    {t("admin.careeredit.sal")}
                                 </Description>
                             </TextContainer>
                             <InputContainer>
@@ -185,7 +166,7 @@ const CareerForm = () => {
                             </InputContainer>
                             <TextContainer>
                                 <Description>
-                                    {t("admin.careerform.loc")}
+                                    {t("admin.careeredit.loc")}
                                 </Description>
                             </TextContainer>
                             <InputContainer>
@@ -216,4 +197,4 @@ const CareerForm = () => {
     )
 }
 
-export default CareerForm
+export default CareerEdit

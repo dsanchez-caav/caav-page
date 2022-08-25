@@ -1,5 +1,5 @@
 import React from 'react'
-import { Banner } from '../../Components'
+import { Banner, JobDescription } from '../../Components'
 import Getcareer from '../../Context/SearchCareer'
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -22,10 +22,19 @@ const Job = () => {
 
     return (
         <>
-            {careers && careers.map((career) => (
+        { careers && careers.map((career) => (
+            <>
                 <Banner careerName={career.data().Name} title={"Job"} salary={career.data().Salary} />
+                <JobDescription description={career.data().Description} date={career.data().Date} location={career.data().Location} />
+                </>
+                
+                
             ))}
+        
         </>
+        
+            
+        
     )
 }
 

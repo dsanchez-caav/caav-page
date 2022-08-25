@@ -83,9 +83,11 @@ const AdminCareer = () => {
                                             </ActionButton>
                                         </ButtonWrapper>
                                         <ButtonWrapper className='table'>
-                                            <ActionButton>
-                                                <MdEdit />
-                                            </ActionButton>
+                                            <NavBtnLink to={'/admin/career/edit/' + (career.id)}>
+                                                <ActionButton >
+                                                    <MdEdit />
+                                                </ActionButton>
+                                            </NavBtnLink>
                                         </ButtonWrapper>
                                     </Ctd>
                                 </Ctr>

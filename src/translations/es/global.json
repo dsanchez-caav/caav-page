@@ -194,13 +194,27 @@
             "vname": "Nombre de la vacante",
             "des": "Descripción",
             "sal": "Salario",
+            "loc": "Ubicación",
             "nameerror": "Error en el campo: Nombre",
             "deserror": "Error en el campo: Descripción",
             "salerror": "Error en el campo: Salario",
+            "locerror": "Error en el campo: Ubicación",
             "aprove": "Vacante añadida con exito",
             "back": "Volver a todas las vacantes",
             "title": "Crear vacante",
             "dest": "Desde este formulario puedes crear una nueva vacante (Todos los campos son obligatorios)"
+        },
+        "careeredit":{
+            "vname": "Nombre de la vacante",
+            "des": "Descripción",
+            "sal": "Salario",
+            "loc": "Ubicación",
+            "deserror": "Error en el campo: Descripción",
+            "salerror": "Error en el campo: Salario",
+            "locerror": "Error en el campo: Ubicación",
+            "aprove": "Vacante editada con exito",
+            "title": "Editar vacante",
+            "dest": "Desde este formulario puedes editar una vacante (Todos los campos son obligatorios)"
         },
         "careertable":{
             "id": "ID",

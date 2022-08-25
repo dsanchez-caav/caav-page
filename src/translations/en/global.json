@@ -194,13 +194,27 @@
             "vname": "Career name",
             "des": "Description",
             "sal": "Salary",
+            "loc": "Location",
             "nameerror": "Error at field: Name",
             "deserror": "Error at field: Description",
             "salerror": "Error at field: Salary",
+            "locerror": "Error at field: Location",
             "aprove": "Succes add career",
             "back": "Back to all careers",
             "title": "Add career",
             "dest": "From this form you can create a new career (All fields are required)"
+        },
+        "careeredit":{
+            "vname": "Career name",
+            "des": "Description",
+            "sal": "Salary",
+            "loc": "Location",
+            "deserror": "Error at field: Description",
+            "salerror": "Error at field: Salary",
+            "locerror": "Error at field: Location",
+            "aprove": "Modified career",
+            "title": "Edit career",
+            "dest": "From this form you can edit a career (All fields are required)"
         },
         "careertable":{
             "id": "ID",

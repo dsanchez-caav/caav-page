@@ -15,12 +15,15 @@ import {
 } from './CareerItem.elements'
 
 import { useTranslation } from 'react-i18next'
+import i18next from 'i18next'
 
-const CareerItem = ({careerName, salary, carrerid}) => {
+const CareerItem = ({ careerName, salary, carrerid }) => {
 
+
+    
     const [t, i18n] = useTranslation("global");
     const formatter = new Intl.NumberFormat('es-CO', {
-        style: 'currency', currency: 'COP',  maximumFractionDigits: 0,
+        style: 'currency', currency: 'COP', maximumFractionDigits: 0,
     });
 
     return (
@@ -30,13 +33,15 @@ const CareerItem = ({careerName, salary, carrerid}) => {
                     <ItemRow className='left'>
                         <ItemColumn>
                             <TitleConatiner>
-                                <Title>
+                                {window.innerWidth < 960 ? <Title>
                                     {careerName} 
-                                </Title>
+                                </Title> : <Title>
+                                    {careerName} &nbsp;
+                                </Title>}
                             </TitleConatiner>
                             <TitleConatiner>
                                 <Title className='money'>
-                                {formatter.format(salary)}
+                                    {formatter.format(salary)}
                                 </Title>
                             </TitleConatiner>
                         </ItemColumn>

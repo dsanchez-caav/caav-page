@@ -14,6 +14,7 @@ import Job from "./Pages/Careers/Job";
 import CareerTable from "./Pages/Admin/CareerTable";
 import CareerAdd from "./Pages/Admin/CareerAdd";
 import { AuthContextPrivider } from "./Context/AuthContexts";
+import CareerEdit from "./Pages/Admin/CareerEdit";
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
             </Protected> } />
           
           <Route exact path="/admin/career/create" element={< CareerAdd />} />
+          <Route exact path="/admin/career/edit/:id" element={< CareerEdit />} />
 
           {/* Error route (404) */}
           <Route path="*" element={< NotFoundP />} />

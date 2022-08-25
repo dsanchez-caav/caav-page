@@ -47,10 +47,7 @@ const Form = () => {
         }
     };
 
-    function handleReset(){
-        document.getElementById("form").reset();
-    }
-
+    
     return (
         <>
             <FormSection>
