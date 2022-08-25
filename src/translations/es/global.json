@@ -154,7 +154,13 @@
             "phone": "Telefono",
             "description": "Mensaje",
             "buttona": "Aceptar",
-            "buttonb": "Cancelar"
+            "buttonb": "Cancelar",
+            "nameerror": "Error en el campo: Nombre",
+            "mailerror": "Error en el campo: e-mail",
+            "phoneerror": "Error en el campo: Telefono",
+            "messaerror": "Error en el campo: Mensaje",
+            "aprove": "Nos contactaremos contigo lo más pronto posible",
+            "back": "Volver al inicio"
         },
         "hints":{
             "name": "Tu Nombre",

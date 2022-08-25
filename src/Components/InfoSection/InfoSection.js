@@ -39,7 +39,7 @@ const InfoSection = () => {
                         </InfoColumn>
                         <InfoColumn>
                             <TextWrapper>
-                                <Serlink to="/Human-Resources">
+                                <Serlink to="/services/human-resources">
                                     {t("info_home.info.title_hr")}
                                 </Serlink>
                                 <Serlist>
@@ -51,7 +51,7 @@ const InfoSection = () => {
                                 <Serlist>
                                     {t("info_home.info.ser_hr3")}
                                 </Serlist>
-                                <Serlink to="/Marketing" className='mk'>
+                                <Serlink to="/services/marketing" className='mk'>
                                     {t("info_home.info.title_mk")}
                                 </Serlink>
                                 <Serlist className='mk'>

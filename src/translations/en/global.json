@@ -154,7 +154,13 @@
             "phone": "Phone",
             "description": "Message",
             "buttona": "Submit",
-            "buttonb": "Cancel"
+            "buttonb": "Cancel",
+            "nameerror": "Error at field: Name",
+            "mailerror": "Error at field: e-mail",
+            "phoneerror": "Error at field: Phone",
+            "messaerror": "Error at field: Message",
+            "aprove": "We will contact you as soon as possible",
+            "back": "Back to home"
         },
         "hints":{
             "name": "Your Name",
