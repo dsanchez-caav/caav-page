@@ -15,6 +15,7 @@ export const Title = styled.h2`
     font-size: 4.6rem;
     padding-top: 5%;
     padding-bottom: 3%;
+    width: 60%;
     @media screen and (max-width: 1400px){
         font-size: 4rem;
     }
@@ -33,6 +34,13 @@ export const Description = styled.p`
         font-size: 1.6rem;
     }
 `
+
+export const TitleDiv = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`
+
 /**
 ========= Career Table styles =================
  */
@@ -142,6 +150,7 @@ export const NavBtnLink = styled(Link)`
         text-decoration: none;
     }
 `
+
 
 /**
 ========= Career Form styles =================

@@ -3,7 +3,7 @@ import { MdLocationOn, MdOutlineDateRange } from 'react-icons/md'
 import { Container } from '../../globlalStyles'
 import { DesContainer, Description, JobInfo, Subtitle, Title } from './JobDescription.elements'
 
-const JobDescription = ({description, location, date}) => {
+const JobDescription = ({ description, location, date }) => {
     return (
         <>
             <DesContainer>
@@ -18,17 +18,20 @@ const JobDescription = ({description, location, date}) => {
                         Requerimientos
                     </Subtitle>
                     <Description>
-                        Aqui van dos elementos
+                        Bilingüe
                     </Description>
+                    <JobInfo>
+                        <MdLocationOn />&nbsp;  {location}
+                    </JobInfo>
+                    <JobInfo>
+                        <MdOutlineDateRange />&nbsp;  {date}
+                    </JobInfo>
+                    <Title>
+                        ¿Te interesa la oferta?
+                    </Title>
                     <Description>
-                        Aqui van dos elementos
+                        Escríbenos un correo a careers@caav.com.co, incluye tu información de contacto y tu hoja de vida, estaremos en contacto contigo.
                     </Description>
-                    <JobInfo>
-                        <MdLocationOn/>&nbsp;  {location}
-                    </JobInfo>
-                    <JobInfo>
-                        <MdOutlineDateRange/>&nbsp;  {date}
-                    </JobInfo>
                 </Container>
             </DesContainer>
         </>

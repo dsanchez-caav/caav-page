@@ -2,9 +2,9 @@ import React from 'react'
 import { Button, Container } from '../../globlalStyles'
 import getAllContacts from '../../Context/ContactContexts'
 import { deleteContact } from '../../Context/DeleteContact'
-import { CareerSection, Description, Title, Ctable, Ctd, Cth, Cthead, Ctr, Ctbody, ActionButton, ButtonWrapper, Addsection, NavBtnLink } from './Admin.elements'
+import { CareerSection, Description, Title, Ctable, Ctd, Cth, Cthead, Ctr, Ctbody, ActionButton, ButtonWrapper, Addsection, NavBtnLink, TitleDiv } from './Admin.elements'
 import { useTranslation } from "react-i18next";
-import { MdDelete, MdEdit, MdRemoveRedEye } from "react-icons/md";
+import { MdDelete, MdRemoveRedEye, MdHome } from "react-icons/md";
 import Swal from 'sweetalert2'
 
 
@@ -40,9 +40,18 @@ const AdminContact = () => {
         <>
             <CareerSection>
                 <Container>
-                    <Title>
-                        {t("admin.contact.title")}
-                    </Title>
+                    <TitleDiv>
+                        <Title>
+                            {t("admin.contact.title")}
+                        </Title>
+                        <ButtonWrapper>
+                            <NavBtnLink to="/admin">
+                                <Button>
+                                    <MdHome color="#F9F9F9" />
+                                </Button>
+                            </NavBtnLink>
+                        </ButtonWrapper>
+                    </TitleDiv>
                     <Description>
                         {t("admin.contact.des")}
                     </Description>
@@ -74,7 +83,7 @@ const AdminContact = () => {
                                             <ActionButton className='delete' onClick={() => {
                                                 deleteContact(contact).then(
                                                     ActualizarContatcs(),
-                                                ToastE.fire({
+                                                    ToastE.fire({
                                                         title: (t("admin.contact.del"))
                                                     })
                                                 )

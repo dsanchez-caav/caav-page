@@ -76,7 +76,10 @@
         "pageca": "Vacantes",
         "page404": "No Encontrada",
         "pageadminadd": "| Admin - Añadir vacante",
-        "pageadmintable": "| Admin - Tabla vacantes"
+        "pageadmintable": "| Admin - Tabla vacantes",
+        "pageadmin": "| Admin",
+        "pageadmincon": "| Admin - Tabla contactos",
+        "pageadminconview": "| Admin - Vista contacto"
     },
     "show":{
         "marketing":{
@@ -230,6 +233,23 @@
             "title": "Tabla de vacantes",
             "des": "En la siguiente tabla estan listadas todas las vacantes publicadas en este momento, desde los botones de acción se pueden modificar o eliminar",
             "del": "Vacante eliminada"
+        },
+        "principal":{
+            "title": "Administración",
+            "sutitle": "CAAV",
+            "des1": "Hola ",
+            "des2": ", este es el portal para administrar los servicios ofrecidos en la página de CAAV, selecciona una de las siguientes opciones",
+            "card1": "Contactos",
+            "card2": "Vacantes"
+        },
+        "contact":{
+            "id": "ID",
+            "name": "Nombre",
+            "email": "E-Mail",
+            "acc": "Acciones",
+            "title": "Tabla de contactos",
+            "des": "En la siguiente tabla se encuentra la información de todos los que se han intentado poner en contacto con CAAV desde la página de contacto, desde los botones de acción puede eliminar o visualizar la información completa",
+            "del": "Contact deleted"
         }
     }
 }

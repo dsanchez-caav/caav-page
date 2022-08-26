@@ -76,7 +76,10 @@
         "pageca": "Careers",
         "page404": "Not Found",
         "pageadminadd": "| Admin - Add career",
-        "pageadmintable": "| Admin - Table career"
+        "pageadmintable": "| Admin - Table career",
+        "pageadmin": "| Admin",
+        "pageadmincon": "| Admin - Table contact",
+        "pageadminconview": "| Admin - View contact"
     },
     "show":{
         "marketing":{

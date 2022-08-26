@@ -10,7 +10,7 @@ const ConatctTable = () => {
     return (
         <>
             <Helmet>
-                <title>CAAV {t("pagestitles.pageadmintable")} </title>
+                <title>CAAV {t("pagestitles.pageadmincon")} </title>
             </Helmet>
             <AContatctable />
         </>

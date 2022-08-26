@@ -13,7 +13,7 @@ const AdminPrincipal = () => {
     return (
         <>
             <Helmet>
-                <title>CAAV {t("pagestitles.pageadminadd")} </title>
+                <title>CAAV {t("pagestitles.pageadmin")} </title>
             </Helmet>
             <Banner title={"Admin"}
                 titletras={t("admin.principal.title")}

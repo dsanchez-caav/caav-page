@@ -50,6 +50,7 @@ justify-content: left;
         padding-top: 0;
     }
 
+    white-space: pre-wrap;
 `
 
 export const Subtitle = styled.h3`

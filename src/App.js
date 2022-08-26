@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Footer, Protected } from "./Components";
 import GlobalStyle from "./globlalStyles";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/HomePage/Home";
 import ServicesPrincipal from "./Pages/ServicesPages/ServicesPrincipal";
 import MarketingService from "./Pages/ServicesPages/MarketingService";
@@ -40,18 +40,26 @@ function App() {
           <Route exact path="/job/:id" element={< Job />} />
           <Route exact path="/admin" element={< AdminPrincipal />} />
 
-
-
           {/* Protected routes */}
           <Route exact path="/admin/career/table" element={
             <Protected>
               < CareerTable />
-            </Protected> } />
-          
-          <Route exact path="/admin/career/create" element={< CareerAdd />} />
-          <Route exact path="/admin/career/edit/:id" element={< CareerEdit />} />
-          <Route exact path="/admin/contact/table" element={<ConatctTable  />} />
-
+            </Protected>} />
+          <Route exact path="/admin/career/create" element={
+            <Protected>
+              < CareerAdd />
+            </Protected>
+          } />
+          <Route exact path="/admin/career/edit/:id" element={
+            <Protected>
+              < CareerEdit />
+            </Protected>
+          } />
+          <Route exact path="/admin/contact/table" element={
+            <Protected>
+              <ConatctTable />
+            </Protected>
+          } />
 
           {/* Error route (404) */}
           <Route path="*" element={< NotFoundP />} />

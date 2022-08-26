@@ -2,9 +2,9 @@ import React from 'react'
 import { Button, Container } from '../../globlalStyles'
 import getAllCareer from '../../Context/CareersContexts'
 import { deleteCareer } from '../../Context/DeleteCareer'
-import { CareerSection, Description, Title, Ctable, Ctd, Cth, Cthead, Ctr, Ctbody, ActionButton, ButtonWrapper, Addsection, NavBtnLink } from './Admin.elements'
+import { CareerSection, Description, Title, Ctable, Ctd, Cth, Cthead, Ctr, Ctbody, ActionButton, ButtonWrapper, Addsection, NavBtnLink, TitleDiv } from './Admin.elements'
 import { useTranslation } from "react-i18next";
-import { MdDelete, MdEdit } from "react-icons/md";
+import { MdDelete, MdEdit, MdHome } from "react-icons/md";
 import Swal from 'sweetalert2'
 
 
@@ -43,9 +43,18 @@ const AdminCareer = () => {
         <>
             <CareerSection>
                 <Container>
-                    <Title>
-                        {t("admin.careertable.title")}
-                    </Title>
+                <TitleDiv>
+                        <Title>
+                            {t("admin.careertable.title")}
+                        </Title>
+                        <ButtonWrapper>
+                            <NavBtnLink to="/admin">
+                                <Button>
+                                    <MdHome color="#F9F9F9" />
+                                </Button>
+                            </NavBtnLink>
+                        </ButtonWrapper>
+                    </TitleDiv>
                     <Description>
                         {t("admin.careertable.des")}
                     </Description>
