@@ -255,6 +255,10 @@ export const TextFormA = styled.textarea`
     @media screen and (max-device-width: 1400px) {
         font-size: 1.6rem;
     }
+    :disabled{
+        color: #7A7A7A;
+
+    }
 `
 
 export const ButtonWrapper = styled.div`
@@ -280,6 +284,8 @@ export const ButtonWrapper = styled.div`
     }
     
 `;
+
+
 
 //============ Admin principal ================
 

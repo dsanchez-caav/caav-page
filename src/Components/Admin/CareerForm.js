@@ -36,6 +36,7 @@ const CareerForm = () => {
     }
 
     var date = new Date();
+    
 
     var careerDate = date.getDate()  + " - " + (date.getMonth()+1) + " /" + date.getFullYear()
 

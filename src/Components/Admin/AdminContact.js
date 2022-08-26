@@ -92,7 +92,7 @@ const AdminContact = () => {
                                             </ActionButton>
                                         </ButtonWrapper>
                                         <ButtonWrapper className='table'>
-                                            <NavBtnLink to="/">
+                                            <NavBtnLink to={"/admin/contact/view/" + (contact.id)}>
                                                 <ActionButton >
                                                     <MdRemoveRedEye />
                                                 </ActionButton>

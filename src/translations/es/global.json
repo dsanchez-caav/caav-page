@@ -249,7 +249,8 @@
             "acc": "Acciones",
             "title": "Tabla de contactos",
             "des": "En la siguiente tabla se encuentra la información de todos los que se han intentado poner en contacto con CAAV desde la página de contacto, desde los botones de acción puede eliminar o visualizar la información completa",
-            "del": "Contact deleted"
+            "del": "Contacto eliminado",
+            "viewT": "Información del contacto"
         }
     }
 }

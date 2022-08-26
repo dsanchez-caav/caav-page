@@ -17,6 +17,7 @@ import { AuthContextPrivider } from "./Context/AuthContexts";
 import CareerEdit from "./Pages/Admin/CareerEdit";
 import AdminPrincipal from "./Pages/Admin/AdminPrincipal";
 import ConatctTable from "./Pages/Admin/ContactTable";
+import ContactView from "./Pages/Admin/ContactView";
 
 function App() {
 
@@ -58,6 +59,12 @@ function App() {
           <Route exact path="/admin/contact/table" element={
             <Protected>
               <ConatctTable />
+            </Protected>
+          } />
+
+          <Route exact path="/admin/contact/view/:id" element={
+            <Protected>
+              <ContactView />
             </Protected>
           } />
 
