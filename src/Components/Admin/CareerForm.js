@@ -10,7 +10,8 @@ import {
     InputContainer,
     TextContainer,
     TextFormA,
-    ButtonWrapper
+    ButtonWrapper,
+    NavBtnLink
 } from './Admin.elements'
 
 import Swal from 'sweetalert2'
@@ -36,9 +37,9 @@ const CareerForm = () => {
     }
 
     var date = new Date();
-    
 
-    var careerDate = date.getDate()  + " - " + (date.getMonth()+1) + " /" + date.getFullYear()
+
+    var careerDate = date.getDate() + " - " + (date.getMonth() + 1) + " /" + date.getFullYear()
 
     const [values, setState] = useState(initialState);
 
@@ -200,9 +201,12 @@ const CareerForm = () => {
                                 />
                             </InputContainer>
                             <ButtonWrapper>
-                                <Button type='reset' onClick={handleReset} className='cancel'>
-                                    {t("contact.form.buttonb")}
-                                </Button>
+                                <NavBtnLink to="/admin/career/table">
+                                    <Button type='reset' onClick={handleReset} className='cancel'>
+                                        {t("contact.form.buttonb")}
+                                    </Button>
+                                </NavBtnLink>
+
                                 <Button type='submit' >
                                     {t("contact.form.buttona")}
                                 </Button>

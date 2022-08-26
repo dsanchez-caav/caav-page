@@ -10,7 +10,8 @@ import {
     InputContainer,
     TextContainer,
     TextFormA,
-    ButtonWrapper
+    ButtonWrapper,
+    NavBtnLink
 } from './Admin.elements'
 
 import Swal from 'sweetalert2'
@@ -180,9 +181,12 @@ const CareerEdit = ({id, Name, Des, Sal, Loc}) => {
                                 />
                             </InputContainer>
                             <ButtonWrapper>
-                                <Button type='reset' onClick={handleReset} className='cancel'>
+                                <NavBtnLink to="/admin/career/table">
+                                <Button type='reset' className='cancel'>
                                     {t("contact.form.buttonb")}
                                 </Button>
+                                </NavBtnLink>
+                                
                                 <Button type='submit' >
                                     {t("contact.form.buttona")}
                                 </Button>
