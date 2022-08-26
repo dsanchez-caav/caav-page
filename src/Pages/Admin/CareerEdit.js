@@ -25,9 +25,12 @@ const CareerEdit = () => {
 
     return (
         <>
+            <Helmet>
+                <title>CAAV {t("pagestitles.pageeditcareer")} </title>
+            </Helmet>
             {careers && careers.map((career) => (
                 <>
-                <AEditCareer Name={career.data().Name} id={career.id} Des={career.data().Description} Loc={career.data().Location} Sal={career.data().Salary} />
+                    <AEditCareer Name={career.data().Name} id={career.id} Des={career.data().Description} Loc={career.data().Location} Sal={career.data().Salary} />
                 </>
             ))}
 

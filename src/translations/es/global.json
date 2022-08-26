@@ -79,7 +79,8 @@
         "pageadmintable": "| Admin - Tabla vacantes",
         "pageadmin": "| Admin",
         "pageadmincon": "| Admin - Tabla contactos",
-        "pageadminconview": "| Admin - Vista contacto"
+        "pageadminconview": "| Admin - Vista contacto",
+        "pageeditcareer": "| Admin - Editar vacante"
     },
     "show":{
         "marketing":{

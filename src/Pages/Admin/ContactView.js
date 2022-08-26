@@ -27,7 +27,7 @@ const ContactView = () => {
   return (
     <>
       <Helmet>
-        <title>CAAV - {t("pagestitles.pagecontact")} </title>
+        <title>CAAV - {t("pagestitles.pageadminconview")} </title>
       </Helmet>
       {contacts && contacts.map((contact) => (
         <>

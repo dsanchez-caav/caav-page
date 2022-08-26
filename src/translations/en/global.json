@@ -79,7 +79,8 @@
         "pageadmintable": "| Admin - Table career",
         "pageadmin": "| Admin",
         "pageadmincon": "| Admin - Table contact",
-        "pageadminconview": "| Admin - View contact"
+        "pageadminconview": "| Admin - View contact",
+        "pageeditcareer": "| Admin - Career edit"
     },
     "show":{
         "marketing":{
