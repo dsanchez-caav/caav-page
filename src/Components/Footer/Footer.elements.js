@@ -133,6 +133,10 @@ export const Linkedin = styled(AiOutlineLinkedin)`
     @media screen and (max-width: 960px){
         font-size: 2.5rem;
     }
+    &:hover {
+            transition: all 0.3s ease-out;
+            color: #D2D8DD;
+        }
 `
 export const Facebook = styled(AiOutlineFacebook)`
     color: #F9F9F9;
@@ -155,4 +159,8 @@ export const Instagram = styled(AiOutlineInstagram)`
     @media screen and (max-width: 960px){
         font-size: 2.5rem;
     }
+    &:hover {
+            transition: all 0.3s ease-out;
+            color: #D2D8DD;
+        }
 `

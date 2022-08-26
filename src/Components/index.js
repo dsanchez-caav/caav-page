@@ -15,5 +15,7 @@ export { default as CareerTable } from "./Career/CareerTable";
 export { default as AdminCareer } from "./Admin/AdminCareer";
 export { default as ACareerForm } from "./Admin/CareerForm";
 export { default as AEditCareer } from "./Admin/CareerEdit";
+export { default as AContatctable } from "./Admin/AdminContact";
+export { default as CAdminPrincipal } from "./Admin/AdminPrincipal";
 export { default as Protected } from "./Protected/Protected";
 export { default as JobDescription } from "./JobDescription/JobDescription";

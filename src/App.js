@@ -16,6 +16,7 @@ import CareerAdd from "./Pages/Admin/CareerAdd";
 import { AuthContextPrivider } from "./Context/AuthContexts";
 import CareerEdit from "./Pages/Admin/CareerEdit";
 import AdminPrincipal from "./Pages/Admin/AdminPrincipal";
+import ConatctTable from "./Pages/Admin/ContactTable";
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
           <Route exact path="/contact" element={<ContactUs />} />
           <Route exact path="/career" element={< Career />} />
           <Route exact path="/job/:id" element={< Job />} />
+          <Route exact path="/admin" element={< AdminPrincipal />} />
 
 
 
@@ -48,7 +50,7 @@ function App() {
           
           <Route exact path="/admin/career/create" element={< CareerAdd />} />
           <Route exact path="/admin/career/edit/:id" element={< CareerEdit />} />
-          <Route exact path="/admin" element={< AdminPrincipal />} />
+          <Route exact path="/admin/contact/table" element={<ConatctTable  />} />
 
 
           {/* Error route (404) */}

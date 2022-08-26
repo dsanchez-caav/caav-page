@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { BsGlobe } from "react-icons/bs";
 import {
@@ -18,11 +18,14 @@ import {
 import { Menuitems } from "./Menuitems";
 import { useTranslation } from "react-i18next";
 import { DropdownS, DropdownC, DropdownL } from "./Dropdown";
-import { Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Logo from "../../Images/Logos/LogoOriginal.svg"
 import { UserAuth } from "../../Context/AuthContexts";
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+
 
   const { googleSingIn, user, logOut } = UserAuth();
 
@@ -33,6 +36,7 @@ const Navbar = () => {
       console.log(error);
     }
   }
+
 
   const handleGoogleSingOut = async () => {
     try {
@@ -120,7 +124,13 @@ const Navbar = () => {
                   </LoginBtn>
                 </NavBtnLink>
                 :
-                <LoginBtn onClick={handleGoogleSingIn} >
+                <LoginBtn onClick={() => {
+                  handleGoogleSingIn().then(
+                    
+                    navigate("/admin")
+                    
+                  )
+                }} >
                   {t("nav.button.login")}
                 </LoginBtn>
               }

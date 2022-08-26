@@ -31,7 +31,7 @@ const Ourservices = ({ title, ctitle1, ctitle2 }) => {
                     </TitleContainer>
                     <ServicesColumn>
                         <ServiceCard>
-                            <CLink to="/Marketing">
+                            <CLink to="/services/marketing">
                                 <CardRow>
                                     <CtitleCont>
                                         <CardTitle>
@@ -45,7 +45,7 @@ const Ourservices = ({ title, ctitle1, ctitle2 }) => {
                             </CLink>
                         </ServiceCard>
                         <ServiceCard>
-                            <CLink to="/Human-Resources">
+                            <CLink to="/services/human-resources">
                                 <CardRow>
                                     <CtitleCont>
                                         <CardTitle>

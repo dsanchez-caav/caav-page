@@ -230,6 +230,23 @@
             "title": "Career table",
             "des": "In the following table all the careers published at this time are listed, from the action buttons they can be modified or deleted",
             "del": "Career deleted"
+        },
+        "principal":{
+            "title": "Management",
+            "sutitle": "CAAV",
+            "des1": "Hi ",
+            "des2": ", this is the portal for managing the services offered on the CAAV page, select one of the following options",
+            "card1": "Contacts",
+            "card2": "Careers"
+        },
+        "contact":{
+            "id": "ID",
+            "name": "Name",
+            "email": "E-Mail",
+            "acc": "Actions",
+            "title": "Contact table",
+            "des": "In the following table is the information of all those who tried to contact CAAV from the contact page, from the action buttons you can delete or see the complete information",
+            "del": "Contact deleted"
         }
     }
 }

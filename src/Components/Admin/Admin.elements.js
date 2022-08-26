@@ -97,6 +97,9 @@ export const Cth = styled.th`
     &.actions{
         width: 35%;
     }
+    &.contactname{
+        width: 20%;
+    }
 `
 
 export const Ctd = styled.td`
@@ -134,7 +137,10 @@ export const Addsection = styled.div`
 ` 
 
 export const NavBtnLink = styled(Link)`
-
+    text-decoration: none;
+    :visited{
+        text-decoration: none;
+    }
 `
 
 /**
@@ -203,6 +209,10 @@ export const FormInput = styled.input`
     @media screen and (max-device-width: 1400px) {
         font-size: 1.6rem;
     }
+    :disabled{
+        color: #7A7A7A;
+
+    }
 `
 
 export const TextFormA = styled.textarea`
@@ -261,3 +271,69 @@ export const ButtonWrapper = styled.div`
     }
     
 `;
+
+//============ Admin principal ================
+
+export const AdminColumn = styled.div`
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    flex-wrap: wrap;
+    @media screen and (max-width: 960px) {
+        width: 100%; 
+        gap: 3rem;
+    }
+`
+
+export const AdminCard = styled.div`
+    width: 40%;
+    height: auto;
+    background: #F1F1F1;
+    border-radius: 10px;
+    justify-content: space-around;
+    justify-self: center;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    @media screen and (max-device-width: 1400px) {
+        width: 42%; 
+    }
+    @media screen and (max-width: 690px) {
+        width: 100%; 
+    }
+
+`
+
+export const CardRow = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
+export const CardTitle = styled.h3`
+    font-family: 'PT Sans', sans-serif;
+    color: #222D5A;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+    @media screen and (max-device-width: 1400px) {
+        font-size: 2.4rem;
+    }
+    @media screen and (max-width: 960px) {
+        font-size: 2.1rem;
+        
+    }
+`
+
+export const Ctitle = styled.div`
+    display: flex;
+    align-self: center;
+    align-items: center;
+    
+
+    padding: 3rem 0;
+    @media screen and (max-width: 960px) {
+        align-self: center;
+        align-items: center;
+        display: block;
+    }
+
+`

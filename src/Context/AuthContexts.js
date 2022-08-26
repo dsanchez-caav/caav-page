@@ -1,13 +1,11 @@
 import { useContext, createContext, useEffect, useState } from "react";
 import { GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged, signInWithRedirect } from "firebase/auth";
 import { auth } from "../Firebase/Firebase"
-import { useNavigate } from "react-router-dom";
 
 const AuthContext = createContext();
 
 export const AuthContextPrivider = ({ children }) => {
 
-    const navigate = useNavigate();
 
 
     const [user, setUser] = useState({}); 
@@ -17,7 +15,8 @@ export const AuthContextPrivider = ({ children }) => {
         provider.setCustomParameters({
             hd: "caav.com.co"
         });
-        signInWithPopup(auth, provider)
+        //signInWithPopup(auth, provider)
+        signInWithRedirect(auth, provider)
     }
 
     const logOut = () => {
