@@ -1,4 +1,4 @@
-import React, { useState, useRef  } from 'react';
+import React, { useState, useRef } from 'react';
 import { Button, Container } from '../../globlalStyles'
 
 import { useTranslation } from "react-i18next";
@@ -9,14 +9,15 @@ import { MdHome } from 'react-icons/md';
 
 
 
-const FormView = ({name, email, phone, mess}) => {
+const FormView = ({ name, email, phone, mess, date }) => {
 
     const initialState = {
-    user_name: name,
-    user_email: email,
-    user_phone: phone,
-    message: mess
-}
+        user_name: name,
+        user_email: email,
+        user_phone: phone,
+        message: mess,
+        date: date
+    }
 
     const [t, i18n] = useTranslation("global");
 
@@ -29,7 +30,7 @@ const FormView = ({name, email, phone, mess}) => {
         <>
             <FormSection>
                 <Container>
-                <TitleDiv>
+                    <TitleDiv>
                         <Title>
                             {t("admin.contact.viewT")}
                         </Title>
@@ -53,7 +54,7 @@ const FormView = ({name, email, phone, mess}) => {
                                     type="text"
                                     name="user_name"
                                     id="user_name"
-                                    value={values.user_name} 
+                                    value={values.user_name}
                                     disabled
                                 />
                             </InputContainer>
@@ -68,7 +69,7 @@ const FormView = ({name, email, phone, mess}) => {
                                     type="email"
                                     id="user_email"
                                     disabled
-                                    value={values.user_email} 
+                                    value={values.user_email}
                                 />
                             </InputContainer>
                             <TextContainer>
@@ -82,8 +83,8 @@ const FormView = ({name, email, phone, mess}) => {
                                     name="user_phone"
                                     id="user_phone"
                                     disabled
-                                    value={values.user_phone} 
-                                    />
+                                    value={values.user_phone}
+                                />
                             </InputContainer>
                             <TextContainer>
                                 <Description>
@@ -96,6 +97,20 @@ const FormView = ({name, email, phone, mess}) => {
                                     id="message"
                                     type="text"
                                     value={values.message}
+                                    disabled
+                                />
+                            </InputContainer>
+                            <TextContainer>
+                                <Description>
+                                    {t("contact.form.date")}
+                                </Description>
+                            </TextContainer>
+                            <InputContainer>
+                                <FormInput
+                                    name="date"
+                                    id="date"
+                                    type="text"
+                                    value={values.date}
                                     disabled
                                 />
                             </InputContainer>

@@ -31,7 +31,7 @@ const ContactView = () => {
       </Helmet>
       {contacts && contacts.map((contact) => (
         <>
-          <CContactView name={contact.data().user_name} email={contact.data().user_email} phone={contact.data().user_phone} mess={contact.data().message} />
+          <CContactView name={contact.data().user_name} email={contact.data().user_email} phone={contact.data().user_phone} mess={contact.data().message} date={contact.data().Date} />
         </>
       ))}
 

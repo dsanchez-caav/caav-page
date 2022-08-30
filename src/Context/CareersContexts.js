@@ -12,7 +12,6 @@ export default async function getAllCareer() {
     const querySnapshot = await getDocs(CareersRef);
     querySnapshot.forEach((doc) => {
         // doc.data() is never undefined for query doc snapshots
-        console.log(doc.id, " => ", doc.data());
         
         careersA.push(doc);
         

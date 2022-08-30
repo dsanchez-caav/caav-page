@@ -90,8 +90,6 @@ const Form = () => {
             timerProgressBar: true,
             showConfirmButton: true,
             confirmButtonColor: '#3085d6',
-
-
         })
 
         e.preventDefault();
@@ -128,8 +126,6 @@ const Form = () => {
             setState(initialState)
 
         }
-        console.log(values)
-
 
     };
 

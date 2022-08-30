@@ -98,7 +98,6 @@ const CareerEdit = ({id, Name, Des, Sal, Loc}) => {
             })
 
         }
-        console.log(values)
 
 
     };
@@ -128,7 +127,7 @@ const CareerEdit = ({id, Name, Des, Sal, Loc}) => {
                                 <FormInput
                                     type="text"
                                     name="Name"
-                                    
+                                    placeholder={t("admin.careerform.placename")}
                                     value={values.Name}
                                     contentEditable='false'
                                     disabled
@@ -142,7 +141,7 @@ const CareerEdit = ({id, Name, Des, Sal, Loc}) => {
                             </TextContainer>
                             <InputContainer>
                                 <TextFormA
-
+                                    placeholder={t("admin.careerform.placedes")}
                                     type="text"
                                     name="Description"
                                     id="des"
@@ -157,7 +156,7 @@ const CareerEdit = ({id, Name, Des, Sal, Loc}) => {
                             </TextContainer>
                             <InputContainer>
                                 <FormInput
-
+                                    placeholder={t("admin.careerform.placesal")}
                                     type="number"
                                     name="Salary"
                                     id="salary"
@@ -172,7 +171,7 @@ const CareerEdit = ({id, Name, Des, Sal, Loc}) => {
                             </TextContainer>
                             <InputContainer>
                                 <FormInput
-
+                                    placeholder={t("admin.careerform.placeubi")}
                                     type="text"
                                     name="Location"
                                     id="loc"

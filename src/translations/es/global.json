@@ -64,7 +64,7 @@
         "desmar": "En CAAV contamos con un amplio portafolio de servicios de marketing para darle a su empresa una identidad de marca exitosa.",
         "deshru": "En Santiago de Cali tenemos acceso a un excelente talento humano. Egresados de varias de las mejores universidades de Colombia.",
         "desau": "CAAV International Solutions ofrece a empresas de todos los tamaños soluciones a través de las fronteras conectando el talento adecuado con la necesidad adecuada.",
-        "desca": "En CAAV reclutamos el mejor talento para nuestros clientes, y tu puedes hacer parte de nuestra empresa."
+        "desca": "En CAAV reclutamos el mejor talento para nuestros clientes, y tú puedes hacer parte de nuestra empresa."
     },
     "pagestitles":{
         "pagehr": "Recursos Humanos",
@@ -124,17 +124,17 @@
     "contactshow":{
         "marketing":{
             "title": "Vamos a hablar de tu marca",
-            "desc": "¿No sabes por dónde empezar? Contáctanos y hablemos de tu marca",
+            "desc": "¿No sabes por dónde empezar? Contáctanos y hablemos de tu marca.",
             "button": "Contáctanos"
         },
         "aboutus":{
             "title": "Ahora que nos conoces, queremos conocerte",
-            "desc": "¿No sabes por dónde empezar? Contáctanos y te ayudaremos",
+            "desc": "¿No sabes por dónde empezar? Contáctanos y te ayudaremos.",
             "button": "Contáctanos"
         },
         "hr":{
             "title": "Conectemos su empresa con los mejores talentos",
-            "desc": "¿No sabes por dónde empezar? Contáctanos y contrata al mejor talento",
+            "desc": "¿No sabes por dónde empezar? Contáctanos y contrata al mejor talento.",
             "button": "Contáctanos"
         },
         "ser":{
@@ -154,11 +154,12 @@
     "contact":{
         "form":{
             "name": "Nombre",
-            "email": "Correo Electronico",
-            "phone": "Telefono",
+            "email": "Correo Electrónico",
+            "phone": "Teléfono",
             "description": "Mensaje",
             "buttona": "Aceptar",
             "buttonb": "Cancelar",
+            "date": "Fecha",
             "nameerror": "Error en el campo: Nombre",
             "mailerror": "Error en el campo: e-mail",
             "phoneerror": "Error en el campo: Telefono",
@@ -170,7 +171,7 @@
             "name": "Tu Nombre",
             "email": "ejemplo@mail.com",
             "phone": "+1 305999999",
-            "description": "Dejanos un mensaje"
+            "description": "Déjanos un mensaje"
         }
     },
     "services":{
@@ -193,7 +194,7 @@
         "item2": "\\ Excelente ambiente de trabajo",
         "item3": "\\ Posibilidades de crecimiento",
         "item4": "\\ Aprendizaje constante",
-        "item5": "\\ Excelentes instalaciones fisicas",
+        "item5": "\\ Excelentes instalaciones físicas",
         "title2": "Conoce las vacantes disponibles",
         "des2": "La lista de las vacantes disponibles en este momento es la siguiente:",
         "buttoninfo": "Más Información",
@@ -212,7 +213,11 @@
             "aprove": "Vacante añadida con exito",
             "back": "Volver a todas las vacantes",
             "title": "Crear vacante",
-            "dest": "Desde este formulario puedes crear una nueva vacante (Todos los campos son obligatorios)"
+            "dest": "Desde este formulario puedes crear una nueva vacante (Todos los campos son obligatorios)",
+            "placename": "IT Manager",
+            "placedes": "Describe el trabajo",
+            "placesal": "1000000",
+            "placeubi": "Cali, Colombia"
         },
         "careeredit":{
             "vname": "Nombre de la vacante",

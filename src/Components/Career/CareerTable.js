@@ -22,7 +22,6 @@ const CareerTable = () => {
         <>
             <TableContainer>
                 <Container>
-                    
                     {careersA && careersA.map((career, index) => (
                         <CareerItem key={index} careerName={career.data().Name} salary={career.data().Salary}  carrerid={career.id} />
                     ))}

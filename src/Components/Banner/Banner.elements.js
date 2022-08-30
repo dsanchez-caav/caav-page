@@ -167,13 +167,24 @@ export const BannerTagline = styled.h4`
         text-align: left;
         padding-top: 1rem;
         letter-spacing: normal;
+        font-size: 3.2rem;
     }
     @media screen and (max-device-width: 1400px) {
         font-size: 2.2rem;
+        &.job{
+        font-size: 2.2rem;
+        padding-top: 1rem;
+        letter-spacing: normal;
+    }
     }
     @media screen and (max-width: 960px) {
         font-size: 1.8rem;
         padding-top: 10%;
+        &.job{
+        text-align: center;
+        padding-top: 1rem;
+        letter-spacing: normal;
+    }
     }
 `;
 
@@ -199,7 +210,7 @@ export const BannerTitle = styled.h3`
     text-align: center;
     justify-content: center;
     font-family: 'PT Sans', sans-serif;
-    font-size: 6.5rem;
+    font-size: 7.2rem;
     &.caav{
         letter-spacing: 2rem;
     }
@@ -209,12 +220,18 @@ export const BannerTitle = styled.h3`
     }
     @media screen and (max-device-width: 1400px) {
         font-size: 6rem;
+        &.job{
+        text-align: left;
+        padding-top: 1rem;
+        font-size: 5rem;
+    }
     }
     @media screen and (max-width: 960px) {
         font-size: 3.2rem;
         &.job{
-        text-align: left;
-        padding-top: 0.5rem;
+        text-align: center;
+        padding-top: 1.8rem;
+        font-size: 3.5rem;
     }
     }
 `;

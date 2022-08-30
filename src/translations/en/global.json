@@ -159,6 +159,7 @@
             "description": "Message",
             "buttona": "Submit",
             "buttonb": "Cancel",
+            "date": "Date",
             "nameerror": "Error at field: Name",
             "mailerror": "Error at field: e-mail",
             "phoneerror": "Error at field: Phone",
@@ -174,9 +175,9 @@
         }
     },
     "services":{
-        "ourservicesT":"What we offer?",
-        "ourservices": "CAAV brings you the best talent for your company connecting the right solutions for your needs.",
-        "ourpromiseT": "What we promise?",
+        "ourservicesT":"What do we offer?",
+        "ourservices": "CAAV brings you the best talent for your company, connecting the right solutions for your needs.",
+        "ourpromiseT": "What do we promise?",
         "ourpromise": "We optimize the processes of your company, reducing the times of different processes, increasing productivity, all this with the best talent.",
         "cards":{
             "title": "Discover our services",
@@ -212,7 +213,11 @@
             "aprove": "Succes add career",
             "back": "Back to all careers",
             "title": "Add career",
-            "dest": "From this form you can create a new career (All fields are required)"
+            "dest": "From this form you can create a new career (All fields are required)",
+            "placename": "IT Manager",
+            "placedes": "Describes the job",
+            "placesal": "1000000",
+            "placeubi": "Cali, Colombia"
         },
         "careeredit":{
             "vname": "Career name",

@@ -8,7 +8,6 @@ const AdminPrincipal = () => {
     window.scrollTo(0, 0);
     const [t, i18n] = useTranslation("global");
     const { user } = UserAuth();
-    console.log(user)
 
     return (
         <>

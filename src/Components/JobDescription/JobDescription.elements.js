@@ -10,7 +10,7 @@ export const Title = styled.h2`
     font-family: 'PT Sans', sans-serif;
     padding-top: 2%;
     font-size: 4.6rem;
-    margin-bottom: 3rem;
+    padding-bottom: 1rem;
     color: #262728;
     display: flex;
     align-items: flex-start;
@@ -22,7 +22,7 @@ export const Title = styled.h2`
         justify-content: center;
         font-size: 2.4rem;
         text-align: center;
-        padding-top: 20%;
+        padding-top: 3%;
         margin-bottom: 2rem;
     }
 
@@ -58,11 +58,12 @@ export const Subtitle = styled.h3`
     font-family: 'PT Sans', sans-serif;
     padding-top: 2%;
     font-size: 3.8rem;
-    margin-bottom: 3rem;
+    //margin-bottom: 3rem;
     color: #262728;
     display: flex;
     align-items: flex-start;
     text-align: left;
+    padding-bottom: 1rem;
     @media screen and (max-device-width: 1400px){
         font-size: 3rem;
     }
@@ -71,7 +72,8 @@ export const Subtitle = styled.h3`
         font-size: 1.8rem;
         text-align: left;
         padding-top: 20%;
-        margin-bottom: 2rem;
+        //margin-bottom: 2rem;
+        padding-bottom: 1rem;
     }
 
 `

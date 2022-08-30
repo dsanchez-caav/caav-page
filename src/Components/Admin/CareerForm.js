@@ -121,8 +121,6 @@ const CareerForm = () => {
             setState(initialState)
 
         }
-        console.log(values)
-
 
     };
 
@@ -141,7 +139,7 @@ const CareerForm = () => {
                 <Container>
 
                     <FormContainer>
-                        <FormColumn onSubmit={handleSubmit} id="form">
+                        <FormColumn onSubmit={handleSubmit} id="form" >
                             <TextContainer>
                                 <Description>
                                     {t("admin.careerform.vname")}
@@ -151,6 +149,7 @@ const CareerForm = () => {
                                 <FormInput
                                     type="text"
                                     name="Name"
+                                    placeholder={t("admin.careerform.placename")}
                                     onChange={handleInputChange}
                                     value={values.Name}
                                 />
@@ -162,7 +161,7 @@ const CareerForm = () => {
                             </TextContainer>
                             <InputContainer>
                                 <TextFormA
-
+                                    placeholder={t("admin.careerform.placedes")}
                                     type="text"
                                     name="Description"
                                     id="des"
@@ -177,7 +176,7 @@ const CareerForm = () => {
                             </TextContainer>
                             <InputContainer>
                                 <FormInput
-
+                                    placeholder={t("admin.careerform.placesal")}
                                     type="number"
                                     name="Salary"
                                     id="salary"
@@ -192,7 +191,7 @@ const CareerForm = () => {
                             </TextContainer>
                             <InputContainer>
                                 <FormInput
-
+                                    placeholder={t("admin.careerform.placename")}
                                     type="text"
                                     name="Location"
                                     id="loc"

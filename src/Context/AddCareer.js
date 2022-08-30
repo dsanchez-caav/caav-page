@@ -10,7 +10,4 @@ export default async function addCareer(infoCareer) {
     
     await setDoc(newCareer, infoCareer)
 
-
-    console.log(infoCareer)
-
 }

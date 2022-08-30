@@ -9,7 +9,7 @@ const JobDescription = ({ description, location, date }) => {
             <DesContainer>
                 <Container>
                     <Title>
-                        Descripcion de la vacante
+                        Descripción de la vacante
                     </Title>
                     <Description>
                         {description}
@@ -17,7 +17,7 @@ const JobDescription = ({ description, location, date }) => {
                     <Subtitle>
                         Requerimientos
                     </Subtitle>
-                    <Description>
+                    <Description className='list'>
                         Bilingüe
                     </Description>
                     <JobInfo>

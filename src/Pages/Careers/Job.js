@@ -4,6 +4,8 @@ import Getcareer from '../../Context/SearchCareer'
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+import Swal from 'sweetalert2'
+
 const Job = () => {
 
     let { id } = useParams();
@@ -16,9 +18,15 @@ const Job = () => {
         });
     }
 
+
+
     React.useEffect(() => {
         ActualizarCareer(id);
+        
     }, []);
+
+
+
 
     return (
         <>
