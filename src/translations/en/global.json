@@ -251,7 +251,10 @@
             "des": "In the following table is the information of all those who tried to contact CAAV from the contact page, from the action buttons you can delete or see the complete information",
             "del": "Contact deleted",
             "viewT": "Contact information"
-            
         }
+    },
+    "cookie":{
+        "text": "This website uses its own and third-party cookies to provide a better user experience.",
+        "button": "Agree!"
     }
 }

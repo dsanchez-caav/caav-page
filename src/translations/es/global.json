@@ -252,5 +252,9 @@
             "del": "Contacto eliminado",
             "viewT": "Información del contacto"
         }
+    },
+    "cookie":{
+        "text": "Este sitio web utiliza cookies propias y de terceros para brindar una mejor experiencia de usuario.",
+        "button": "De acuerdo!"
     }
 }

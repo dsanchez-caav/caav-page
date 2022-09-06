@@ -20,3 +20,4 @@ export { default as CAdminPrincipal } from "./Admin/AdminPrincipal";
 export { default as CContactView } from "./Admin/ContactView";
 export { default as Protected } from "./Protected/Protected";
 export { default as JobDescription } from "./JobDescription/JobDescription";
+export { default as CookieConsentC } from "./CookieConsent/CookieConsent";

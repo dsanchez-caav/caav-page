@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Footer, Protected } from "./Components";
+import { Navbar, Footer, Protected, CookieConsent, CookieConsentC } from "./Components";
 import GlobalStyle from "./globlalStyles";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/HomePage/Home";
@@ -72,6 +72,7 @@ function App() {
           <Route path="*" element={< NotFoundP />} />
         </Routes>
         <Footer />
+        <CookieConsentC/>
       </AuthContextPrivider>
     </Router>
   );
