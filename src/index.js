@@ -5,6 +5,8 @@ import { I18nextProvider } from 'react-i18next'
 import i18next from 'i18next';
 import global_es from './translations/es/global.json'
 import global_en from './translations/en/global.json';
+import terms_en from './translations/en/terms.json';
+import terms_es from './translations/es/terms.json';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 i18next
@@ -13,10 +15,12 @@ i18next
   interpolation: { escapeValue: false },
   resources: {
     es: {
-      global: global_es
+      global: global_es,
+      terms: terms_es
     },
     en: {
-      global: global_en
+      global: global_en,
+      terms: terms_en
     }
   }
 });

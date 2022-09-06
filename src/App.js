@@ -18,6 +18,7 @@ import CareerEdit from "./Pages/Admin/CareerEdit";
 import AdminPrincipal from "./Pages/Admin/AdminPrincipal";
 import ConatctTable from "./Pages/Admin/ContactTable";
 import ContactView from "./Pages/Admin/ContactView";
+import TermsPage from "./Pages/Terms/TermsPage";
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
           <Route exact path="/contact" element={<ContactUs />} />
           <Route exact path="/career" element={< Career />} />
           <Route exact path="/job/:id" element={< Job />} />
+          <Route exact path="/terms" element={< TermsPage />} />
           <Route exact path="/admin" element={< AdminPrincipal />} />
 
           {/* Protected routes */}

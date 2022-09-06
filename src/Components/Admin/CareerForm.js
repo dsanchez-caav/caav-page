@@ -191,7 +191,7 @@ const CareerForm = () => {
                             </TextContainer>
                             <InputContainer>
                                 <FormInput
-                                    placeholder={t("admin.careerform.placename")}
+                                    placeholder={t("admin.careerform.placeubi")}
                                     type="text"
                                     name="Location"
                                     id="loc"
