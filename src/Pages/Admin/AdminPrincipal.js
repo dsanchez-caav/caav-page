@@ -18,7 +18,7 @@ const AdminPrincipal = () => {
             <Banner title={"Admin"}
                 titletras={t("admin.principal.title")}
                 Subtitle={t("admin.principal.sutitle")}
-                destras={t("admin.principal.des1") + user.displayName + t("admin.principal.des2")}
+                //destras={t("admin.principal.des1") + user.displayName + t("admin.principal.des2")}
             />
             <CAdminPrincipal/>
         </>
